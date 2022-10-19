@@ -3,6 +3,9 @@
     padding: 40px 0;
     .logo{
         margin-bottom: 40px;
+        @media screen and (max-width:1024px) {
+            margin-bottom: 20px;
+        }
     }
     .about-fitterfly {
         color: #DDDDDD;
@@ -10,16 +13,24 @@
         font-family: "Roboto",sans-serif;
         line-height: 24px;
         margin-bottom: 20px;
+        @media screen and (max-width:1024px) {
+            margin-bottom: 10px;
+        }
     }
     .social-block {
         .social-icon {
             margin: 0 15px;
         }
+        @media screen and (max-width:1024px) {
+            margin-bottom: 20px;
+        }
     }
     .contact-details{
-        strong{
-            display: block;
+        h4{
             margin-bottom: 40px;
+            @media screen and (max-width:1024px) {
+                margin-bottom: 20px;
+            }
         }
         .contact-list{
             display: flex;
