@@ -30,6 +30,10 @@
             background: url(/images/right-arw.svg) no-repeat;
         }
     }
+    @media screen and (max-width:1024px) {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
 }
 .btn-block {
     display: flex;
