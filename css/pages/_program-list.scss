@@ -1,0 +1,99 @@
+body {
+    background-color: #021D45;
+}
+.program-list-head-sec {
+    background-color: #021D45;
+    .row {
+        .section-head {
+            padding-top: 95px;
+            h3 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #41B9D5; 
+                padding: 95px 0px 35px;
+                @media screen and (max-width:1024px){
+                    font-size: 24px;
+                    line-height: 30px;
+                    padding: 0px 0px 25px;
+                }
+            }
+            h2 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 127.02%;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #F0E7D2;
+                padding-bottom: 90px;
+                @media screen and (max-width:1024px){
+                    font-size: 35px;
+                    line-height: 115.02%;
+                    letter-spacing: 0.03em;
+                    padding-bottom: 50px;
+                } 
+            }
+        }
+    }
+}
+
+.program-list-sec {
+    background-color: #173868;
+    &.background{
+        background-color: #274879;
+    }
+    .program-list {
+        padding: 55px 0px;
+    }
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        @media screen and (max-width:1024px){
+            padding-bottom: 25px;
+            width: 65%;
+        }
+    }
+    h4 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 127.02%;
+        letter-spacing: 0.03em;
+        color: #F0E7D2;
+        padding-bottom: 15px;  
+    }
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #41B9D5; 
+        padding-bottom: 25px;
+    }
+    .btn {
+        width: 189px;
+        height: 60px;
+        background: #FEC914;
+        border: 2.5px solid #F0E7D2;
+        border-radius: 100px;
+        @media screen and (max-width:1024px){
+            width: 150px;
+            height: 45px;
+        } 
+    }
+}
+
+.mb-95 {
+    margin-bottom: 95px;
+}
