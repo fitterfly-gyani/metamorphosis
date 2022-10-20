@@ -1,0 +1,28 @@
+// Core variables and mixins
+@import 'base-partial/atoms/_variables.scss';
+@import 'base-partial/atoms/_mixin.scss';
+
+// Normalize and reset
+@import 'base-partial/atoms/_reset-and-normalize.scss';
+@import 'base-partial/atoms/_grid.scss';
+@import 'base-partial/atoms/_extend.scss';
+
+// Components
+@import 'base-partial/atoms/_button-groups.scss';
+@import 'base-partial/atoms/_typography.scss'; 
+@import 'base-partial/atoms/_pattern.scss';
+
+// molecules
+@import 'base-partial/molecules/_card.scss';
+@import 'base-partial/molecules/_bullet-list.scss';
+
+// templates
+@import 'base-partial/templates/_layout.scss';
+@import 'base-partial/templates/_home-page.scss';
+
+%scroll-y{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; 
+} 
+ 
+

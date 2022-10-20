@@ -1,0 +1,22 @@
+.card{
+    border-radius: 10px;
+    &.blue-bg{
+        background: #0F3061;
+    }
+}
+
+.round-box{
+    background: #41B9D5;
+    padding: 16px 70px 19px 45px;
+    max-width: 450px;
+    border-radius: 0 10px 10px 0;
+    margin-left: -95px;
+    strong{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 26px;
+        color: #021D45;
+    }
+}
