@@ -15,8 +15,14 @@
   &.active {
     background-color: #021D45;
   }
+  .container {
+    @media screen and (max-width:1024px){
+      padding: 0;
+    }
+  }
   @media screen and (max-width:1024px){
     height: 60px;
+    background-color: #021D45;
     position: relative;
   }
   .header-wrap {
@@ -176,4 +182,7 @@
 
 .header-pad-100 {
   padding-top: 100px;
+  @media screen and (max-width:1024px) {
+    padding-top: 0;
+  }
 }
