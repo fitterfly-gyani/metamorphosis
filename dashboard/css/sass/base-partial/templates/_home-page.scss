@@ -9,7 +9,31 @@
     font-size: 18px;
     line-height: 25px;
     color: #F0E7D2;
-    margin: 20px 0;
+    margin: 20px 0 40px;
+}
+
+.participant-box{
+    position: relative;
+    z-index: 4;
+    margin-bottom: 20px;
+    &:after{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        background: #41B9D5;
+        //padding: 16px 70px 19px 45px;
+        height: 67px;
+        margin: auto;
+        width: 32%;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.card-name{
+    color: #41B9D5;
+    margin-bottom: 10px;
 }
 
 .count-block{

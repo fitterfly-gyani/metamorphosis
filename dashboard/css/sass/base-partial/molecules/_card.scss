@@ -1,16 +1,27 @@
 .card{
     border-radius: 10px;
+    overflow: hidden;
     &.blue-bg{
         background: #0F3061;
+    }
+    .card-head{
+        padding: 8px 16px;
+        background: #1C4685;
+    }
+    .card-body{
+        padding: 20px 16px;
+        background: #DBF4F2;
+        height: 205px;
     }
 }
 
 .round-box{
-    background: #41B9D5;
-    padding: 16px 70px 19px 45px;
-    max-width: 450px;
-    border-radius: 0 10px 10px 0;
-    margin-left: -95px;
+    // background: #41B9D5;
+    padding: 16px 70px 19px 0px;
+    display: inline-flex;
+    // max-width: 450px;
+    // border-radius: 0 10px 10px 0;
+    // margin-left: -95px;
     strong{
         font-family: 'Inter';
         font-style: normal;
@@ -18,5 +29,60 @@
         font-size: 28px;
         line-height: 26px;
         color: #021D45;
+        margin-top: 5px;
+    }
+}
+
+.data-table{
+    .row{
+        margin: 0 0 13px 0;
+    }
+    .col-sm-3, .col-sm-6{
+        padding: 0 0 0 0;
+    }
+    .data-name{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: #166780;
+        padding-right: 5px;
+    }
+    .progress{
+        width: 100%;
+        height: 17px;
+        position: relative;
+        box-shadow: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        .progress-bar{
+            position: absolute;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 0.5s;
+            &.red{
+                background: #E83D62;
+            }
+            &.yellow{
+                background: #FEC914;
+            }
+            &.orange{
+                background: #FC7D00;
+            }
+            &.sky-blue{
+                background: #41B9D5;
+            }
+        }
+    }  
+    .data-value{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: right;
+        color: #021D45;
+        padding-right: 5px;
     }
 }
