@@ -1,9 +1,20 @@
 .header {
-  background-color: #021D45;
   // padding: 50px 0px 20px 0px;
   height: 100px;
   display: flex;
   align-items: center;
+  position: fixed;
+	z-index: 1000;
+	height: 100px;
+  width: 100%; 
+	background: transparent;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+  &.active {
+    background-color: #021D45;
+  }
   @media screen and (max-width:1024px){
     height: 60px;
     position: relative;
