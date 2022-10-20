@@ -1,0 +1,94 @@
+.home-banner{
+    background-color: #021D45;
+    min-height: 700px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    img{
+        display: block;
+    }
+    .hbc-title{
+        letter-spacing: 18px;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        span{
+            &.oring{
+                margin-right: 15px;
+                img{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .hb-left-text{
+        position: absolute;
+        left: 30px;
+        top: -60px;
+        p{
+            color: #A3B2C2;
+        }
+    }
+    h2{
+        font-size: 42px;
+        color: #FEC914;
+        margin-top: 20px;
+    }
+    .hbc-para{
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #41B9D5;
+    }
+}
+
+.video-sec{
+    background-color: #021D45;
+    padding: 90px 0px;
+    position: relative;
+    text-align: center;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/videosec-background.png);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .vs-title{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .vs-thumnail{
+        margin-top: 50px;
+        max-width: 899px;
+        max-height: 523px;
+        background: #021D45;
+        box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 50px auto auto auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        cursor: pointer;
+        .play-btn{
+            position: absolute;
+        }
+    }
+    .vs-desc{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        color: #41B9D5;
+        max-width: 483px;
+        margin: 40px auto auto;
+    }
+}

@@ -1,0 +1,54 @@
+.footer {
+    background-color: #1C4685;
+    padding: 40px 0;
+    .logo{
+        margin-bottom: 40px;
+        @media screen and (max-width:1024px) {
+            margin-bottom: 20px;
+        }
+    }
+    .about-fitterfly {
+        color: #DDDDDD;
+        font-size: 14px;
+        font-family: "Roboto",sans-serif;
+        line-height: 24px;
+        margin-bottom: 20px;
+        @media screen and (max-width:1024px) {
+            margin-bottom: 10px;
+        }
+    }
+    .social-block {
+        .social-icon {
+            margin: 0 15px;
+        }
+        @media screen and (max-width:1024px) {
+            margin-bottom: 20px;
+        }
+    }
+    .contact-details{
+        h4{
+            color: #fff;
+            margin-bottom: 40px;
+            @media screen and (max-width:1024px) {
+                margin-bottom: 20px;
+            }
+        }
+        .contact-list{
+            display: flex;
+            flex-direction: column;
+            .contact-item {
+                img{
+                    margin-right: 10px;
+                }
+                color: #fff;
+                font-weight: 400;
+                display: inline-flex;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}

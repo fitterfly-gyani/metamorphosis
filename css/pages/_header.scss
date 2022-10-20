@@ -1,15 +1,37 @@
 .header {
-  background-color: #021D45;
   // padding: 50px 0px 20px 0px;
   height: 100px;
   display: flex;
   align-items: center;
+  position: fixed;
+	z-index: 1000;
+	height: 100px;
+  width: 100%; 
+	background: transparent;
+	-webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+  &.active {
+    background-color: #021D45;
+  }
+  @media screen and (max-width:1024px){
+    height: 60px;
+    position: relative;
+  }
   .header-wrap {
     display: flex;
     justify-content: space-between;
+    padding: 0px 15px;
     .logo {
       display: flex;
-      // flex: 1;
+      align-items: center;
+      a {
+        display: block;
+        img{
+          display: block;
+        }
+      }
     }
     .nav {
       display: flex;
@@ -19,44 +41,139 @@
         li {
           cursor: pointer;
           display: flex;
+          align-items: center;
           a {
             color: #A3B2C2;
             font-weight: 500;
             font-size: 18px;
-            line-height: 22px;
-            line-height: 22px;
             margin: 0 15px;
+            display: block;
+            position: relative;
             &::after {
               content: '';
               display: block;
-              margin-top: 5px;
+              // margin-top: 5px;
               width: 0;
               height: 2px;
+              position: absolute;
+              bottom: -5px;
               background: #E83D62;
               transition: width .3s;
+              @media screen and (max-width:1024px) {
+                display: none;
+                
+              }
             }
           }
           &:hover{
             a{
               color: #FBF0DC;
               &::after {
-                width: 100%;
+                width: 40%;
               }
             }
           }
+          @media screen and (max-width:1024px) {
+            margin: 10px 0px;
+          }
+
+        }
+        @media screen and (max-width:1024px) {
+          flex-direction: column;
+          margin-bottom: 15px;
         }
       }
+      @media screen and (max-width:1024px) {
+        display: none;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        margin-left: -15px;
+        // display: block;
+        background-color: #021D45;
+        z-index: 9;
+        &.active {
+          display: block;
+        }
+      }
+
     }
-    .nav-btn {
-      display: flex;
+    .nav-items {
+      .login-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #41B9D5;
+        height: 33px;
+        width: 63px;
+        border: 1px solid #41B9D5;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+      @media screen and (max-width:1024px) {
+        display: flex;
+        align-items: center;
+      }
+      
+    }
+    .icon-burger{ 
+      display: none;
+      // display: flex;
       justify-content: center;
-      align-items: center;
-      color: #41B9D5;
-      height: 33px;
-      width: 63px;
-      border: 1px solid #41B9D5;
-      border-radius: 30px;
+      align-items: flex-start;
+      flex-direction: column;
+      position: unset;
+      margin: unset;
+      padding-left: 10px;
+      width: 40px;
+      height: 40px;
       cursor: pointer;
+
+      .burger-patty {
+        margin: -2px auto;
+        width: 26px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: unset;
+        left: unset;
+        background: #fff;
+        z-index: 999;
+        -webkit-transition: -webkit-transform 0.2s ease;
+        -o-transition: -o-transform 0.2s ease;
+        transition: transform 0.2s ease;
+        &:first-child {
+          transform: translateY(-8px);
+        }
+        &:last-child {
+          transform: translateY(8px);
+        }
+        
+      }
+
+      &.active {
+        .burger-patty {
+          &:first-child {
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            transform: scale(0);
+          }
+          &:last-child {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      @media screen and (max-width:1024px) {
+        display: flex;
+        
+      }
     }
   }
+}
+
+
+.header-pad-100 {
+  padding-top: 100px;
 }
