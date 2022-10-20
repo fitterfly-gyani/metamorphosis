@@ -1,0 +1,91 @@
+.about-us-banner {
+    background-color:  rgba($color:#0f3052, $alpha: 1.0);
+    .banner-pad {
+        padding: 40px 0;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.join-challenge-sec{
+    color: #021D45;
+    background-color: #41B9D5;
+    height: 300px;
+    position: relative;
+        .row {
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    .challenge-title{
+        display: flex;
+        align-items: center;
+    }
+    .challenge-detail{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #DBF4F2;
+        position: relative;
+        z-index: 2;
+        border-radius: 130px 0 0 130px;
+        padding-left: 65px;
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 30px;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #DBF4F2;
+        border-radius: 150px 0 0 150px;
+        width: 792px;
+        height: 100%;
+        z-index: 0;
+    }
+}
+.h-100 {
+    height: 100%;
+}
+
+.blue-text {
+    color: #41B9D5;
+}
+
+.about-us-find-more-sec {
+height: 550px;
+background: url(/images/about-us-trans.png) no-repeat rgba($color:#0f3052, $alpha: 1.0);
+background-size: cover;
+.row{
+    justify-content: center;
+}
+.find-more-sec-block{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+    .find-more-sec-title {
+        margin-bottom: 20px;
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn-block {
+        margin-bottom: 20px;
+    }
+    .find-more-link{
+        border-bottom: 1px solid;
+    }
+}
+}
