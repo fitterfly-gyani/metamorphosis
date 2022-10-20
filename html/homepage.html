@@ -1,12 +1,13 @@
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/base.css">
-    <link href="/js/main.js">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
    <header class="header">
@@ -51,13 +52,48 @@
         </div>
    </header>
 
-   <section class="home-banner" style="height: 100vh;">
+   <section class="home-banner">
        <div class="container">
            <div class="row">
-               <div class="col-lg-5"></div>
-               <div class="col-lg-7"></div>
+               <div class="col-lg-5 d-flex justify-content-end">
+                   <div class="hb-left-text">
+                       <p>India's 1st<br>METABOLIC HEALTH<br>challenge</p>
+                   </div>
+                    <div class="hb-image">
+                        <img src="/images/homepage-banner.png" alt="metamorphosis">
+                    </div>
+               </div>
+               <div class="col-lg-7 d-flex justify-content-end">
+                    <div class="hb-content">
+                        <div class="hbc-img">
+                            <img src="/images/meta-logo.svg" alt="metamorphosis">
+                        </div>
+                        <h1 class="hbc-title">METAM<span class="oring"><img src="/images/two-circle.svg"></span>RPHOSIS</h1>
+                        <h2 class="hbc-highlight-text">A 90-Day Challenge</h2>
+                        <p class="hbc-para">to restore your metabolic health.<br>
+                            Are you game?</p>
+                    </div>
+               </div>
            </div>
        </div>
+   </section>
+
+   <section class="video-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="vs-title">Take the first step towards<br>
+                    the rest of your healthier life.</h2>
+                <div class="vs-thumnail">
+                    <img class="play-btn" src="/images/play-btn.svg" alt="play">
+                    <img src="/images/video-thumbnail.png" alt="thumbnail">
+                </div>
+                <p class="vs-desc">Our mission is to get your employees healthier and allow them to take control
+                    over their chronic condition.</p>
+                
+            </div>
+        </div>
+    </div>
    </section>
 
    <footer class="footer">
@@ -111,5 +147,6 @@
         </div>
     </div>
    </footer>
+
 </body>
 </html>
