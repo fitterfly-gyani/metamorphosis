@@ -54,3 +54,27 @@
         color: #F0E7D2;
     }
 }
+
+.circle-block{
+    position: relative;
+    .white-circle{
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        @extend .flex-center;
+        strong{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #191C32;
+        }
+    }
+}
+
