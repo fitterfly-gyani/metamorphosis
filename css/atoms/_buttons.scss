@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     background-color: #FEC914;
-    padding: 15px 35px;
+    padding: 10px 35px;
     border-radius: 100px;
     border: 1px solid #fff;
     .right-arrow{
@@ -30,7 +30,37 @@
             background: url(/images/right-arw.svg) no-repeat;
         }
     }
+    @media screen and (max-width:1024px) {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    &.btn-blue {
+        background-color: #41B9D5;
+        .right-arrow{
+            background-color: #021D45;
+            &::after {
+                background: url(/images/blue-right-arrow.svg) no-repeat;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &.btn-pink {
+        color: #F0E7D2;
+        background-color: #E83D62;
+        .right-arrow {
+            background-color: #F0E7D2;
+            &::after {
+             background: url(/images/dark-blue-arrow.svg) no-repeat;    
+             width: 16px;
+             height: 16px;
+            }
+        }
+    }
+    
+
 }
+
 .btn-block {
     display: flex;
     justify-content: center;

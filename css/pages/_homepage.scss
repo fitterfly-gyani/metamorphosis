@@ -370,7 +370,7 @@
 }
 
 .challenge-box{
-    background: #DBF4F2;
+    // background: #DBF4F2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -381,10 +381,28 @@
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    min-height: 320px;
+    @media screen and (max-width:1024px) {
+        padding: 29px 10px 14px 105px;
+        min-height: 220px;
+    }
+    &.bg-teal {
+        background-color:#DBF4F2 ;
+    }
+    &.bg-yellow {
+        background-color:#FBF0DC ;
+    }
+    &.bg-pink {
+        background-color: #FCD7D1;
+    }
     img.cb-img {
         position: absolute;
         left: 0;
         top: 35px;
+        @media screen and (max-width:1024px) {
+            top: 0;
+            left: -25px;
+        }
     }
     .cb-date{
         font-weight: 700;
@@ -410,6 +428,9 @@
         color: #708092;
         top: 20px;
         right: 20px;
+        @media screen and (max-width:1024px) {
+            top: 10px;
+        }
     }
 }
 
