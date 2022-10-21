@@ -1,0 +1,102 @@
+.pricing-sec{
+    padding: 70px 0px;
+    background: #0F3061;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/program-pricing-bg.png);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+    }
+    .ps-logo{
+        img{
+
+        }
+    }
+    .ps-details{
+        h4{
+            font-weight: 700;
+            font-size: 24px;
+            color: #F0E7D2;
+            line-height: initial;
+            letter-spacing: 1px;
+        }
+        p{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: initial;
+            color: #41B9D5;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+        .regular-price{
+            font-weight: 600;
+            font-size: 22px;
+            color: #F0E7D2;
+            line-height: initial;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+        .ps-buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            .talk-to {
+                a {
+                font-weight: 500;
+                font-size: 24px;
+                color: #FEC914;
+                border: 2px solid #FEC914;
+                border-radius: 30px;
+                padding: 10px 35px;
+            }
+            }
+        }
+    }
+}
+
+.therapeutic-sec{
+    padding: 90px 0px;
+    background: #DBF4F2;
+    text-align: center;
+    .ts-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: initial;
+        color: #021D45;
+    }
+    .ts-uses-list{
+        margin-top: 90px;
+        .ts-uses-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 290px;
+            margin: auto;
+            &.mt{
+                margin-top: 60px;
+            }
+            h4{
+                font-weight: 700;
+                font-size: 22px;
+                line-height: initial;
+                color: #021D45;
+                margin-top: 10px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                color: #708092;
+                line-height: initial;
+                margin-top: 10px;
+            }
+        }
+    }
+}
