@@ -105,11 +105,10 @@
    </footer>
     <script>
 
-    $(".icon-burger").toggle(
-        function(){
-            $(".nav")
-        }
-    );
+    $(".icon-burger").on("click",function(){
+        $(".nav").slideToggle();
+        $(this).toggleClass("active");
+    });
     </script>
 </body>
 </html>
