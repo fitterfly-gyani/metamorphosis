@@ -1,0 +1,21 @@
+.program-description-sec {
+    background-color: #021D45;
+    padding: 100px 0;
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .program-image{
+        text-align: center;
+    }
+    .btn-block{
+        justify-content: flex-start;
+    }
+    .program-desc{
+        margin-bottom: 40px;
+        color: #41B9D5;
+    }
+}
