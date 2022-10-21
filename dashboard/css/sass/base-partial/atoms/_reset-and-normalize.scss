@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+/* @group global reset */
+html, body {
+    padding:0;
+    margin:0;
+    height:100%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.19px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+sup {
+    font-size: 9px;
+}
+fieldset, dd, button, form {
+    margin:0;
+    padding:0;
+    border: none;
+}
+ul, ul li, ol, ol li, dl, p, input, input[type="checkbox"], input[type="radio"] {
+    margin:0;
+    padding: 0;
+}
+ul li, ol li, menu li { list-style-type: none;}
+img, a img {
+    border: none;
+    max-width: 100%;
+}
+table {
+    border-spacing:0;
+    border-collapse:collapse;
+    width:100%;
+}
+input, button, label, td {
+    margin: 0;
+    padding: 0;
+}
+abbr, article, aside, audio, bb, canvas, datagrid, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video, blockquote {
+    margin:0;
+    padding:0;
+}
+header, footer, nav, menu, section, aside, details, summary {
+    display:block;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* @end */
+
+/* @clearfix style */
+.clearfix{zoom: 1; }
+.clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{clear: both; }
+.clearfix{
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*end */

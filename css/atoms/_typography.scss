@@ -1,21 +1,27 @@
 body {
-color: #fff;
+font-family: 'Inter';
+font-style: normal;
 }
 
 h1 {
     font-size: 44px;
     font-weight: 700;
     line-height: 55px;
-    font-family: 'Inter',sans-serif;
     color: #fff;
 }
 
 h2 {
     font-size: 36px;
     line-height: 45px;
-    font-family: 'Inter',sans-serif;
+    color: #fff;
 }
 
 h3 {
 
+}
+
+p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
 }
