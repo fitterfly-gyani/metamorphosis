@@ -1,15 +1,28 @@
 .wrapper{
     width: 100%;
-    height: 100%;
+    //height: 100%;
     background-color: $blue-col;
-    //background: url('./../images/mm-bg.svg') no-repeat #021D45 right bottom;
     position: relative;
+}
+
+.container-wrap{
+    // display: flex;
+    // flex-direction: column;
+    // height: 100%;
+    // overflow: hidden;
+}
+
+.header{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+    background-color: #021D45;
     &:before{
         content: '';
         position: absolute;
-        //width: 786px;
         height: 104px;
-        //background: url('/dashboard/images/round-rect.svg') no-repeat center;
         top:0;
         right:0;
         z-index: 1;
@@ -21,25 +34,20 @@
     }
 }
 
-.container-wrap{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-}
-
-.header{
+.header-wrap{
     @extend .flex-space-between;
     height: 104px;
     z-index: 4;
+    position: relative;
 }
 
 .content{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    // display: flex;
+    // flex-direction: column;
+    // flex: 1;
     overflow: hidden;
     overflow-y: auto;
+    padding-top: 105px;
 }
 
 .footer{
@@ -49,6 +57,7 @@
 
 .logo{
     @extend .flex-center;
+    z-index: 1;
 }
 
 .company-logo{

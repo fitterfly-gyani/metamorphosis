@@ -17,3 +17,17 @@
   text-transform: capitalize;
   @extend .flex-center;
 }
+
+.dropdown{
+  background: #DBF4F2;
+  border-radius: 12px;
+  padding: 10px 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #166780;
+}
