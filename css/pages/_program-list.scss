@@ -3,9 +3,9 @@ body {
 }
 .program-list-head-sec {
     background-color: #021D45;
+    padding-top: 95px;
     .row {
         .section-head {
-            padding-top: 95px;
             h3 {
                 font-family: 'Inter';
                 font-style: normal;
@@ -45,7 +45,7 @@ body {
 
 .program-list-sec {
     background-color: #173868;
-    &.background{
+    &.light-bg{
         background-color: #274879;
     }
     .program-list {
@@ -81,16 +81,8 @@ body {
         color: #41B9D5; 
         padding-bottom: 25px;
     }
-    .btn {
-        width: 189px;
-        height: 60px;
-        background: #FEC914;
-        border: 2.5px solid #F0E7D2;
-        border-radius: 100px;
-        @media screen and (max-width:1024px){
-            width: 150px;
-            height: 45px;
-        } 
+    .btn-block {
+        justify-content: flex-start;
     }
 }
 
