@@ -100,3 +100,95 @@
         }
     }
 }
+
+.join-program-sec{
+    padding: 130px 0 90px 0;
+    .jp-main{
+        text-align: center;
+        h2{
+            font-weight: 700;
+            font-size: 36px;
+            color: #F0E7D2;
+            line-height: initial;
+        }
+        p{
+            font-size: 28px;
+            font-weight: 500;
+            color: #41B9D5;
+            line-height: initial;
+            margin-top: 10px;
+        }
+        .btn-block{
+            margin-top: 30px;
+        }
+        a{
+            &.find-more{
+                display: block;
+                font-weight: 500;
+                font-size: 28px;
+                color: #41B9D5;
+                line-height: initial;
+                text-decoration: underline;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.weight-program-sec{
+    padding: 100px 0px;
+    background: #41B9D5;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 850px;
+        max-height: 500px;
+        background: #DBF4F2;
+        border-radius: 255px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 112px;
+        max-height: 388px;
+        background-image: url(/images/metabolicsec-bg.png);
+        background-repeat: no-repeat;
+        right: 0;
+        top: 30px;
+        transform: rotate(180deg);
+        z-index: 9;
+    }
+    .wps-title{
+        font-weight: 700;
+        font-size: 36px;
+        color: #021D45;
+        line-height: initial;
+    }
+    .wps-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 400px;
+        margin: auto;
+        p{
+            font-weight: 700;
+            font-size: 18px;
+            color: #166780;
+            line-height: initial;
+            margin-top: 40px;    
+            &:first-child{
+                margin-top: 0px;
+            }     
+        }
+    }
+}
