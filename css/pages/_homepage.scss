@@ -203,6 +203,16 @@
 .participate-sec{
     padding: 90px 0px;
     background: #FBF0DC;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 528px;
+        height: 564px;
+        background-image: url(/images/participate-bg.png);
+        left: 0;
+        background-repeat: no-repeat;
+    }
     .ps-titel{
         h2{
             color: #021D45;
@@ -247,10 +257,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 50px 80px 50px 200px;
+    padding: 80px 80px 80px 200px;
     text-align: left;
     position: relative;
     margin-bottom: 30px;
+    overflow: hidden;
+    img.cb-img {
+        position: absolute;
+        left: 0;
+        top: 35px;
+    }
     .cb-date{
         font-weight: 700;
         font-size: 20px;
