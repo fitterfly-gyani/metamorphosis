@@ -1,0 +1,80 @@
+.program-description-sec {
+    background-color: #021D45;
+    padding: 100px 0;
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .program-image{
+        text-align: center;
+    }
+    .btn-block{
+        justify-content: flex-start;
+    }
+    .program-desc{
+        margin-bottom: 40px;
+        color: #41B9D5;
+    }
+}
+
+
+
+.program-achievement{
+    color: #fff;
+    background-color:#021D45 ;
+    padding: 100px 0;
+    h2 {
+        margin-bottom: 40px;
+    }
+    .achivement-main {
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        padding: 15px 0;
+        .ach-list {
+            display: flex;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            .icon {
+                width: 56px;
+                align-self: center;
+                img{
+                    display: block;
+                }
+            }
+            .text {
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 250px;
+                .ach-percent{
+                    margin: 0 0 10px;
+                    font-size: 20px;
+                }
+                .ach-detail {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: #70809280;
+            width: 72px;
+            top: 0;
+            left: -7px;
+            height: 100%;
+            border-radius: 50px;
+        }
+    }
+}

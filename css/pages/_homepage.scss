@@ -5,17 +5,64 @@
     display: flex;
     align-items: flex-end;
     position: relative;
+    // &::before{
+    //     content: "";
+    //     background-image: url(/images/banner-bg.png);
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     background-repeat: no-repeat;
+    // }
+    @media only screen and (max-width: 991px){
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
     img{
         display: block;
+    }
+    .hb-content{
+        @media only screen and (max-width: 991px){
+            text-align: center;
+        }
+        .hbc-img{
+            img{
+                @media only screen and (max-width: 991px){
+                    margin: auto;
+                }
+            }
+        }
     }
     .hbc-title{
         letter-spacing: 18px;
         font-size: 50px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 991px){
+            flex-direction: column;
+            font-size: 20px;
+        }
+        .morphisis{
+            display: flex;
+            align-items: center;
+            
+            @media only screen and (max-width: 991px){
+                flex-direction: row;
+                font-size: 20px;
+            }
+        }
         span{
             &.oring{
                 margin-right: 15px;
+                width: 43px;
+                height: 43px;
+                @media only screen and (max-width: 991px){
+                    width: 30px;
+                    height: 30px;
+                }
                 img{
                     display: inline-block;
                 }
@@ -99,6 +146,74 @@
 .metabolic-health-sec {
     background-color: #41B9D5;
     padding: 120px 0px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 940px;
+        max-height: 500px;
+        background: #DBF4F2;
+        border-radius: 255px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        top: 60px;
+        left: 0;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/metabolicsec-bg.png);
+        background-repeat: no-repeat;
+        left: 0;
+        top: 110px;
+    }
+    .mh-title{
+        @media only screen and (max-width: 991px){
+            margin-bottom: 100px;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 36px;
+            color: #021D45;
+            line-height: initial;
+        }
+        p{
+            font-weight: 400;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #166780;
+            line-height: initial;
+        }
+    }
+    .mh-videothumb{
+        max-width: 644px;
+        max-height: 379px;
+        background: #166780;
+        box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        margin: auto;
+        @media only screen and (max-width: 991px){
+            margin-top: 50px;
+        }
+        cursor: pointer;
+        .play-btn{
+            position: absolute;
+        }
+    }
+    .mhs-arrw{
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 .weekly-challenge-sec{
@@ -109,10 +224,12 @@
         h2{
             font-size: 44px;
             color: #F0E7D2;
+            line-height: initial;
         }
         p{
             font-size: 30px;
             margin-top: 30px;
+            line-height: initial;
         }
         .benefit-main-div{
             margin-top: 100px;
@@ -203,6 +320,18 @@
 .participate-sec{
     padding: 90px 0px;
     background: #FBF0DC;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 528px;
+        max-height: 564px;
+        background-image: url(/images/participate-bg.png);
+        left: 0;
+        background-repeat: no-repeat;
+    }
     .ps-titel{
         h2{
             color: #021D45;
@@ -216,7 +345,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 420px;
+        max-width: 420px;
         .point{
             display: flex;
             align-items: flex-start;
@@ -241,16 +370,40 @@
 }
 
 .challenge-box{
-    background: #DBF4F2;
+    // background: #DBF4F2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 50px 80px 50px 200px;
+    padding: 80px 80px 80px 200px;
     text-align: left;
     position: relative;
     margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 320px;
+    @media screen and (max-width:1024px) {
+        padding: 29px 10px 14px 105px;
+        min-height: 220px;
+    }
+    &.bg-teal {
+        background-color:#DBF4F2 ;
+    }
+    &.bg-yellow {
+        background-color:#FBF0DC ;
+    }
+    &.bg-pink {
+        background-color: #FCD7D1;
+    }
+    img.cb-img {
+        position: absolute;
+        left: 0;
+        top: 35px;
+        @media screen and (max-width:1024px) {
+            top: 0;
+            left: -25px;
+        }
+    }
     .cb-date{
         font-weight: 700;
         font-size: 20px;
@@ -275,5 +428,191 @@
         color: #708092;
         top: 20px;
         right: 20px;
+        @media screen and (max-width:1024px) {
+            top: 10px;
+        }
+    }
+}
+
+.reward-sec{
+    padding: 130px 0px 0px 0px;
+    background-color: #021D45;
+    text-align: center;
+    .rs-main{
+        h2{
+            font-size: 48px;
+        }
+        p{
+            font-size: 32px;
+            line-height: initial;
+            font-weight: 700;
+            margin-top: 60px;
+        }
+    }
+    .quarterly-reward-list{
+        margin-top: 120px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 178px;
+            background: #41B9D5;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+    .rl-box{
+        background: #DBF4F2;
+        box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        position: relative;
+        @media only screen and (max-width: 991px){
+            margin-bottom: 80px;
+        }
+        .box-top{
+            background: #41B9D5;
+            border-radius: 14px;
+            height: 200px;
+            width: 100%;
+            position: relative;
+            img{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        .box-botm{
+            text-align: left;
+            margin-top: 30px;
+            padding-left: 10px;
+            h5{
+                font-weight: 600;
+                font-size: 20px;
+                color: #27272E;
+            }
+            p{
+                font-weight: 600;
+                margin-top: 10px;
+                font-size: 14px;
+                color: #425466;
+            }
+        }
+    }
+    .monthly-reward-list{
+        margin-top: 120px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 178px;
+            background: #41B9D5;
+            bottom: -20px;
+            left: 0;
+        }
+        .mr-heading{
+            font-size: 32px;
+            line-height: initial;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.waiting-for-sec{
+    padding: 90px 0px;
+    background-color: #021D45;
+    text-align: center;
+    .wf-desc{
+        font-weight: 500;
+        font-size: 24px;
+        color: #A3B2C2;
+        line-height: initial;
+        max-width: 851px;
+        margin: auto;
+    }
+    .wf-btn{
+        margin-top: 100px;
+        h2{
+            font-weight: 700;
+            font-size: 48px;
+            color: #F0E7D2;
+            line-height: initial;
+        }
+        .btn-block{
+            margin-top: 40px;
+        }
+    }
+}
+
+.getintouch-sec{
+    background-color: #021D45;
+    padding: 0 0 200px 0;
+    position: relative;
+    @media only screen and (max-width: 991px){
+        padding: 0 0 50px 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 840px;
+        max-height: 325px;
+        background: #DBF4F2;
+        border-radius: 165px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        @media only screen and (max-width: 991px){
+            display: none;
+        }
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/gettouch-bg.png);
+        left: 0px;
+        top: -50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media only screen and (max-width: 991px){
+            display: none;
+        }
+    }
+    .gs-add{
+        h3{
+            font-weight: 700;
+            font-size: 36px;
+            color: #41B9D5;
+            line-height: initial;
+        }
+        p{
+            font-weight: 600;
+            font-size: 16px;
+            color: #F0E7D2;
+            line-height: initial;
+            margin-top: 20px;
+        }
+    }
+    .gs-image{
+        z-index: 99;
+        position: relative;
+        @media only screen and (max-width: 991px){
+            background: #DBF4F2;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
     }
 }
