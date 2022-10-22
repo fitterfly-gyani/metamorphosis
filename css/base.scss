@@ -1,8 +1,11 @@
 @import './atoms/_reset-and-normalize.scss';
 @import './atoms/_typography.scss';
 @import './atoms/_grid.scss';
+@import './atoms/_mixin.scss';
+@import './atoms/_extend.scss';
 @import './atoms/_buttons.scss';
 @import './atoms/_common.scss';
+@import './atoms/_pattern.scss';
 @import './pages/_header.scss';
 @import './pages/_footer.scss';
 @import './pages/_about-us.scss';
@@ -10,6 +13,8 @@
 @import './pages/_upcoming-event.scss';
 @import './pages/_program-desc-sec.scss';
 @import './pages/_program-list.scss';
+@import './pages/_profile-list.scss';
+@import './pages/_leaderboard.scss';
 
 @import './pages/_popup.scss';  
 @import './pages/_form.scss';

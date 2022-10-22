@@ -1,0 +1,119 @@
+.leaderboard{
+    background: #0F3061;
+}
+
+.aside-menu{
+    padding-top: 85px;
+    ul{
+        li{
+            padding: 24px 24px 17px 15px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.3px;
+            color: #F0E7D2;
+            cursor: pointer;
+            margin: 0 -15px;
+            position: relative;
+            &.active, &:visited{
+                background: #41B9D5;
+                color: #021D45;
+            }
+        }
+    }
+}
+
+.lb-content{
+    background: #1C4685;
+    padding: 55px 77px 124px;
+    .lb-head{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.3px;
+        color: #FEC914;
+        margin-bottom: 8px
+    }
+    .lb-text{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.3px;
+        color: #A3B2C2;
+    }
+    .lb-img{
+        padding-top: 75px;
+        @extend .flex-center;
+    }
+}
+
+.scoring-sec{
+    padding-top: 120px;
+    h2{
+        padding-bottom: 100px;
+    }
+}
+
+.scoring-block{
+    padding: 0 150px;
+    .scoring-title{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.3px;
+        color: #FEC914;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        .title-img{
+            @extend .flex-center;
+            margin-right: 16px;
+        }
+    }
+}
+
+.scoring-list{
+    .scoring-area{
+        height: 90px;
+        background: #1C4685;
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        @extend .flex-align-center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        color: #F0E7D2;
+        text-align: left;
+        padding:16px 24px;
+    }
+    .score-points{
+        height: 90px;
+        width: 100%;
+        background: #DBF4F2;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        @extend .flex-center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #021D45;
+        padding:16px 24px;
+    }
+}
