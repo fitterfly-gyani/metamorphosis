@@ -13,6 +13,8 @@
   transition: all ease-out .5s;
   &.active {
     background-color: #021D45;
+    position: fixed;
+    animation: smoothScroll 1s forwards;
   }
   .container {
     @media screen and (max-width:1024px){
@@ -172,7 +174,6 @@
       }
       @media screen and (max-width:1024px) {
         display: flex;
-        
       }
     }
   }
@@ -183,5 +184,13 @@
   padding-top: 100px;
   @media screen and (max-width:1024px) {
     padding-top: 0;
+  }
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
