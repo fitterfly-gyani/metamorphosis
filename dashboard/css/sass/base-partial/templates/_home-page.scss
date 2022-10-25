@@ -1,5 +1,15 @@
 .home-page{
-
+    .container-wrap{
+        //background: url('./../images/tt-participant.svg') no-repeat bottom left;
+    }
+    .footer{
+        background: url(./../images/tt-participant.svg) no-repeat bottom left -45px;
+        padding-top: 130px;
+        height: auto;
+        .ff-logo{
+            padding-bottom: 50px;
+        }
+    }
 }
 
 .wel-msg{
