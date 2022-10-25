@@ -1,5 +1,6 @@
 .leaderboard{
-    background: #0F3061;
+    background-color: #0F3061;
+    background: #0F3061 url('/images/lb-texture.svg') no-repeat bottom left;
 }
 
 .aside-menu{
@@ -28,6 +29,9 @@
 .lb-content{
     background: #1C4685;
     padding: 55px 77px 124px;
+    &.pb-55{
+        padding-bottom: 55px;
+    }
     .lb-head{
         font-family: 'Inter';
         font-style: normal;
@@ -55,6 +59,7 @@
 
 .scoring-sec{
     padding-top: 120px;
+    background: #0F3061 url('/images/lb-circ-graph.svg') no-repeat top left;
     h2{
         padding-bottom: 100px;
     }
@@ -62,6 +67,12 @@
 
 .scoring-block{
     padding: 0 150px;
+    .score-item{
+        padding-bottom: 100px;
+        &:last-child{
+            padding-bottom: 95px;
+        }
+    }
     .scoring-title{
         font-family: 'Inter';
         font-style: normal;
@@ -73,7 +84,7 @@
         text-align: left;
         display: flex;
         align-items: center;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
         .title-img{
             @extend .flex-center;
             margin-right: 16px;
