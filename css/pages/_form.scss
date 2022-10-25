@@ -17,7 +17,7 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.3px;
-    padding: 5px 10px;
+    padding: 15px 25px;
     height: 64px;
     color: #000000;
     background: #EFF5FA;
@@ -32,34 +32,44 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
       -webkit-appearance: none;
       appearance: none;
     }
-    &::placeholder {
-      font-family: 'Open Sans';
-      font-style: italic;
+    &:placeholder {
+      font-family: 'Inter';
       font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: -0.171429px;
-      color: #999999; 
+      font-size: 16px;
+      font-style: normal;
+      line-height: 19px;
+      color: #708092;
+      letter-spacing: -0.2px;
     }
     
-    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      font-family: 'Open Sans';
-      font-style: italic;
+    &:-webkit-input-placeholder { /* Internet Explorer 10-11 */
+      font-family: 'Inter';
       font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: -0.171429px;
-      color: #999999; 
+      font-size: 16px;
+      font-style: normal;
+      line-height: 19px;
+      color: #708092;
+      letter-spacing: -0.2px; 
+    }
+
+    &:-ms-input-placeholder { /* Microsoft Edge */
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 19px;
+      color: #708092;
+      letter-spacing: -0.2px; 
     }
     
-    &::-ms-input-placeholder { /* Microsoft Edge */
-      font-family: 'Open Sans';
-      font-style: italic;
+    &:-moz-placeholder { /* Microsoft Edge */
+      font-family: 'Inter';
       font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      letter-spacing: -0.171429px;
-      color: #999999; 
+      font-size: 16px;
+      font-style: normal;
+      line-height: 19px;
+      color: #708092;
+      letter-spacing: -0.2px; 
     }
 }
 
@@ -71,35 +81,35 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 16px;
-  color: #999;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+  color: #708092;
   letter-spacing: -0.2px;
 }
 ::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 16px;
-  color: #999;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+  color: #708092;
   letter-spacing: -0.2px;
 }
 :-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 16px;
-  color: #999;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+  color: #708092;
   letter-spacing: -0.2px;
 }
 :-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: italic;
-  line-height: 16px;
-  color: #999;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+  color: #708092;
   letter-spacing: -0.2px;
 }
 
@@ -123,11 +133,24 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     line-height: 20px;
   }
   .err-msg {
-      font-size: 10px;
-      position: absolute;
-      border: 2px solid #166780;
-      bottom: -18px;
-      right: 0px;
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #E43A40;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+  }
+  &.error{
+      input, select, area{
+        border: 2px solid #E43A40;
+        border-radius: 6px;
+      }
+    .err-msg{
+      display: flex;
+    }
   }
   .undrline {
     text-decoration: underline;
