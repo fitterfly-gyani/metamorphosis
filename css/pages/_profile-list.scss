@@ -8,14 +8,14 @@
             padding: 4px 20px 4px 6px;
             .list-head{
                 font-family: Inter;
-                font-size: 11px;
+                font-size: 16px;
                 font-weight: 500;
-                line-height: 13px;
+                line-height: 19px;
                 letter-spacing: 0.03em;
                 text-align: left;
                 color: #FFFFFF;
                 margin-right: 5px;
-                width: 45px;
+                width: 55px;
                 text-align: center;
                 &:first-child{
                     flex:1;
@@ -30,8 +30,8 @@
                 @extend .flex-align-center;
                 padding-right: 12px;
                 .profile-pic{
-                    height: 40px;
-                    width: 40px;
+                    height: 60px;
+                    width: 60px;
                     border-radius: 30px;
                     background-image: url('/images/default-comp-prof.svg');
                     background-repeat: no-repeat;
@@ -48,8 +48,8 @@
                         font-family: 'Inter';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 10px;
-                        line-height: 12px;
+                        font-size: 16px;
+                        line-height: 20px;
                         text-align: right;
                         letter-spacing: 0.03em;
                         color: #F0E7D2;
@@ -61,8 +61,8 @@
                         font-family: 'Inter';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 8px;
-                        line-height: 10px;
+                        font-size: 14px;
+                        line-height: 17px;
                         letter-spacing: 0.03em;
                         text-align: left;
                         text-transform: capitalize;
@@ -74,13 +74,13 @@
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 10px;
-                line-height: 12px;
+                font-size: 16px;
+                line-height: 19px;
                 text-align: right;
                 letter-spacing: 0.03em;
                 color: #F0E7D2;
                 margin-right: 5px;
-                width: 45px;
+                width: 55px;
                 text-align: center;
             }
             .rank{
