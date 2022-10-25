@@ -14,7 +14,7 @@
                 letter-spacing: 0.03em;
                 text-align: left;
                 color: #FFFFFF;
-                margin-right: 5px;
+                margin-right: 25px;
                 width: 55px;
                 text-align: center;
                 &:first-child{
@@ -79,12 +79,17 @@
                 text-align: right;
                 letter-spacing: 0.03em;
                 color: #F0E7D2;
-                margin-right: 5px;
+                margin-right: 25px;
                 width: 55px;
                 text-align: center;
             }
             .rank{
                 margin-right: 0px;
+            }
+        }
+        &:nth-child(odd){
+            .item{
+                background-color: #0F2F5F;
             }
         }
         &:first-child{
