@@ -6,14 +6,13 @@
     <title>Metamorphosis</title>
     <link rel="stylesheet" href="/css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/js/main.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-wrap">
                 <div class="logo">
-                    <a href="/">
+                    <a href="/html/homepage.html">
                         <img src="/images/fitterfly-logo.svg" alt="">
                     </a>
                 </div>
@@ -40,16 +39,16 @@
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <span class="login-btn">Login</span>
+                    <a href="/html/login.html" class="login-btn">Login</a>
                     <div class="icon-burger">
                         <span class="burger-patty"></span>
                         <span class="burger-patty"></span>
                         <span class="burger-patty"></span>
-                   </div>
-               </div>
+                </div>
+            </div>
             </div>          
         </div>
-   </header>
+    </header>
 
     <section class="header-pad-100">
         <div class="container">
@@ -69,11 +68,84 @@
                     </div>
                 </div>
                 <div class="col-md-9 p-0">
-                    <div class="lb-content">
+                    <div class="lb-content pb-55">
                         <div class="lb-head">Top 5 companies in the race</div>
                         <div class="lb-text">This leaderboard will list the top 5 companies in the race</div>
-                        <div class="lb-img">
-                            <img src="/images/lb-img.png" alt="">
+                        <div class="mt-30">
+                            <ul class="profile-list">
+                                <li>
+                                    <div class="item">
+                                        <div class="list-head">Name</div>
+                                        <div class="list-head">Points</div>
+                                        <div class="list-head">Rank</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">Tech</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">19,800</div>
+                                        <div class="rank">1</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">Tech</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">19,800</div>
+                                        <div class="rank">1</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">Tech</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">19,800</div>
+                                        <div class="rank">1</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">Tech</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">19,800</div>
+                                        <div class="rank">1</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">Tech</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">19,800</div>
+                                        <div class="rank">1</div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -86,6 +158,63 @@
             <h2>How the scoring works?</h2>
             <div class="scoring-block">
                 <div class="score-item">
+
+                    <div class="score-item">
+                        <div class="scoring-title">
+                            <span class="title-img"><img src="/images/enagement.svg" alt=""></span>Engagement
+                        </div>
+                        <div class="scoring-list">
+                            <div class="row">
+                                <div class="col-md-8 pr-5">
+                                    <div class="scoring-area">Completion of daily step count goal set by your coach</div>
+                                </div>
+                                <div class="col-md-4 pl-5">
+                                    <div class="score-points">200 Points/Day</div>
+                                </div>
+                                <div class="col-md-8 pr-5">
+                                    <div class="scoring-area">30 mins exercise logging per day</div>
+                                </div>
+                                <div class="col-md-4 pl-5">
+                                    <div class="score-points">200 Points/Day</div>
+                                </div>
+                                <div class="col-md-8 pr-5">
+                                    <div class="scoring-area">Meeting sleep goals - 6 hrs/day</div>
+                                </div>
+                                <div class="col-md-4 pl-5">
+                                    <div class="score-points">200 Points</div>
+                                </div>
+                                <div class="col-md-8 pr-5">
+                                    <div class="scoring-area">Using the app for atleast 5 min/day</div>
+                                </div>
+                                <div class="col-md-4 pl-5">
+                                    <div class="score-points">100 Points</div>
+                                </div>
+                                <div class="col-md-8 pr-5">
+                                    <div class="scoring-area">Weekly challenge completion</div>
+                                </div>
+                                <div class="col-md-4 pl-5">
+                                    <div class="score-points">100 Points</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="score-item">
+                        <div class="scoring-title">
+                            <span class="title-img"><img src="/images/flag.svg" alt=""></span>Outcomes
+                        </div>
+                        <div class="scoring-list">
+                            <div class="row">
+                                <div class="col-md-8 pr-5">
+                                    <div class="scoring-area">Achieving atleast 70% of the 5 goals set in the beginning of the program</div>
+                                </div>
+                                <div class="col-md-4 pl-5">
+                                    <div class="score-points">500 Points/goal achieved</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="scoring-title">
                         <span class="title-img"><img src="/images/goal.svg" alt=""></span>Compliance
                     </div>
@@ -126,62 +255,6 @@
                             </div>
                             <div class="col-md-4 pl-5">
                                 <div class="score-points">100 Points</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="score-item">
-                    <div class="scoring-title">
-                        <span class="title-img"><img src="/images/enagement.svg" alt=""></span>Engagement
-                    </div>
-                    <div class="scoring-list">
-                        <div class="row">
-                            <div class="col-md-8 pr-5">
-                                <div class="scoring-area">Completion of daily step count goal set by your coach</div>
-                            </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">200 Points/Day</div>
-                            </div>
-                            <div class="col-md-8 pr-5">
-                                <div class="scoring-area">30 mins exercise logging per day</div>
-                            </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">200 Points/Day</div>
-                            </div>
-                            <div class="col-md-8 pr-5">
-                                <div class="scoring-area">Meeting sleep goals - 6 hrs/day</div>
-                            </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">200 Points</div>
-                            </div>
-                            <div class="col-md-8 pr-5">
-                                <div class="scoring-area">Using the app for atleast 5 min/day</div>
-                            </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">100 Points</div>
-                            </div>
-                            <div class="col-md-8 pr-5">
-                                <div class="scoring-area">Weekly challenge completion</div>
-                            </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">100 Points</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="score-item">
-                    <div class="scoring-title">
-                        <span class="title-img"><img src="/images/flag.svg" alt=""></span>Outcomes
-                    </div>
-                    <div class="scoring-list">
-                        <div class="row">
-                            <div class="col-md-8 pr-5">
-                                <div class="scoring-area">Achieving atleast 70% of the 5 goals set in the beginning of the program</div>
-                            </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">500 Points/goal achieved</div>
                             </div>
                         </div>
                     </div>

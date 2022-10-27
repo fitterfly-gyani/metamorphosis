@@ -8,4 +8,3 @@ $(window).on("scroll", function() {
         }
     });
 });
-

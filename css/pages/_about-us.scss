@@ -41,6 +41,7 @@
         display: flex;
         align-items: center;
         h2 {
+            color: #021D45;
             @media screen and (max-width:1024px) {
                 margin-bottom: 20px;
                 font-size: 26px;
@@ -62,9 +63,13 @@
         p {
             font-size: 24px;
             font-weight: 700;
+            color: #021D45;
             line-height: 30px;
             &:first-child {
                 margin-bottom: 10px;
+            }
+            &.blue-text {
+                color: #41B9D5;
             }
             @media screen and (max-width:1024px) {
                 font-size: 18px;
