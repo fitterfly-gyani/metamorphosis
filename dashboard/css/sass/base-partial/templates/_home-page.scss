@@ -68,13 +68,13 @@
 .circle-block{
     position: relative;
     .white-circle{
-        width: 116px;
-        height: 116px;
+        width: 98px;
+        height: 98px;
         border-radius: 50%;
         background: #fff;
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 29px;
+        left: 29px;
         @extend .flex-center;
         strong{
             font-family: 'Inter';
