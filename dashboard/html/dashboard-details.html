@@ -48,7 +48,7 @@
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="flex-align-center">
-                                                        <div class="circle-block">
+                                                        <div class="circle-block pl-20 pr-20">
                                                             <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
                                                                 <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
                                                             </svg>
@@ -67,13 +67,13 @@
                                         <div class="col-lg-6">
                                             <div class="card mb-30">
                                                 <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
+                                                    <span class="img mr-10"><img src="./../images/metabolic-score.svg" width="26"></span>
                                                     <h4>Metabolic Health Score</h4>
                                                 </div>
                                                 <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
                                                     <div class="flex-align-center">
                                                         <div class="circle-block">
-                                                            <div id="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
+                                                            <div id="hg-container" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
                                                         </div>
                                                         <div class="w-100 ml-10 mr-20">
                                                             <ul class="bullet-list">
@@ -105,19 +105,129 @@
                                         <div class="col-lg-6">
                                             <div class="card mb-30">
                                                 <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
-                                                    <h4>Metabolic Health Score</h4>
+                                                    <span class="img mr-10"><img src="./../images/metabolic-risk.svg" width="26"></span>
+                                                    <h4>Metabolic Disease Risk</h4>
                                                 </div>
-                                                <div class="card-body">
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
                                                     <div class="flex-align-center">
-                                                        
-
                                                         <div class="circle-block">
-                                                            <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
-                                                                <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
-                                                            </svg>
+                                                            <div id="hg-container-1" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
                                                         </div>
-                                                        <div class="w-100 ml-40 mr-20">
+                                                        <div class="w-100 ml-10 mr-20">
+                                                            <ul class="bullet-list">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Low</span>
+                                                                        <strong>60%</strong>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Medium</span>
+                                                                        <strong>10%</strong>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>High</span>
+                                                                        <strong>30%</strong>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <span class="img mr-10"><img src="./../images/weight-scale.svg" width="26"></span>
+                                                    <h4>Weight</h4>
+                                                </div>
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="flex-align-center">
+                                                        <div class="circle-block">
+                                                            <div id="hg-container-2" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
+                                                        </div>
+                                                        <div class="w-100 ml-10 mr-20">
+                                                            <ul class="bullet-list">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Healthy</span>
+                                                                        <strong>10%</strong>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Overweight</span>
+                                                                        <strong>40%</strong>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>Poor</span>
+                                                                        <strong>50%</strong>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <span class="img mr-10"><img src="./../images/medical-report.svg" width="26"></span>
+                                                    <h4>Lab Parameter Risk Zone</h4>
+                                                </div>
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="flex-align-center">
+                                                        <div class="circle-block">
+                                                            <div id="hg-container-3" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
+                                                        </div>
+                                                        <div class="w-100 ml-10 mr-20">
+                                                            <ul class="bullet-list">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Low</span>
+                                                                        <strong>10%</strong>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Medium</span>
+                                                                        <strong>40%</strong>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>High</span>
+                                                                        <strong>50%</strong>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <span class="img mr-10"><img src="./../images/nutrition-score.svg" width="26"></span>
+                                                    <h4>Nutrition Score</h4>
+                                                </div>
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="flex-align-center">
+                                                        <div class="circle-block">
+                                                            <div id="hg-container-4" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
+                                                        </div>
+                                                        <div class="w-100 ml-10 mr-20">
                                                             <ul class="bullet-list">
                                                                 <li>
                                                                     <div class="item">
@@ -147,17 +257,15 @@
                                         <div class="col-lg-6">
                                             <div class="card mb-30">
                                                 <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
-                                                    <h4>Metabolic Health Score</h4>
+                                                    <span class="img mr-10"><img src="./../images/fitness-score.svg" width="26"></span>
+                                                    <h4>Fitness Score</h4>
                                                 </div>
-                                                <div class="card-body">
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
                                                     <div class="flex-align-center">
                                                         <div class="circle-block">
-                                                            <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
-                                                                <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
-                                                            </svg>
+                                                            <div id="hg-container-5" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
                                                         </div>
-                                                        <div class="w-100 ml-40 mr-20">
+                                                        <div class="w-100 ml-10 mr-20">
                                                             <ul class="bullet-list">
                                                                 <li>
                                                                     <div class="item">
@@ -187,137 +295,15 @@
                                         <div class="col-lg-6">
                                             <div class="card mb-30">
                                                 <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
-                                                    <h4>Metabolic Health Score</h4>
+                                                    <span class="img mr-10"><img src="./../images/sleeping-score.svg" width="26"></span>
+                                                    <h4>Sleep & Well-being Score</h4>
                                                 </div>
-                                                <div class="card-body">
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
                                                     <div class="flex-align-center">
                                                         <div class="circle-block">
-                                                            <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
-                                                                <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
-                                                            </svg>
+                                                            <div id="hg-container-6" class="hg-container" style="min-width: 130px; height: 140px; max-width: 130px; margin: 0 auto;"></div>
                                                         </div>
-                                                        <div class="w-100 ml-40 mr-20">
-                                                            <ul class="bullet-list">
-                                                                <li>
-                                                                    <div class="item">
-                                                                        <span>Good</span>
-                                                                        <strong>10%</strong>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="yellow">
-                                                                    <div class="item">
-                                                                        <span>Average</span>
-                                                                        <strong>40%</strong>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="red">
-                                                                    <div class="item">
-                                                                        <span>Poor</span>
-                                                                        <strong>50%</strong>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class="card mb-30">
-                                                <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
-                                                    <h4>Metabolic Health Score</h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="flex-align-center">
-                                                        <div class="circle-block">
-                                                            <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
-                                                                <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="w-100 ml-40 mr-20">
-                                                            <ul class="bullet-list">
-                                                                <li>
-                                                                    <div class="item">
-                                                                        <span>Good</span>
-                                                                        <strong>10%</strong>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="yellow">
-                                                                    <div class="item">
-                                                                        <span>Average</span>
-                                                                        <strong>40%</strong>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="red">
-                                                                    <div class="item">
-                                                                        <span>Poor</span>
-                                                                        <strong>50%</strong>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class="card mb-30">
-                                                <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
-                                                    <h4>Metabolic Health Score</h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="flex-align-center">
-                                                        <div class="circle-block">
-                                                            <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
-                                                                <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="w-100 ml-40 mr-20">
-                                                            <ul class="bullet-list">
-                                                                <li>
-                                                                    <div class="item">
-                                                                        <span>Good</span>
-                                                                        <strong>10%</strong>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="yellow">
-                                                                    <div class="item">
-                                                                        <span>Average</span>
-                                                                        <strong>40%</strong>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="red">
-                                                                    <div class="item">
-                                                                        <span>Poor</span>
-                                                                        <strong>50%</strong>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <div class="card mb-30">
-                                                <div class="card-head flex-align-center">
-                                                    <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
-                                                    <h4>Metabolic Health Score</h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="flex-align-center">
-                                                        <div class="circle-block">
-                                                            <svg class="circle" viewBox="0 0 140 140" width="104" height="104" style="overflow: visible">
-                                                                <circle class="circle-chart-background" stroke="#41B9D5" stroke-width="10" fill="none" cx="68" cy="68" r="60"></circle>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="w-100 ml-40 mr-20">
+                                                        <div class="w-100 ml-10 mr-20">
                                                             <ul class="bullet-list">
                                                                 <li>
                                                                     <div class="item">
@@ -378,7 +364,7 @@
                                                                 <span class="team-name">Tech</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
+                                                        <div class="points">9,800</div>
                                                         <div class="rank">1</div>
                                                     </div>
                                                 </li>
@@ -387,116 +373,116 @@
                                                         <div class="profile">
                                                             <div class="profile-pic"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Isha Singh</div>
+                                                                <span class="team-name">Marketing</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">8,800</div>
+                                                        <div class="rank">2</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic2.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Monika Kapoor</div>
+                                                                <span class="team-name">Human Resources</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">7,800</div>
+                                                        <div class="rank">3</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Abhijeet Sharma</div>
+                                                                <span class="team-name">Sales</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">6,800</div>
+                                                        <div class="rank">4</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic4.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
+                                                                <div class="person-name">Anya</div>
                                                                 <span class="team-name">Tech</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">5,800</div>
+                                                        <div class="rank">5</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic5.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Sonali Srivastava</div>
+                                                                <span class="team-name">Marketing</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">4,800</div>
+                                                        <div class="rank">6</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Akshay Pal</div>
+                                                                <span class="team-name">Human Resources</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">4,400</div>
+                                                        <div class="rank">7</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Akansha Awasthi</div>
+                                                                <span class="team-name">Marketing</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">3,800</div>
+                                                        <div class="rank">8</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Aman Dhavale</div>
+                                                                <span class="team-name">Design</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">2,800</div>
+                                                        <div class="rank">9</div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic9.png);"></div>
                                                             <div class="profile-info">
-                                                                <div class="person-name">Brijesh Yadav</div>
-                                                                <span class="team-name">Tech</span>
+                                                                <div class="person-name">Mohan Sharma</div>
+                                                                <span class="team-name">Sales</span>
                                                             </div>
                                                         </div>
-                                                        <div class="points">19,800</div>
-                                                        <div class="rank">1</div>
+                                                        <div class="points">1,800</div>
+                                                        <div class="rank">10</div>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -558,22 +544,315 @@
                 colorByPoint: true,
                 innerSize: '80%',
                 data: [{
-                    name: 'Good',
-                    y: 20,
+                    name: '',
+                    y: 10,
                 }, {
-                    name: 'Average',
-                    y: 30
+                    name: '',
+                    y: 40,
                 }, {
-                    name: 'Poor',
+                    name: '',
                     y: 50
                 }]
             }]
         });
 
+        Highcharts.chart('hg-container-1', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+
+        Highcharts.chart('hg-container-2', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-3', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-4', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-5', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-6', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
     </script>
     <style>
-        #hg-container .highcharts-credits{ display: none !important;}
-        #hg-container .highcharts-exporting-group{ display: none !important;} 
+        .hg-container .highcharts-credits{ display: none !important;}
+        .hg-container .highcharts-exporting-group{ display: none !important;} 
     </style>
 </body>
 </html>
