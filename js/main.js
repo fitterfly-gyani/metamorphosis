@@ -9,21 +9,14 @@ $(function() {
         $(".header").removeClass("active");
         }
     });
-  // console.log($("#username").val());
-  //   if($("#username").val().length > 4 &&  $("#password").val().length > 2)
-  // {
-  //   $(".btn.btn-pink").removeClass('disabled');
-  // }
 });
-// $(document).ready(function(){
-//   $(window).load(function(){
-//     console.log($("#username").val());
-//     if($("#username").val().length > 4 &&  $("#password").val().length > 2)
-//     {
-//       $(".btn.btn-pink").removeClass('disabled');
-//     }
-//   });
-// });
+
+$(".leaderboard aside-menu ul li").on("click",function(){
+  $(".leaderboard aside-menu ul li").removeClass("active");
+  $(this).addClass("active");
+  console.log($(this).html());
+  return;
+});
 
 
 function checkField() {
