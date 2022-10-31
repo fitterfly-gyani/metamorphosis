@@ -9,6 +9,12 @@ label {
     color: #696F79;
     padding-bottom: 15px;
 }
+input{
+  &:focus {
+    border: 2px solid #166780 !important;
+  }
+}
+
 
 input[type="text"], input[type="password"], input[type="number"], input[type="email"], select, textarea, input[type="date"], input[type="time"],input[type="file"],input[type="search"] {
     font-family: 'Inter';
@@ -21,7 +27,7 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
     height: 64px;
     color: #000000;
     background: #EFF5FA;
-    border: 1px solid #8692A6;
+    border: 2px solid #8692A6;
     border-radius: 6px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;

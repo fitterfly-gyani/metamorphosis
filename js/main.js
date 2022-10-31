@@ -46,6 +46,8 @@ function verifyUser() {
     $("#password").parent().addClass('error');
     return;
   }
+  $(".btn.btn-pink").text('Loading....')
+  
     const username = $("#username").val();
     const password = $("#password").val();
     // console.log($username);
