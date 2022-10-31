@@ -72,7 +72,7 @@
               }
             }
           }
-          &:hover{
+          &:hover, &.active{
             a{
               color: #FBF0DC;
               &::after {
