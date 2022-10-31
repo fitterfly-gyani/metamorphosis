@@ -1,4 +1,19 @@
 .upcoming-event-sec {
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(/images/upcoming-sec-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        max-width: 1280px;
+        max-height: 596px;
+        left: 0px;
+        top: 100px;
+        position: absolute;
+    }
     .event-container {
         width: 90%;
         margin: auto;
