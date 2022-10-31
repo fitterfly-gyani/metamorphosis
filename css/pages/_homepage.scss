@@ -1,19 +1,24 @@
 .home-banner{
     background-color: #021D45;
-    min-height: 700px;
+    min-height: 740px;
     height: 100vh;
     display: flex;
     align-items: flex-end;
     position: relative;
     // &::before{
     //     content: "";
-    //     background-image: url(/images/banner-bg.png);
+    //     background-image: url(/images/banner-bg.svg);
+    //     background-position: left;
+    //     background-size: 100% 80%;
     //     width: 100%;
     //     height: 100%;
     //     position: absolute;
-    //     left: 0;
-    //     bottom: 0;
+    //     left: -23px;
+    //     top: -55px;
     //     background-repeat: no-repeat;
+    //     @media only screen and (max-width: 991px){
+    //         display: none;
+    //     }
     // }
     @media only screen and (max-width: 991px){
         height: auto;
@@ -243,6 +248,7 @@
                 padding: 24px;
                 position: relative;
                 margin-bottom: 30px;
+                min-height: 162px;
                 &.bg-offyellow{
                     background-color: #FBF0DC;
                 }
@@ -395,10 +401,140 @@
     &.bg-pink {
         background-color: #FCD7D1;
     }
+    &.meal-tracker:before{
+        content: "";
+        width: 223px;
+        height: 350px;
+        background-image: url(/images/meal-tracker.png);
+        position: absolute;
+        left: -22px;
+        bottom: -38px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        z-index: 999;
+    }
+    &.protein-pro:before{
+        content: "";
+        width: 223px;
+        height: 324px;
+        background-image: url(/images/protein-pro.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0px;
+        bottom: -38px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.fab-fiber:before{
+        content: "";
+        width: 223px;
+        height: 324px;
+        background-image: url(/images/fab-fiber.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0px;
+        bottom: -38px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.cheeni-kum:before{
+        content: "";
+        width: 223px;
+        height: 360px;
+        background-image: url(/images/cheeni-kum.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0;
+        bottom: -38px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.upper-body:before{
+        content: "";
+        width: 223px;
+        height: 360px;
+        background-image: url(/images/upper-body.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0;
+        bottom: -38px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.core-workout:before{
+        content: "";
+        width: 223px;
+        height: 360px;
+        background-image: url(/images/core-workout.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: -1px;
+        bottom: -41px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.sixtee-kg:before{
+        content: "";
+        width: 223px;
+        height: 350px;
+        background-image: url(/images/sixtee-kg.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: -10px;
+        bottom: -41px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.good-vibes:before{
+        content: "";
+        width: 200px;
+        height: 250px;
+        background-image: url(/images/good-vibes.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0px;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.meditation-master:before{
+        content: "";
+        width: 276px;
+        height: 275px;
+        background-image: url(/images/meditation-master.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: -30px;
+        bottom: -40px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.sleep-supreme:before{
+        content: "";
+        width: 242px;
+        height: 313px;
+        background-image: url(/images/sleep-supreme.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: -28px;
+        bottom: -35px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
     img.cb-img {
         position: absolute;
         left: 0;
-        top: 35px;
+        top: 45px;
         @media screen and (max-width:1024px) {
             top: 0;
             left: -25px;
