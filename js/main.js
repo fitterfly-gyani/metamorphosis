@@ -37,6 +37,9 @@ function checkField() {
 }
 
 function verifyUser() {
+  $("#username").parent().removeClass('error');
+  $("#password").parent().removeClass('error');
+
   if($("#username").val() == '')
   {
     $("#username").parent().addClass('error');
@@ -46,12 +49,14 @@ function verifyUser() {
     $("#password").parent().addClass('error');
     return;
   }
+  $(".btn.btn-pink").text('Loading....')
+  
     const username = $("#username").val();
     const password = $("#password").val();
     // console.log($username);
     // console.log($password);
     var settings = {
-        "url": "https://stage.fitterfly.com/pwp/user/login",
+        "url": "https://stage.fitterfly.com/nplus_app/account/request_account_access",
         "method": "POST",
         "timeout": 0,
         "headers": {
@@ -65,8 +70,9 @@ function verifyUser() {
 
       $.ajax(settings).done(function (response) {
         if(response.status == 'error') {
+          $(".btn.btn-pink").text('Submit');
             $("#username").parent().addClass('error');
-            // $("#username").siblings().text('Invalid Access');
+            $("#username").siblings().text('Invalid Access');
             alert("Invalid Access");
             return;
             // $("#password").parent().addClass('error');
