@@ -1,5 +1,11 @@
 
 
+$(".icon-burger").on("click",function(){
+  $(this).toggleClass('active');
+  $(".nav").toggleClass('active');
+});
+
+
 $(function() {
     $(window).on("scroll", function() {
     if($(window).scrollTop() > 50) {
@@ -9,6 +15,11 @@ $(function() {
         $(".header").removeClass("active");
         }
     });
+});
+
+$(".icon-burger").on("click",function(){
+  $(this).toggleClass('active');
+  $(".nav").toggleClass('active');
 });
 
 $(".leaderboard aside-menu ul li").on("click",function(){

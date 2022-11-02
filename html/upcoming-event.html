@@ -312,12 +312,19 @@
         </div>
     </div>
    </footer>
-    <script>
+    <!-- <script>
 
     $(".icon-burger").on("click",function(){
         $(".nav").slideToggle();
         $(this).toggleClass("active");
     });
-    </script>
+    </script> -->
+    <script>
+        $(".icon-burger").on("click",function(){
+        $(this).toggleClass('active');
+        $(".nav").toggleClass('active');
+        });
+   </script>
 </body>
+
 </html>
