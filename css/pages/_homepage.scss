@@ -39,6 +39,12 @@
                 }
             }
         }
+        .btn-block{
+            justify-content: start;
+            .btn{
+                padding: 15px 35px;
+            }
+        }
     }
     .hbc-title{
         letter-spacing: 18px;
@@ -93,6 +99,7 @@
         font-size: 32px;
         line-height: 39px;
         color: #41B9D5;
+        margin-bottom: 20px;
     }
 }
 
@@ -387,7 +394,7 @@
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
-    min-height: 320px;
+    min-height: 330px;
     @media screen and (max-width:1024px) {
         padding: 29px 10px 14px 105px;
         min-height: 220px;
@@ -422,7 +429,7 @@
         position: absolute;
         background-position: bottom;
         background-size: cover;
-        left: 0px;
+        left: -13px;
         bottom: -38px;
         background-repeat: no-repeat;
         z-index: 99;
