@@ -4,15 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/base.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <title>Metamorphsis</title>
 </head>
 <body>
-    <div class="wrapper home-page">
+    <div class="wrapper">
         <div class="container-wrap">
             <div class="header">
                 <div class="header-wrap container">
                     <div class="company-logo">
-                        <span class="img"><a href="/dashboard/html/dashboard-details.html"><img src="./../images/acme-logo.svg" /></a></span>
+                        <span class="img"><img src="./../images/acme-logo.svg" /></span>
                         <div class="logo-text">
                             <strong class="company-name">Acme Inc</strong>
                             <span class="company-user">HR Manager</span>
@@ -30,86 +33,705 @@
                         <div class="wel-msg">Good Morning, Reshma!</div>
                     </div>
                 </div>
-                <div class="participant-box">
-                    <div class="container">
-                        <div class="round-box">
-                            <div class="flex-align-center">
-                                <span class="img mr-15"><img src="./../images/people.svg" /></span>
-                                <strong>Total Participants</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div>      
                     <div class="container">
-                        <div class="row mb-35">
-                            <div class="col-md-4">
-                                <div class="flex-align-center ml-50 h-100">
-                                    <div class="count-block">
-                                        <div class="count">5,000</div>
-                                        <span class="count-label">new joinees</span>
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <div class="cardwrap-sec">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <a href="/dashboard/html/total-participants.html">
+                                                <div class="card mb-30">
+                                                    <div class="card-head flex-align-center">
+                                                        <div class="flex-align-center">
+                                                            <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
+                                                            <h4>Total Participants</h4>
+                                                        </div>
+                                                        <div>
+                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="card-info flex-align-center" style="">
+                                                            <div class="blue-bar">
+                                                                <div class="flex-align-center pb-5">
+                                                                    <span class="pre">PRE</span>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar sky-blue" style="width: 60%;"></div>
+                                                                    </div>
+                                                                    <span class="number-text">10k</span>
+                                                                </div>
+                                                                <div class="flex-align-center">
+                                                                    <span class="pre pad">NOW</span>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar sky-blue" style="width: 85%;"></div>
+                                                                    </div>
+                                                                    <span class="number-text">20k</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="joined-membar">
+                                                                <div class="participants-number">20,000</div>
+                                                                <div class="participants-text">participants joined</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                            
+                                        <div class="col-lg-6">
+                                           <a href="/dashboard/html/metabolic-health.html">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <div class="flex-align-center">
+                                                        <span class="img mr-10"><img src="./../images/Metabolic-Health Score-logo.svg" width="26"></span>
+                                                        <h4>Metabolic Health Score</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span><img src="./../images/side-arrow.svg" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body bg-blue" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="card-info flex-align-center">
+                                                        <div class="square-bar">
+                                                            <div class="health-score-bar">
+                                                                <span class="pre">PRE</span>
+                                                                <div class="progress-squar">
+                                                                    <div class="progress" style="width: 25%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 40%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 35%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="now flex-align-center">
+                                                                <span class="pre pad">NOW</span>
+                                                                <div class="progress" style="width: 50%;">
+                                                                    <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 30%;">
+                                                                    <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 20%;">
+                                                                    <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="improvement">
+                                                            <div class="improvement-score">30%</div>
+                                                            <div class="improvement-text">Improvement in Score</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer mr-20">
+                                                        <ul class="bullet-list" style="">
+                                                            <li>
+                                                                <div class="item">
+                                                                    <span>Healthy</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="yellow">
+                                                                <div class="item">
+                                                                    <span>Overweight</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="red">
+                                                                <div class="item">
+                                                                    <span>Poor</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           </a>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <a href="/dashboard/html/metabolic-disease.html">
+                                                <div class="card mb-30">
+                                                    <div class="card-head flex-align-center">
+                                                        <div class="flex-align-center">
+                                                            <span class="img mr-10"><img src="./../images/Metabolic-Disease-Risk-logo.svg" width="26"></span>
+                                                            <h4>Metabolic Disease Risk</h4>
+                                                        </div>
+                                                        <div>
+                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                        <div class="card-info flex-align-center">
+                                                            <div class="square-bar">
+                                                                <div class="health-score-bar">
+                                                                    <span class="pre">PRE</span>
+                                                                    <div class="progress-squar">
+                                                                        <div class="progress" style="width: 25%;">
+                                                                            <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 40%;">
+                                                                            <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 35%;">
+                                                                            <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="now flex-align-center">
+                                                                    <span class="pre pad">NOW</span>
+                                                                    <div class="progress" style="width: 50%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 30%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 20%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="improvement">
+                                                                <div class="improvement-score">30%</div>
+                                                                <div class="improvement-text">Improvement in Score</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer mr-20">
+                                                            <ul class="bullet-list" style="">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Low</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Medium</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>High</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <a href="/dashboard/html/weight.html">
+                                                <div class="card mb-30">
+                                                    <div class="card-head flex-align-center">
+                                                        <div class="flex-align-center">
+                                                            <span class="img mr-10"><img src="./../images/Weight-logo.svg" width="26"></span>
+                                                            <h4>Weight</h4>
+                                                        </div>
+                                                        <div>
+                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                        <div class="card-info flex-align-center">
+                                                            <div class="square-bar">
+                                                                <div class="health-score-bar">
+                                                                    <span class="pre">PRE</span>
+                                                                    <div class="progress-squar">
+                                                                        <div class="progress" style="width: 25%;">
+                                                                            <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 40%;">
+                                                                            <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 35%;">
+                                                                            <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="now flex-align-center">
+                                                                    <span class="pre pad">NOW</span>
+                                                                    <div class="progress" style="width: 50%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 30%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 20%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="improvement">
+                                                                <div class="improvement-score">30%</div>
+                                                                <div class="improvement-text">Improvement in Score</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer mr-20">
+                                                            <ul class="bullet-list" style="">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Good</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Average</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>Poor</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <div class="flex-align-center">
+                                                        <span class="img mr-10"><img src="./../images/medical-report.svg" width="26"></span>
+                                                        <h4>Lab Parameter Risk Zone</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span><img src="./../images/side-arrow.svg" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="card-info flex-align-center">
+                                                        <div class="square-bar">
+                                                            <div class="health-score-bar">
+                                                                <span class="pre">PRE</span>
+                                                                <div class="progress-squar">
+                                                                    <div class="progress" style="width: 25%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 40%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 35%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="now flex-align-center">
+                                                                <span class="pre pad">NOW</span>
+                                                                <div class="progress" style="width: 50%;">
+                                                                    <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 30%;">
+                                                                    <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 20%;">
+                                                                    <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="improvement">
+                                                            <div class="improvement-score">30%</div>
+                                                            <div class="improvement-text">Improvement in Score</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer mr-20">
+                                                        <ul class="bullet-list" style="">
+                                                            <li>
+                                                                <div class="item">
+                                                                    <span>Low</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="yellow">
+                                                                <div class="item">
+                                                                    <span>Medium</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="red">
+                                                                <div class="item">
+                                                                    <span>High</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <div class="flex-align-center">
+                                                        <span class="img mr-10"><img src="./../images/nutrition-logo.svg" width="26"></span>
+                                                        <h4>Nutrition Score</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span><img src="./../images/side-arrow.svg" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="card-info flex-align-center">
+                                                        <div class="square-bar">
+                                                            <div class="health-score-bar">
+                                                                <span class="pre">PRE</span>
+                                                                <div class="progress-squar">
+                                                                    <div class="progress" style="width: 25%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 40%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 35%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="now flex-align-center">
+                                                                <span class="pre pad">NOW</span>
+                                                                <div class="progress" style="width: 50%;">
+                                                                    <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 30%;">
+                                                                    <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 20%;">
+                                                                    <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="improvement">
+                                                            <div class="improvement-score">30%</div>
+                                                            <div class="improvement-text">Improvement in Score</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer mr-20">
+                                                        <ul class="bullet-list" style="">
+                                                            <li>
+                                                                <div class="item">
+                                                                    <span>Good</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="yellow">
+                                                                <div class="item">
+                                                                    <span>Average</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="red">
+                                                                <div class="item">
+                                                                    <span>Poor</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <a href="/dashboard/html/fitness-score.html">
+                                                <div class="card mb-30">
+                                                    <div class="card-head flex-align-center">
+                                                        <div class="flex-align-center">
+                                                            <span class="img mr-10"><img src="./../images/fitness-score.svg" width="26"></span>
+                                                            <h4>Fitness Score</h4>
+                                                        </div>
+                                                        <div>
+                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                        <div class="card-info flex-align-center">
+                                                            <div class="square-bar">
+                                                                <div class="health-score-bar">
+                                                                    <span class="pre">PRE</span>
+                                                                    <div class="progress-squar">
+                                                                        <div class="progress" style="width: 25%;">
+                                                                            <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 40%;">
+                                                                            <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 35%;">
+                                                                            <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="now flex-align-center">
+                                                                    <span class="pre pad">NOW</span>
+                                                                    <div class="progress" style="width: 50%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 30%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 20%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="improvement">
+                                                                <div class="improvement-score">30%</div>
+                                                                <div class="improvement-text">Improvement in Score</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-footer mr-20">
+                                                            <ul class="bullet-list" style="">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Good</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Average</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>Poor</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                          <a class="" href="/dashboard/html/sleep-well.html">
+                                            <div class="card mb-30">
+                                                <div class="card-head flex-align-center">
+                                                    <div class="flex-align-center">
+                                                        <span class="img mr-10"><img src="./../images/sleeping-logo.svg" width="26"></span>
+                                                        <h4>Sleep & Well-being Score</h4>
+                                                    </div>
+                                                    <div>
+                                                        <span><img src="./../images/side-arrow.svg" /></span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                    <div class="card-info flex-align-center">
+                                                        <div class="square-bar">
+                                                            <div class="health-score-bar">
+                                                                <span class="pre">PRE</span>
+                                                                <div class="progress-squar">
+                                                                    <div class="progress" style="width: 25%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 40%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 35%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="now flex-align-center">
+                                                                <span class="pre pad">NOW</span>
+                                                                <div class="progress" style="width: 50%;">
+                                                                    <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 30%;">
+                                                                    <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                </div>
+                                                                <div class="progress" style="width: 20%;">
+                                                                    <div class="red-box red box-text" style="width: 100%;">10%</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="improvement">
+                                                            <div class="improvement-score">30%</div>
+                                                            <div class="improvement-text">Improvement in Score</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer mr-20">
+                                                        <ul class="bullet-list" style="">
+                                                            <li>
+                                                                <div class="item">
+                                                                    <span>Good</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="yellow">
+                                                                <div class="item">
+                                                                    <span>Average</span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="red">
+                                                                <div class="item">
+                                                                    <span>Poor</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <h2 class="card-name">Before</h2>
-                                <div class="card blue-bg">
-                                    <div class="p-15 p3-35 flex-align-center">
-                                        <div class="circle-block">
-                                            <svg width="156px" height="156px" viewBox="0 0 40 40" class="donut">
-                                                <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3"></circle>
-                                            </svg>
-                                            <div class="white-circle">
-                                                <strong>10,000</strong>
+                            <div class="col-xl-5">
+                                <div class="lb-card">
+                                    <div class="card-head">
+                                        <div class="flex-space-between">
+                                            <h4>Leaderboard</h4>
+                                            <div class="dropdown">
+                                                <span>Weekly</span>
+                                                <span class="downarrow">
+                                                    <img src="./../images/down-arrow.svg">
+                                                </span>
                                             </div>
-                                        </div>
-                                        <div class="w-100 ml-15 mr-20">
-                                            <ul class="bullet-list">
-                                                <li>
-                                                    <div class="item">
-                                                        <span>Joined</span>
-                                                        <strong>100%</strong>
-                                                    </div>
-                                                </li>
-                                                <li class="green">
-                                                    <div class="item">
-                                                        <span>New</span>
-                                                        <strong>0%</strong>
-                                                    </div>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <h2 class="card-name">Today</h2>
-                                <div class="card blue-bg">
-                                    <div class="p-15 p3-35 flex-align-center">
-                                        <div class="circle-block">
-                                            <svg width="156px" height="156px" viewBox="0 0 40 40" class="donut">
-                                                <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3"></circle>
-                                                <circle class="donut-segment donut-segment-2" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3" stroke-dasharray="50 50" stroke-dashoffset="25"></circle>
-                                            </svg>
-                                            <div class="white-circle">
-                                                <strong>10,000</strong>
-                                            </div>
-                                        </div>
-                                        <div class="w-100 ml-15 mr-20">
-                                            <ul class="bullet-list">
+                                    <div class="card-body">
+                                        <div>
+                                            <ul class="profile-list">
                                                 <li>
                                                     <div class="item">
-                                                        <span>Old</span>
-                                                        <strong>100%</strong>
+                                                        <div class="list-head">Name</div>
+                                                        <div class="list-head">Points</div>
+                                                        <div class="list-head">Rank</div>
                                                     </div>
                                                 </li>
-                                                <li class="green">
+                                                <li>
                                                     <div class="item">
-                                                        <span>New</span>
-                                                        <strong>0%</strong>
+                                                        <div class="profile">
+                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Brijesh Yadav</div>
+                                                                <span class="team-name">Tech</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">9,800</div>
+                                                        <div class="rank">1</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Isha Singh</div>
+                                                                <span class="team-name">Marketing</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">8,800</div>
+                                                        <div class="rank">2</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic2.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Monika Kapoor</div>
+                                                                <span class="team-name">Human Resources</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">7,800</div>
+                                                        <div class="rank">3</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Abhijeet Sharma</div>
+                                                                <span class="team-name">Sales</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">6,800</div>
+                                                        <div class="rank">4</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic4.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Anya</div>
+                                                                <span class="team-name">Tech</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">5,800</div>
+                                                        <div class="rank">5</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic5.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Sonali Srivastava</div>
+                                                                <span class="team-name">Marketing</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">4,800</div>
+                                                        <div class="rank">6</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Akshay Pal</div>
+                                                                <span class="team-name">Human Resources</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">4,400</div>
+                                                        <div class="rank">7</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Akansha Awasthi</div>
+                                                                <span class="team-name">Marketing</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">3,800</div>
+                                                        <div class="rank">8</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Aman Dhavale</div>
+                                                                <span class="team-name">Design</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">2,800</div>
+                                                        <div class="rank">9</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic9.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Mohan Sharma</div>
+                                                                <span class="team-name">Sales</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">1,800</div>
+                                                        <div class="rank">10</div>
                                                     </div>
                                                 </li>
                                             </ul>
+                                            <div class="view-all">
+                                                <a href="">View all ></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -117,339 +739,363 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="container">
-                        <div class="row mb-25">
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-head">
-                                        <h4>Age Group</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="data-table">
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">20-30 yrs</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar red" style="width: 90%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">40%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">31-40 yrs</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar red" style="width: 70%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">40%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">41-50 yrs</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar red" style="width: 30%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">10%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">51-60 yrs</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar red" style="width: 50%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">17%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">61-70 yrs</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar red" style="width: 25%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">02%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-head">
-                                        <h4>Gender</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="data-table">
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Male</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar yellow" style="width: 70%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">40%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Female</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar yellow" style="width: 90%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">50%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Others</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar yellow" style="width: 25%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">10%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-head">
-                                        <h4>Location</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="data-table">
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Mumbai</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar orange" style="width: 90%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">40%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Delhi</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar orange" style="width: 70%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">30%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Pune</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar orange" style="width: 30%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">10%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Kanpur</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar orange" style="width: 50%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">17%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Bangalore</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar orange" style="width: 25%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">02%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card">
-                                    <div class="card-head">
-                                        <h4>Function</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="data-table">
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">HR</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar sky-blue" style="width: 90%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">40%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Marketing</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar sky-blue" style="width: 70%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">30%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Pune</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar sky-blue" style="width: 30%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">10%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Kanpur</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar sky-blue" style="width: 50%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">17%</div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <div class="data-name">Gurgaon</div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="progress">
-                                                        <div class="progress-bar sky-blue" style="width: 25%;"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="data-value">02%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="footer container flex-align-right">
                 <div class="ff-logo"><img src="./../images/ff-logo.svg" /></div>
             </div>
         </div>
     </div>
+    <script>
+        Highcharts.setOptions({
+            colors: ['#41B9D5', '#FEC914', '#E83D62']
+        });  
+        Highcharts.chart('hg-container', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+
+        Highcharts.chart('hg-container-1', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+
+        Highcharts.chart('hg-container-2', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-3', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-4', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-5', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    
+        Highcharts.chart('hg-container-6', {
+            chart: {
+                animation: false,
+                plotBackgroundColor: null,
+                backgroundColor: '',
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+                },
+                title: {
+                text: '',
+                y:225
+            },
+            legend:{
+                enabled:false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                        formatter:function(){
+                            return this.key+ ': ' + this.y + '%';
+                        }
+                    },
+                    showInLegend: false
+                }
+            },
+            series: [{
+                name: 'Score',
+                colorByPoint: true,
+                innerSize: '80%',
+                data: [{
+                    name: '',
+                    y: 10,
+                }, {
+                    name: '',
+                    y: 40,
+                }, {
+                    name: '',
+                    y: 50
+                }]
+            }]
+        });
+    </script>
     <style>
-        .svg-item {
-            animation: donutfade 1s;
-        }
-
-        @keyframes donutfade {
-        /* this applies to the whole svg item wrapper */
-            0% {
-                opacity: .2;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @media (min-width: 992px) {
-            .svg-item {
-                width: 80%;
-            }
-        }
-
-        .donut-ring {
-            stroke: #41B9D5;
-        }
-
-        .donut-segment {
-            transform-origin: center;
-            stroke: #FF6200;
-        }
-
-        .donut-segment-2 {
-            stroke: #1A9D25;
-            animation: donut1 3s;
-        }
-
-        @keyframes donut1 {
-            0% {
-                stroke-dasharray: 0, 100;
-            }
-            100% {
-                stroke-dasharray: 50, 50;
-            }
-        }
+        .hg-container .highcharts-credits{ display: none !important;}
+        .hg-container .highcharts-exporting-group{ display: none !important;} 
     </style>
 </body>
 </html>
