@@ -80,3 +80,15 @@ function verifyUser() {
         window.location.href="/dashboard/html/dashboard.html";
       });
 }
+
+
+
+// popup
+
+function openPopup() {
+  $(".popup").show();
+}
+function closePopup() {
+  $(".popup").hide();
+}
+

@@ -13,9 +13,12 @@
     display: flex;
     .popup-pad{
         position: relative; 
-        min-width: 800px;
+        min-width: 700px;
+        max-width: 700px;
         background: #EFF5FA;;
-        border-radius: 6px;
+        border-radius: 15px;
+        overflow:auto;
+        margin: 25px 0;
     }
     
     .popup-body{
@@ -70,6 +73,7 @@
         display: flex;
         justify-content: center;
         padding-bottom: 25px;
+        display: inline-block;
     }
     .thank-you{
         text-align: center;
@@ -96,5 +100,26 @@
 }
 
 
-
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-right: 8px;
+    position: relative;
+    &.active {
+    background-color: #021D45;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: url(/images/check-sign.svg) no-repeat;
+        }
+    }
+}
+.checkbox-content{
+    cursor: pointer;
+    display: flex;
+}
 

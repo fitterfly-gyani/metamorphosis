@@ -24,7 +24,7 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
     line-height: 22px;
     letter-spacing: -0.3px;
     padding: 15px 25px;
-    height: 64px;
+    // height: 64px;
     color: #000000;
     background: #EFF5FA;
     border: 2px solid #8692A6;
@@ -202,4 +202,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   img {
     padding-bottom: 20px;
   }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
