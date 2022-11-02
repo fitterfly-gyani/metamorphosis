@@ -7,11 +7,15 @@
     .card-head{
         padding: 8px 16px;
         background: #1C4685;
+        justify-content: space-between;
     }
     .card-body{
         padding: 20px 16px;
-        background: #DBF4F2;
+        background: #DBF4F2; 
         height: 205px;
+    }
+    .bg-blue {
+        background: #EFF5FA !important;
     }
 }
 
@@ -20,7 +24,7 @@
     padding: 20px 70px 20px 0px;
     display: inline-flex;
     // max-width: 450px;
-    // border-radius: 0 10px 10px 0;
+    // border-radius: 0 10px 10px 0; 
     // margin-left: -95px;
     strong{
         font-family: 'Inter';
@@ -46,8 +50,12 @@
         font-weight: 600;
         font-size: 12px;
         line-height: 15px;
-        color: #166780;
+        color: #166780; 
         padding-right: 5px;
+    }
+    .pad {
+        margin-right: 6px;
+        padding-right: 0px;
     }
     .progress{
         width: 100%;
@@ -127,5 +135,214 @@
     }
     .card-body{
         padding: 13px 16px;
+    }
+}
+
+.card-info {
+    justify-content: space-between;  
+    padding: 20px 0px 25px;
+    .square-bar {
+        width: 60%;
+        .pre {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 20px;
+            color: #166780;
+            min-width: 20px;
+        }
+        .pad {
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+        .number-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 9px;
+            line-height: 20px;
+            color: #166780;
+        }
+        .progress{
+            width: 100%;
+            height: 30px;
+            position: relative;
+            box-shadow: none;
+            .progress-bar{
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.sky-blue{
+                    background: #41B9D5;
+                }
+                &.red{
+                    background: #E83D62;
+                }
+                &.yellow{
+                    background: #FEC914;
+                }
+                &.orange{
+                    background: #FC7D00;
+                }
+            }
+            .blue-box {
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.sky-blue{
+                    background: #41B9D5;
+                }
+            }
+            .orange-box {
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.orange{
+                    background: #FEC914;
+                }
+            }
+            .red-box {
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.red{
+                    background: #E83D62;
+                }
+            }
+            .box-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 9px;
+                line-height: 20px;
+                color: #021D45;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+        .health-score-bar {
+            display: flex;
+            padding-bottom: 5px;
+            .progress-squar {
+                width: 100%;
+                display: flex;
+            }
+        }
+    }
+    .blue-bar {
+        width: 50%;
+        .pre {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 20px;
+            color: #166780;
+            min-width: 20px;
+        }
+        .number-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 9px;
+            line-height: 20px;
+            color: #166780;
+        }
+        .progress{
+            width: 100%;
+            height: 20px;
+            position: relative;
+            box-shadow: none;
+            .progress-bar{
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.sky-blue{
+                    background: #41B9D5;
+                }
+                &.red{
+                    background: #E83D62;
+                }
+                &.yellow{
+                    background: #FEC914;
+                }
+                &.orange{
+                    background: #FC7D00;
+                }
+            }
+            .blue-box {
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.sky-blue{
+                    background: #41B9D5;
+                }
+            }
+            .orange-box {
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.orange{
+                    background: #FEC914;
+                }
+            }
+            .red-box {
+                position: absolute;
+                height: 100%;
+                transition: all 0.5s;
+                &.red{
+                    background: #E83D62;
+                }
+            }
+            .box-text {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 9px;
+                line-height: 20px;
+                color: #021D45;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+
+    }
+    .joined-membar {
+        .participants-number {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #191C32;  
+        }
+        .participants-text {
+            color: #41B9D5;;
+        }
+    }
+}
+.card-footer {
+    .bullet-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.improvement {
+    .improvement-score {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: #166780;
+    }
+    .improvement-text {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 11px;
+        color: #166780;        
     }
 }
