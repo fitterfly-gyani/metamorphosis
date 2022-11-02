@@ -147,10 +147,10 @@
             font-size: 6px;
             line-height: 20px;
             color: #166780;
-            padding-right: 10px;
+            min-width: 20px;
         }
         .pad {
-            margin-right: 6px;
+            margin-right: 0px;
             padding-right: 0px;
         }
         .number-text {
@@ -236,7 +236,7 @@
             font-size: 6px;
             line-height: 20px;
             color: #166780;
-            padding-right: 10px;
+            min-width: 20px;
         }
         .number-text {
             font-family: 'Inter';
