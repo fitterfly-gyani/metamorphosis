@@ -70,15 +70,15 @@
     }
     .card {
         .card-body{
-            height: auto;
+           max-height: 145px;
             background: #EFF5FA;
         }
     }
     .bullet-list{
         li{
             .item{
-                span{
-                    color: #021D45;
+                span{ 
+                    color: #021D45; 
                 }
                 strong{
                     color: #166780
