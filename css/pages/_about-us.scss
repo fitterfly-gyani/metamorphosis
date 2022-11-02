@@ -34,6 +34,7 @@
     height: 320px;
     padding: 40px 0;
     position: relative;
+   
     @media screen and (max-width:1024px) {
         height: initial;
     }
@@ -87,9 +88,13 @@
         right: 0;
         background-color: #DBF4F2;
         border-radius: 150px 0 0 150px;
-        width: 792px;
+        // width: 792px;
+        width: 1000px;
         height: 100%;
         z-index: 0;
+        @media screen and (max-width:1440px) {
+            width: 792px;
+        }
         @media screen and (max-width:1024px) {
             display: none;
         }
