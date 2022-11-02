@@ -106,17 +106,7 @@
 
     }
     .nav-items {
-      .login-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #41B9D5;
-        height: 33px;
-        width: 63px;
-        border: 1px solid #41B9D5;
-        border-radius: 30px;
-        cursor: pointer;
-      }
+    
       @media screen and (max-width:1024px) {
         display: flex;
         align-items: center;
@@ -193,4 +183,16 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #41B9D5;
+  height: 33px;
+  width: 63px;
+  border: 1px solid #41B9D5;
+  border-radius: 30px;
+  cursor: pointer;
 }

@@ -3,7 +3,13 @@
         //background: url('./../images/tt-participant.svg') no-repeat bottom left;
     }
     .footer{
+        &.weight {
         background: url(./../images/tt-participant.svg) no-repeat bottom left -45px;
+        }
+        &.sleep-well {
+           
+            background: url(./../images/sleep-well-footer.svg) no-repeat  rgba($color:#0f3052, $alpha: 1.0) bottom left -45px ;
+        }
         padding-top: 130px;
         height: auto;
         .ff-logo{
@@ -26,6 +32,22 @@
     position: relative;
     z-index: 4;
     margin-bottom: 20px;
+    &.weight {
+        &::after{
+            width: 22%;
+        }
+    }
+    &.metabolic {
+        &::after {
+            width: 34%;
+        }
+    }
+    &.sleep-well {
+        &::after {
+            width: 35%;
+        }
+    }
+
     &:after{
         content: '';
         position: absolute;
@@ -45,7 +67,9 @@
     color: #41B9D5;
     margin-bottom: 10px;
 }
-
+.new-joinee-sec {
+    margin: 70px 0;
+}
 .count-block{
     .count{
         font-family: 'Inter';

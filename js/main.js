@@ -70,14 +70,16 @@ function verifyUser() {
 
       $.ajax(settings).done(function (response) {
         if(response.status == 'error') {
-          $(".btn.btn-pink").text('Submit');
+          $(".btn.btn-pink").text('Corporate Login');
             $("#username").parent().addClass('error');
             $("#username").siblings().text('Invalid Access');
             alert("Invalid Access");
             return;
             // $("#password").parent().addClass('error');
         }
-        window.location.href="/dashboard/html/dashboard.html";
+        $(".btn.btn-pink").text('Corporate Login');
+        var url = window.location.origin + '/dashboard/html/dashboard.html';
+        window.open(url,"_blank");
       });
 }
 
@@ -86,9 +88,56 @@ function verifyUser() {
 // popup
 
 function openPopup() {
+  $(".overlay").addClass('overlay-open');
   $(".popup").show();
 }
 function closePopup() {
   $(".popup").hide();
+  $(".overlay").removeClass('overlay-open');
+
 }
+
+
+
+
+
+$(".checkbox-content").on("click",function(){
+  $(".checkbox-content .checkbox").toggleClass('active');
+})
+
+$("#corporate-enquiry input").on("keyup",function() {
+  const name = $("#fullName").val();
+  const email = $("#corporateEmail").val();
+  const number = $("#contactNumber").val();
+  const company = $("#yourCompany").val();
+  if(name.length !=0 && email.length !=0  && number.length != 0 && company.length != 0)  {
+      $(".popup-btn .btn").removeClass('disabled');
+  }
+});
+function saveRecord() {
+  if($(".popup-btn .btn").hasClass('disabled')) {
+      return;
+  }
+  if($("#fullName").val() == '')
+  {
+     $("#fullName").parent().addClass('error');
+     return;
+  }
+  if($("#corporateEmail").val() == '') {
+      $("#corporateEmail").parent().addClass('error');
+      return;
+  }
+  if($("#contactNumber").val() == '') {
+      $("#contactNumber").parent().addClass('error');
+      return;
+  }
+  if($("#yourCompany").val() == '') {
+      $("#yourCompany").parent().addClass('error');
+      return;
+  }
+  console.log($("#mark").is(":checked"));
+}
+
+
+
 

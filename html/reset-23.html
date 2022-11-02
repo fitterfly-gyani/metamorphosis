@@ -28,6 +28,9 @@
                             <a href="/html/about-us.html">About MM</a>
                         </li>
                         <li>
+                            <a href="/html/Program-list.html">Programs</a>
+                        </li>
+                        <li>
                             <a href="/html/leaderboard.html">Leaderboard</a>
                         </li>
                         <li>
@@ -79,10 +82,10 @@
                             weight management designed by a team of senior nutritionists & experts. 
                             With its unique comprehensive approach that offers diet, exercise, sleep, & stress management guidance.
                         </p>
-                        <div class="regular-price">
+                        <!-- <div class="regular-price">
                             Regular price - Rs. 4999/- <br>
                             P&G special price - Rs. 4499/-
-                        </div>
+                        </div> -->
                         <div class="ps-buttons">
                             <div class="btn-block">
                                 <a href="" class="btn">Enroll Now 
@@ -90,7 +93,7 @@
                                 </a>
                             </div>
                             <div class="talk-to">
-                                <a href="">Talk to the Experts</a>
+                                <a href="javascript:void(0)" onclick="openPopup()">Talk to the Experts</a>
                             </div>
                         </div>
                     </div>
@@ -310,6 +313,77 @@
         </div>
     </section>
 
+
+
+
+    <div class="overlay" onclick="closePopup()">
+
+    </div>
+    <!-- popup -->
+    <div class="popup" style="display: none;">
+        <div class="popup-pad">
+            <div class="popup-body">
+                <div class="popup-inner-pad">
+                    <span onclick="closePopup()" class="back-icon">
+                        <img class="" src="/images/back-icon.svg" alt="">
+                    </span>
+                    <div id="corporate-enquiry" class="form-main" >
+                        <h3>Our experts will contact you soon! </h3>
+                        <p>We just need following information to reach out!</p>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input id="fullName" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" type="text" placeholder="" value="">
+                        </div>
+                        <div class="form-group err-msg">
+                            <label>Your Company Name</label>
+                            <input id="yourCompany" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" type="text" placeholder="" value="">
+                        </div>
+                        <div class="form-field-holder">
+                            <div class="form-group">
+                                <label for="">Contact Number</label>
+                                <input id="contactNumber"  class="text" type="text" onkeydown="return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 46" value="">
+                            </div>
+                            <div class="form-group text">
+                                <label for="">Corporate Email Id</label>
+                                <div class="answer-type form-group">
+                                    <input id="corporateEmail" class="text" type="email" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group flex-row ">
+                            <div  class="checkbox-content ">
+                                <span class="checkbox">
+
+                                </span>
+                                <span>I accept the <span class="undrline"> Terms and Conditions</span></span>
+                            </div>
+                            <!-- <label for="">
+                                <input type="checkbox">
+                                <span>I accept the <span class="undrline"> Terms and Conditions</span></span>
+                            </label> -->
+                            <!-- <input id="check" type="hidden" value="0"><input class="mark" type="checkbox" value="1"><span>I accept the <span class="undrline"> Terms and Conditions</span></span> -->
+                        </div>
+                        <div class="btn-block popup-btn">
+                            <a href="javascript:void(0);" onclick="saveRecord()"  class="btn disabled">Submit </a>
+                        </div>
+                    </div>
+                    
+                    <div class="thank-you-popup" style="display: none;">
+                            <span class="back-icon">
+                                <img class="" src="/images/thank-you-img.svg" alt="">
+                            </span>
+                            <div class="thank-you">
+                                <h2>Thank you for your time!</h2>
+                                <span>Our experts will contact you soon!</span>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popup -->
+
    <footer class="footer">
     <div class="container">
         <div class="row justify-content-between">
@@ -362,5 +436,45 @@
     </div>
    </footer>
 
+   <script>
+
+
+    $(".checkbox-content").on("click",function(){
+        $(".checkbox-content .checkbox").toggleClass('active');
+    })
+    
+    $("#corporate-enquiry input").on("keyup",function() {
+        const name = $("#fullName").val();
+        const email = $("#corporateEmail").val();
+        const number = $("#contactNumber").val();
+        const company = $("#yourCompany").val();
+        if(name.length !=0 && email.length !=0  && number.length != 0 && company.length != 0)  {
+            $(".popup-btn .btn").removeClass('disabled');
+        }
+    });
+    function saveRecord() {
+        if($(".popup-btn .btn").hasClass('disabled')) {
+            return;
+        }
+        if($("#fullName").val() == '')
+        {
+           $("#fullName").parent().addClass('error');
+           return;
+        }
+        if($("#corporateEmail").val() == '') {
+            $("#corporateEmail").parent().addClass('error');
+            return;
+        }
+        if($("#contactNumber").val() == '') {
+            $("#contactNumber").parent().addClass('error');
+            return;
+        }
+        if($("#yourCompany").val() == '') {
+            $("#yourCompany").parent().addClass('error');
+            return;
+        }
+        console.log($("#mark").is(":checked"));
+    }
+    </script>
 </body>
 </html>

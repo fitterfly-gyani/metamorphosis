@@ -28,6 +28,9 @@
                             <a href="/html/about-us.html">About MM</a>
                         </li>
                         <li>
+                            <a href="/html/Program-list.html">Programs</a>
+                        </li>
+                        <li>
                             <a href="/html/leaderboard.html">Leaderboard</a>
                         </li>
                         <li>
@@ -74,13 +77,13 @@
                 </div>
                 <div class="col-lg-6"> 
                     <div class="ps-details">
-                        <h4>Weight Management Program </h4>
+                        <h4>Diabetes Management Program Pro </h4>
                         <p>An award-winning, 90-day CGM-sensor based diabetes management program designed by doctors and healthcare experts. The program helps you figure out how each of your meals affects your blood sugar.
                         </p>
-                        <div class="regular-price">
+                        <!-- <div class="regular-price">
                             Regular price - Rs. 9499/- <br>
                             P&G special price - Rs. 8968/-
-                        </div>
+                        </div> -->
                         <div class="ps-buttons">
                             <div class="btn-block">
                                 <a href="" class="btn">Enroll Now 
@@ -168,7 +171,7 @@
 
     <section class="program-achievement"> 
         <div class="container">
-            <h2 class="text-center"> <span class="yellow-text">15,000+ people</span>have already benefited <br />from our award-winning programs</h2>
+            <h2 class="text-center"> <span class="yellow-text">15,000+ people </span>have already benefited <br />from our award-winning programs</h2>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="achivement-main">
@@ -264,6 +267,9 @@
 
 
 
+    <div class="overlay" onclick="closePopup()">
+
+    </div>
     <!-- popup -->
     <div class="popup" style="display: none;">
         <div class="popup-pad">
@@ -383,9 +389,11 @@
     </div>
    </footer>
 <script>
-    $(".checkbox-content").on("click",function(){
-        $(".checkbox-content .checkbox").toggleClass('active');
-    })
+
+
+$(".checkbox-content").on("click",function(){
+    $(".checkbox-content .checkbox").toggleClass('active');
+})
 
 $("#corporate-enquiry input").on("keyup",function() {
     const name = $("#fullName").val();
