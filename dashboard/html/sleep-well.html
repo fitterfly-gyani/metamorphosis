@@ -71,10 +71,16 @@
                                                         <strong>10%</strong>
                                                     </div>
                                                 </li>
-                                                <li class="green">
+                                                <li class="yellow">
                                                     <div class="item">
-                                                        <span>New</span>
-                                                        <strong>0%</strong>
+                                                        <span>Average</span>
+                                                        <strong>40%</strong>
+                                                    </div>
+                                                </li>
+                                                <li class="red">
+                                                    <div class="item">
+                                                        <span>Poor</span>
+                                                        <strong>50%</strong>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -89,7 +95,7 @@
                                         <div class="circle-block">
                                             <svg width="156px" height="156px" viewBox="0 0 40 40" class="donut">
                                                 <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3"></circle>
-                                                <circle class="donut-segment donut-segment-2" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3" stroke-dasharray="50 50" stroke-dashoffset="25"></circle>
+                                                <circle class="donut-segment donut-segment-2 yellow " cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="3" stroke-dasharray="50 50" stroke-dashoffset="25"></circle>
                                             </svg>
                                             <div class="white-circle">
                                                 <strong>10,000</strong>
@@ -99,14 +105,20 @@
                                             <ul class="bullet-list">
                                                 <li>
                                                     <div class="item">
-                                                        <span>Old</span>
-                                                        <strong>100%</strong>
+                                                        <span>Good</span>
+                                                        <strong>50%</strong>
                                                     </div>
                                                 </li>
-                                                <li class="green">
+                                                <li class="yellow">
                                                     <div class="item">
-                                                        <span>New</span>
-                                                        <strong>0%</strong>
+                                                        <span>Average</span>
+                                                        <strong>40%</strong>
+                                                    </div>
+                                                </li>
+                                                <li class="red">
+                                                    <div class="item">
+                                                        <span>Poor</span>
+                                                        <strong>10%</strong>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -402,10 +414,9 @@
                     </div>
                 </div>
             </div>
-            <div class="footer sleep-well container flex-align-right">
-                <div class="ff-logo"><img src="./../images/ff-logo.svg" /></div>
-                <div class="">
-
+            <div class="footer sleep-well  ">
+                <div class="container flex-align-right">
+                    <div class="ff-logo"><img src="./../images/ff-logo.svg" /></div>
                 </div>
             </div>
         </div>
@@ -434,6 +445,14 @@
         .donut-ring {
             stroke: #41B9D5;
         }
+        .donut-segment-2.yellow {
+            transform-origin: center;
+            stroke:#FEC914;
+        }
+        .donut-segment-2.red {
+            transform-origin: center;
+            stroke:#E83D62;
+        }
 
         .donut-segment {
             transform-origin: center;
@@ -454,5 +473,6 @@
             }
         }
     </style>
+    
 </body>
 </html>

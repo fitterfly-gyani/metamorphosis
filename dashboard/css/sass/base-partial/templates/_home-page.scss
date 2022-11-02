@@ -8,7 +8,21 @@
         }
         &.sleep-well {
            
-            background: url(./../images/sleep-well-footer.svg) no-repeat  rgba($color:#0f3052, $alpha: 1.0) bottom left -45px ;
+            background: url(./../images/sleep-well-footer.svg) no-repeat  bottom left -45px ;
+        }
+        &.team-work {
+            background: url(./../images/teamwork-footer.svg) no-repeat  bottom left -15px ;
+        }
+        &.metabolic-health {
+            background: url(./../images/metabolic-health-score-footer.svg) no-repeat  bottom left -15px ;
+        }
+        &.metabolic-disease {
+            background: url(./../images/metabolic-disease-footer.svg) no-repeat  bottom left -15px ;
+            background-size:contain ;
+        }
+        &.weight {
+            background: url(./../images/weight-footer.svg) no-repeat  bottom left -15px ;
+
         }
         padding-top: 130px;
         height: auto;
@@ -112,3 +126,22 @@
     }
 }
 
+
+.wt-yellow {
+    background: #FBF0DC !important;
+}
+.bullet-list {
+    &.black-text{
+        li{
+            .item {
+                span {
+                    color: #021D45;
+                }
+                strong{
+                    color: #166780;
+                }
+            }
+        }
+    }
+    
+}
