@@ -47,7 +47,8 @@ function checkField() {
 
 }
 
-function verifyUser() {
+function verifyUser(event) {
+  var nameOfButton = event.target.innerHTML;
   $("#username").parent().removeClass('error');
   $("#password").parent().removeClass('error');
 
@@ -81,14 +82,16 @@ function verifyUser() {
 
       $.ajax(settings).done(function (response) {
         if(response.status == 'error') {
-          $(".btn.btn-pink").text('Corporate Login');
+
+          $(".btn.btn-pink").text(nameOfButton);
             $("#username").parent().addClass('error');
-            $("#username").siblings().text('Invalid Access');
-            alert("Invalid Access");
+            $("#password").parent().addClass('error');
+            // $("#username").siblings().text('Invalid Access');
+            // alert("Invalid Access");
             return;
             // $("#password").parent().addClass('error');
         }
-        $(".btn.btn-pink").text('Corporate Login');
+        $(".btn.btn-pink").text(nameOfButton);
         // var url = window.location.origin + '/dashboard/html/dashboard.html';
         // window.open(url,"_blank");
         window.location.href="/dashboard/html/dashboard.html";

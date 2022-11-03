@@ -55,7 +55,14 @@
 
     <section class="header-pad-100 faqs-criteria-sec">
         <div class="container">
-            <h2 class="pt-60 pb-100">Corporate Login</h2>
+            <ul class="login-tabs">
+                <li class="active" onclick="showLoginform('member')">
+                    <a href="javascript:void(0);">Member Login</a>
+                </li>
+                <li onclick="showLoginform('corporate')">
+                    <a href="javascript:void(0);">Corporate Login</a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -85,7 +92,8 @@
                             </div>
                             
                             <div class="btn-block">
-                                <a href="javascript:void(0);" onclick="verifyUser()" class="btn btn-pink disabled">Corporate Login</a>
+                                <a href="javascript:void(0);" onclick="verifyUser(event)" style="display: none;" class="btn btn-pink corporate disabled">Corporate Login</a>
+                                <a href="javascript:void(0);" onclick="verifyUser(event)"  class="btn btn-pink member disabled">Member Login</a>
                             </div>
                         </div>
                     </div>
@@ -93,6 +101,7 @@
             </div>
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="container">
@@ -151,6 +160,25 @@
         $(".nav").toggleClass('active');
         });
    </script>
-   
+   <script>
+    function showLoginform(val) {
+        $("#username").parent().removeClass('error');
+        $("#password").parent().removeClass('error');
+        if(val == 'member') {
+            $(".btn.btn-pink.corporate").hide();
+            $(".btn.btn-pink.member").show();
+            $(".btn.btn-pink.member").text('Member Login');
+        }
+        else if(val == 'corporate') {
+            $(".btn.btn-pink.corporate").show();
+            $(".btn.btn-pink.corporate").text('Corporate Login');
+            $(".btn.btn-pink.member").hide();
+        }
+    }
+    $(".login-tabs li").on("click",function(){
+        $(".login-tabs li").removeClass('active');
+        $(this).addClass('active')
+    });
+   </script>
 </body>
 </html>
