@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/base.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -301,141 +302,145 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="card mb-30">
-                                                <div class="card-head flex-align-center">
-                                                    <div class="flex-align-center">
-                                                        <span class="img mr-10"><img src="./../images/medical-report.svg" width="26"></span>
-                                                        <h4>Lab Parameter Risk Zone</h4>
+                                            <a href="/dashboard/html/lab-parameter.html">
+                                                <div class="card mb-30">
+                                                    <div class="card-head flex-align-center">
+                                                        <div class="flex-align-center">
+                                                            <span class="img mr-10"><img src="./../images/medical-report.svg" width="26"></span>
+                                                            <h4>Lab Parameter Risk Zone</h4>
+                                                        </div>
+                                                        <div>
+                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <span><img src="./../images/side-arrow.svg" /></span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
-                                                    <div class="card-info flex-align-center">
-                                                        <div class="square-bar">
-                                                            <div class="health-score-bar">
-                                                                <span class="pre">PRE</span>
-                                                                <div class="progress-squar">
-                                                                    <div class="progress" style="width: 25%;">
-                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                    <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                        <div class="card-info flex-align-center">
+                                                            <div class="square-bar">
+                                                                <div class="health-score-bar">
+                                                                    <span class="pre">PRE</span>
+                                                                    <div class="progress-squar">
+                                                                        <div class="progress" style="width: 25%;">
+                                                                            <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 40%;">
+                                                                            <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 35%;">
+                                                                            <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="progress" style="width: 40%;">
-                                                                        <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                </div>
+                                                                <div class="now flex-align-center">
+                                                                    <span class="pre pad">NOW</span>
+                                                                    <div class="progress" style="width: 50%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
                                                                     </div>
-                                                                    <div class="progress" style="width: 35%;">
-                                                                        <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                    <div class="progress" style="width: 30%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 20%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">10%</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="now flex-align-center">
-                                                                <span class="pre pad">NOW</span>
-                                                                <div class="progress" style="width: 50%;">
-                                                                    <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
-                                                                </div>
-                                                                <div class="progress" style="width: 30%;">
-                                                                    <div class="orange-box orange box-text" style="width: 100%;">30%</div>
-                                                                </div>
-                                                                <div class="progress" style="width: 20%;">
-                                                                    <div class="red-box red box-text" style="width: 100%;">10%</div>
-                                                                </div>
+                                                            <div class="improvement">
+                                                                <div class="improvement-score">30%</div>
+                                                                <div class="improvement-text">Improvement in Score</div>
                                                             </div>
                                                         </div>
-                                                        <div class="improvement">
-                                                            <div class="improvement-score">30%</div>
-                                                            <div class="improvement-text">Improvement in Score</div>
+                                                        <div class="card-footer mr-20">
+                                                            <ul class="bullet-list" style="">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Low</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Medium</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>High</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="card-footer mr-20">
-                                                        <ul class="bullet-list" style="">
-                                                            <li>
-                                                                <div class="item">
-                                                                    <span>Low</span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="yellow">
-                                                                <div class="item">
-                                                                    <span>Medium</span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="red">
-                                                                <div class="item">
-                                                                    <span>High</span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <div class="card mb-30">
-                                                <div class="card-head flex-align-center">
-                                                    <div class="flex-align-center">
-                                                        <span class="img mr-10"><img src="./../images/nutrition-logo.svg" width="26"></span>
-                                                        <h4>Nutrition Score</h4>
+                                            <a href="/dashboard/html/nutrition-score.html">
+                                                <div class="card mb-30">
+                                                    <div class="card-head flex-align-center">
+                                                        <div class="flex-align-center">
+                                                            <span class="img mr-10"><img src="./../images/nutrition-logo.svg" width="26"></span>
+                                                            <h4>Nutrition Score</h4>
+                                                        </div>
+                                                        <div>
+                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <span><img src="./../images/side-arrow.svg" /></span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
-                                                    <div class="card-info flex-align-center">
-                                                        <div class="square-bar">
-                                                            <div class="health-score-bar">
-                                                                <span class="pre">PRE</span>
-                                                                <div class="progress-squar">
-                                                                    <div class="progress" style="width: 25%;">
-                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                    <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
+                                                        <div class="card-info flex-align-center">
+                                                            <div class="square-bar">
+                                                                <div class="health-score-bar">
+                                                                    <span class="pre">PRE</span>
+                                                                    <div class="progress-squar">
+                                                                        <div class="progress" style="width: 25%;">
+                                                                            <div class="blue-box sky-blue box-text" style="width: 100%;">10%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 40%;">
+                                                                            <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                        </div>
+                                                                        <div class="progress" style="width: 35%;">
+                                                                            <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="progress" style="width: 40%;">
-                                                                        <div class="orange-box orange box-text" style="width: 100%;">50%</div>
+                                                                </div>
+                                                                <div class="now flex-align-center">
+                                                                    <span class="pre pad">NOW</span>
+                                                                    <div class="progress" style="width: 50%;">
+                                                                        <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
                                                                     </div>
-                                                                    <div class="progress" style="width: 35%;">
-                                                                        <div class="red-box red box-text" style="width: 100%;">40%</div>
+                                                                    <div class="progress" style="width: 30%;">
+                                                                        <div class="orange-box orange box-text" style="width: 100%;">30%</div>
+                                                                    </div>
+                                                                    <div class="progress" style="width: 20%;">
+                                                                        <div class="red-box red box-text" style="width: 100%;">10%</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="now flex-align-center">
-                                                                <span class="pre pad">NOW</span>
-                                                                <div class="progress" style="width: 50%;">
-                                                                    <div class="blue-box sky-blue box-text" style="width: 100%;">60%</div>
-                                                                </div>
-                                                                <div class="progress" style="width: 30%;">
-                                                                    <div class="orange-box orange box-text" style="width: 100%;">30%</div>
-                                                                </div>
-                                                                <div class="progress" style="width: 20%;">
-                                                                    <div class="red-box red box-text" style="width: 100%;">10%</div>
-                                                                </div>
+                                                            <div class="improvement">
+                                                                <div class="improvement-score">30%</div>
+                                                                <div class="improvement-text">Improvement in Score</div>
                                                             </div>
                                                         </div>
-                                                        <div class="improvement">
-                                                            <div class="improvement-score">30%</div>
-                                                            <div class="improvement-text">Improvement in Score</div>
+                                                        <div class="card-footer mr-20">
+                                                            <ul class="bullet-list" style="">
+                                                                <li>
+                                                                    <div class="item">
+                                                                        <span>Good</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="yellow">
+                                                                    <div class="item">
+                                                                        <span>Average</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="red">
+                                                                    <div class="item">
+                                                                        <span>Poor</span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="card-footer mr-20">
-                                                        <ul class="bullet-list" style="">
-                                                            <li>
-                                                                <div class="item">
-                                                                    <span>Good</span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="yellow">
-                                                                <div class="item">
-                                                                    <span>Average</span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="red">
-                                                                <div class="item">
-                                                                    <span>Poor</span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
 
                                         <div class="col-lg-6">

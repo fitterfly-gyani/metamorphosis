@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
@@ -42,7 +43,7 @@
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <a href="/html/login.html" class="login-btn">Login</a>
+                    <a href="/html/login.html" target="_blank" target="_blank" class="login-btn">Login</a>
                     <div class="icon-burger">
                         <span class="burger-patty"></span>
                         <span class="burger-patty"></span>
@@ -92,14 +93,17 @@
             <div class="col-sm-12">
                 <h2 class="vs-title">Take the first step towards<br>
                     the rest of your healthier life.</h2>
-                <div class="vs-thumnail">
-                    <img class="play-btn" src="/images/play-btn.svg" alt="play">
-                    <img src="/images/video-thumbnail.png" alt="thumbnail">
+                <div class="vs-thumnail" id="mpopupLink">
+                    <img  class="play-btn" src="/images/play-btn.svg" alt="play">
+                    <img class="play-img" src="/images/video-thumbnail.png" alt="thumbnail">
+                
+                    <iframe id="video-player" style="border-radius: 20px;display: none;" width="100%" id="video-player" height="500" src="https://www.youtube.com/embed/oUO9Yng62yY?controls=0&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 </div>
                 <p class="vs-desc">Our mission is to get your employees healthier and allow them to take control
                     over their chronic condition.</p>
                 <div class="btn-block">
-                    <a href="/html/login.html" class="btn">Sign me Up 
+                    <a href="/html/Program-list.html" class="btn">Sign me Up 
                         <span class="right-arrow"></span>
                     </a>
                 </div>
@@ -111,12 +115,13 @@
    <section class="metabolic-health-sec">
        <div class="container">
            <div class="row">
-               <div class="col-lg-4">
+               <div class="col-lg-4 align-self-center">
                    <div class="mh-title">
-                       <h2>Take the first step towards the rest of your healthier life.</h2>
-                       <p>Lorem Ipsum Dolar</p>
+                       <h2>Understanding Metabolic Health</h2>
+                       <!-- <p>Lorem Ipsum Dolar</p> -->
                    </div>
-                   <span class="mhs-arrw"><img src="/images/right-arrow.svg"></span>
+                    <!-- <a href="/html/Program-list.html" class="mhs-arrw"><img src="/images/right-arrow.svg"></a> -->
+                   
                </div>
                <div class="col-lg-8">
                    <div class="mh-videothumb">
@@ -430,7 +435,7 @@
                 <div class="wf-btn">
                     <h2>What are you waiting for?</h2>
                     <div class="btn-block">
-                        <a href="/html/login.html" class="btn">Register Now 
+                        <a href="/html/Program-list.html" class="btn">Register Now 
                             <span class="right-arrow"></span>
                         </a>
                     </div>
@@ -460,6 +465,16 @@
            </div>
        </div>
    </section>
+
+   <div id="mpopupBox" class="mpopup" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+            </div>
+            <iframe width="100%" id="video-player" height="500" src="https://www.youtube.com/embed/oUO9Yng62yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe width="100%" id="sanjay-shanbhag" height="500" src="https://www.youtube.com/embed/0pxzhLUZ_Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+        </div>
+   </div>
 
    <footer class="footer">
     <div class="container">
@@ -512,7 +527,22 @@
         </div>
     </div>
    </footer>
+   <style>
+    .ytp-chrome-top{
+        display: none !important;
+    }
+    .ytp-show-cards-title {
+        display: none !important;
+    }
+   </style>
    <script>
+$(document).ready(function(){
+    $("iframe .ytp-chrome-top.ytp-show-cards-title").css("display","none");
+    $("iframe .ytp-chrome-top.ytp-show-cards-title").hide();
+
+})
+
+
         $(".icon-burger").on("click",function(){
         $(this).toggleClass('active');
         $(".nav").toggleClass('active');
@@ -520,5 +550,42 @@
    </script>
     <!-- <script src="/js/main.js"></script> -->
 
+
+    <script>
+
+        $("#mpopupLink").on("click",function(){
+            $(".play-img").hide();
+            $(".play-btn").hide();
+            $("#video-player").show();
+        });
+
+        // // Select modal
+        // var mpopup = document.getElementById('mpopupBox');
+        
+        // // Select trigger link
+        // var mpLink = document.getElementById("mpopupLink");
+        
+        // // Select close action element
+        // var close = document.getElementsByClassName("close")[0];
+        
+        // // Open modal once the link is clicked
+        // mpLink.onclick = function() {
+        //     mpopup.style.display = "block";
+    
+        // };
+        
+        // // Close modal once close element is clicked
+        // close.onclick = function() {
+        //     mpopup.style.display = "none";
+        //     document.getElementById('video-player').setAttribute("src", "https://www.youtube.com/embed/0pxzhLUZ_Ks");
+        // };
+        
+        // Close modal when user clicks outside of the modal box
+        window.onclick = function(event) {
+            if (event.target == mpopup) {
+                mpopup.style.display = "none";
+            }
+        };
+        </script>
 </body>
 </html>

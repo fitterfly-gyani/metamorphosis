@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
@@ -43,7 +44,7 @@
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <a href="/html/login.html" class="login-btn">Login</a>
+                    <a href="/html/login.html" target="_blank" class="login-btn">Login</a>
                     <div class="icon-burger">
                         <span class="burger-patty"></span>
                         <span class="burger-patty"></span>
@@ -305,7 +306,7 @@
                                 <span class="right-arrow"></span>
                             </a>
                         </div>
-                        <a class="find-more" href="">Find out more</a>
+                        <a class="find-more" href="javascript:void(0);" onclick="openPopup()">Call me back</a>
                     </div>
                 </div>
             </div>
@@ -472,6 +473,8 @@
             $("#yourCompany").parent().addClass('error');
             return;
         }
+        $(".popup").hide();
+        $(".overlay").removeClass('overlay-open');
         console.log($("#mark").is(":checked"));
     }
     </script>

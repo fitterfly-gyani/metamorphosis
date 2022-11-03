@@ -89,8 +89,9 @@ function verifyUser() {
             // $("#password").parent().addClass('error');
         }
         $(".btn.btn-pink").text('Corporate Login');
-        var url = window.location.origin + '/dashboard/html/dashboard.html';
-        window.open(url,"_blank");
+        // var url = window.location.origin + '/dashboard/html/dashboard.html';
+        // window.open(url,"_blank");
+        window.location.href="/dashboard/html/dashboard.html";
       });
 }
 
