@@ -1,4 +1,4 @@
-name: Deploy to S3
+name: Deploy to Stage
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-south-1
         
-    - name: pushing code to S3 Bucket
+    - name: Push to S3 Bucket
       run: |
         aws s3 sync . s3://ff-dev-metamorphosis --exclude '.git/*' --exclude '.github/*' --exclude 'deploy-live.sh' --exclude 'deploy-stage.sh' --exclude './idea' --exclude '.DS_Store' --exclude '.gitignore' --exclude 'README.md'
         echo "deploy done..."
