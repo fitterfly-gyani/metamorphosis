@@ -10,6 +10,58 @@
     padding-bottom: 100px;
 }
 
+.login-tabs {
+    display: flex;
+    margin-top: 50px;
+    li {
+        // padding: 0 10px;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 400;
+        position: relative;
+        font-family: 'Inter',sans-serif;
+        a{
+            color: #A3B2C2;
+        }
+        &:last-child{
+            margin-left: 20px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            // margin-top: 5px;
+            width: 0;
+            height: 2px;
+            position: absolute;
+            bottom: -5px;
+            background: #E83D62;
+            transition: width .3s;
+            z-index: 99;
+            @media screen and (max-width:1024px) {
+              display: none;
+              
+            }
+          }
+          &.active {
+            a{
+                color: #FBF0DC;
+            }
+            &::after {
+                width: 100%;
+            }
+          }
+        //   &:hover, &.active{
+        //     a{
+        //         color: #FBF0DC;
+        //     }
+        //     &::after {
+        //         width: 100%;
+        //     }
+
+        //   }
+    }
+}
+
 .login-form{
     padding: 64px 56px; 
     background: #EFF5FA;
