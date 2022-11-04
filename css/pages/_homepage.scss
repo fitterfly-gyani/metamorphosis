@@ -255,6 +255,9 @@
                 position: relative;
                 margin-bottom: 30px;
                 min-height: 162px;
+                &.no-border{
+                    border: none;
+                }
                 &.bg-offyellow{
                     background-color: #FBF0DC;
                 }
