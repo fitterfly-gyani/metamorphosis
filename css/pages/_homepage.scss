@@ -293,6 +293,11 @@
             right: 0;
             top: 0;
         }
+        .benefit-challenge-div{
+            img {
+                padding-bottom: 20px;
+            }
+        }
     }
     .challenges-div{
         margin-top: 100px;
@@ -323,9 +328,20 @@
             margin: auto;
             font-weight: 600;
             font-size: 30px;
-            color: #fff;
+            color: #fff;  
             margin-top: 20px;
         }
+    }
+}
+.benefit-challenge-sec {
+    background-color:#1C4685;
+    img {
+        padding-bottom: 20px;
+    }
+    .card-info{
+        max-width: 160px;
+        text-align: left;
+        color: #166780;
     }
 }
 
