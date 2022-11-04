@@ -3,6 +3,13 @@
         //background: url('./../images/tt-participant.svg') no-repeat bottom left;
     }
     .footer{
+        &.lab-parameter {
+            background: url(./../images/medical-report-footer.svg) no-repeat bottom left 0px;
+            background-size: contain;
+        }
+        &.nutrion-score {
+            background: url(./../images/nutrition-score-footer.svg) no-repeat bottom left 0px;
+        }
         &.total-participate {
         background: url(./../images/tt-participant.svg) no-repeat bottom left -45px;
         }
@@ -150,10 +157,21 @@
                     color: #021D45;
                 }
                 strong{
-                    color: #166780;
+                    color: #41B9D5;
                 }
             }
         }
     }
     
+}
+
+.category-tab {
+    width: 27%;
+    padding: 20px 20px 20px 95px;
+    font-size: 25px;
+    color: #41B9D5;
+    font-weight: 600;
+    background: #0F3061;
+    margin-bottom: 40px;
+    border-radius: 0px 10px 10px 0;
 }

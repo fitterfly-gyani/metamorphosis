@@ -2,23 +2,23 @@
     background-color: #021D45;
     min-height: 740px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
-    // &::before{
-    //     content: "";
-    //     background-image: url(/images/banner-bg.svg);
-    //     background-position: left;
-    //     background-size: 100% 80%;
-    //     width: 100%;
-    //     height: 100%;
-    //     position: absolute;
-    //     left: -23px;
-    //     top: -55px;
-    //     background-repeat: no-repeat;
-    //     @media only screen and (max-width: 991px){
-    //         display: none;
-    //     }
-    // }
+    &::before{
+        content: "";
+        background-image: url(/images/banner-bg.svg);
+        background-position: left;
+        background-size: 100% 80%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -23px;
+        top: -66px;
+        background-repeat: no-repeat;
+        @media only screen and (max-width: 991px){
+            display: none;
+        }
+    }
     @media only screen and (max-width: 991px){
         height: auto;
         padding-top: 100px;
