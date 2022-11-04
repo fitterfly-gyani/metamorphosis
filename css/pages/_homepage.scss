@@ -2,23 +2,23 @@
     background-color: #021D45;
     min-height: 740px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
-    // &::before{
-    //     content: "";
-    //     background-image: url(/images/banner-bg.svg);
-    //     background-position: left;
-    //     background-size: 100% 80%;
-    //     width: 100%;
-    //     height: 100%;
-    //     position: absolute;
-    //     left: -23px;
-    //     top: -55px;
-    //     background-repeat: no-repeat;
-    //     @media only screen and (max-width: 991px){
-    //         display: none;
-    //     }
-    // }
+    &::before{
+        content: "";
+        background-image: url(/images/banner-bg.svg);
+        background-position: left;
+        background-size: 100% 80%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -23px;
+        top: -66px;
+        background-repeat: no-repeat;
+        @media only screen and (max-width: 991px){
+            display: none;
+        }
+    }
     @media only screen and (max-width: 991px){
         height: auto;
         padding-top: 100px;
@@ -255,6 +255,9 @@
                 position: relative;
                 margin-bottom: 30px;
                 min-height: 162px;
+                &.no-border{
+                    border: none;
+                }
                 &.bg-offyellow{
                     background-color: #FBF0DC;
                 }
@@ -293,6 +296,11 @@
             right: 0;
             top: 0;
         }
+        .benefit-challenge-div{
+            img {
+                padding-bottom: 20px;
+            }
+        }
     }
     .challenges-div{
         margin-top: 100px;
@@ -323,9 +331,20 @@
             margin: auto;
             font-weight: 600;
             font-size: 30px;
-            color: #fff;
+            color: #fff;  
             margin-top: 20px;
         }
+    }
+}
+.benefit-challenge-sec {
+    background-color:#1C4685;
+    img {
+        padding-bottom: 20px;
+    }
+    .card-info{
+        max-width: 160px;
+        text-align: left;
+        color: #166780;
     }
 }
 
@@ -694,6 +713,7 @@
             color: #F0E7D2;
             line-height: initial;
         }
+        
         .btn-block{
             margin-top: 40px;
         }

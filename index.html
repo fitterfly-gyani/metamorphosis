@@ -125,7 +125,7 @@
                </div>
                <div class="col-lg-8">
                    <div class="mh-videothumb">
-                        <img class="play-btn" src="/images/play-btn.svg" alt="play">
+                        <!-- <img class="play-btn" src="/images/play-btn.svg" alt="play"> -->
                        <img src="/images/metabolic-thumb.png">
                    </div>
                </div>
@@ -153,7 +153,7 @@
                                             <div class="bd-name">Fitness</div>
                                         </div>
                                         <div class="ben-image">
-                                            <img src="/images/flage-hand.svg" alt="flage">
+                                            <img src="/images/fitness-yellow.svg" alt="flage">
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@
                                             <div class="bd-name">Health</div>
                                         </div>
                                         <div class="ben-image">
-                                            <img src="/images/flage-hand.svg" alt="flage">
+                                            <img src="/images/health-yellow.svg" alt="flage">
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
                                             <div class="bd-name">Quality Of Life</div>
                                         </div>
                                         <div class="ben-image">
-                                            <img src="/images/flage-hand.svg" alt="flage">
+                                            <img src="/images/care-yellow.svg" alt="flage">
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@
                                             <div class="bd-name">Sleep</div>
                                         </div>
                                         <div class="ben-image">
-                                            <img src="/images/flage-hand.svg" alt="flage">
+                                            <img src="/images/sleep-yellow.svg" alt="flage">
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +209,7 @@
                                             <div class="bd-name">Stress</div>
                                         </div>
                                         <div class="ben-image">
-                                            <img src="/images/flage-hand.svg" alt="flage">
+                                            <img src="/images/stress-yellow.svg" alt="flage">
                                         </div>
                                     </div>
                                 </div>
@@ -230,7 +230,66 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
 
+   <section class="weekly-challenge-sec benefit-challenge-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="benefit-div">
+                    <h2>How will you benefit from the challenge?</h2>
+                    <!-- <p class="text-yellow">Start your transformation in 90 days -->
+                    </p>
+                    <div class="benefit-main-div">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="benefit-box bg-offyellow no-border">
+                                    <div class="card-info">
+                                        <img src="/images/Improved-energy-logo.svg">
+                                        <div class="">Improved energy throughout the day.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="benefit-box bg-offyellow no-border">
+                                    <div class="card-info">
+                                        <img src="/images/weight-loss-logo.svg">
+                                        <div class="">Weight Loss</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="benefit-box bg-offyellow no-border">
+                                    <div class="card-info">
+                                        <img src="/images/small-girl-logo.svg">
+                                        <div class="">Superior focus and productivity. </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="benefit-box bg-offyellow no-border">
+                                    <div class="card-info">
+                                        <img src="/images/happy-logo.svg">
+                                        <div class="">Improved workplace wellness.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <section class="weekly-challenge-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
                     <div class="challenges-div">
                         <h2>Weekly Challenges</h2>
                         <p>Stay motivated with fun challenges, and <br> win some amazing prizes.
@@ -306,7 +365,8 @@
                 </div>
             </div>
         </div>
-   </section>  
+    </section>
+
 
    <section class="participate-sec">
        <div class="container">
@@ -429,9 +489,9 @@
    <section class="waiting-for-sec">
        <div class="container">
             <div class="col-sm-12">
-                <p class="wf-desc">Participants have an opportunity to score points for every challenge, to move up the leaderboard.  <br><br>
+                <p class="wf-desc">Participants have an opportunity to score points for every <br> challenge, to move up the leaderboard.  <br><br>
 
-                    All winners will additionally receive a 90-day subscription to Reset or Diabefly for their loved ones.</p>
+                   <span class="text-yellow"> All winners will additionally receive a 90-day <br> subscription to Reset or Diabefly for their loved ones.</span></p>
                 <!-- <div class="wf-btn"> -->
                     <!-- <h2>What are you waiting for?</h2> -->
                     <!-- <div class="btn-block">
@@ -650,8 +710,8 @@
             $("#yourCompany").parent().addClass('error');
             return;
         }
-        $(".popup").hide();
-        $(".overlay").removeClass('overlay-open');
+        $("#corporate-enquiry").hide();
+        $(".thank-you-popup").show();
         console.log($("#mark").is(":checked"));
     }
     </script>

@@ -3,11 +3,17 @@
         //background: url('./../images/tt-participant.svg') no-repeat bottom left;
     }
     .footer{
-        &.weight {
+        &.lab-parameter {
+            background: url(./../images/medical-report-footer.svg) no-repeat bottom left 0px;
+            background-size: contain;
+        }
+        &.nutrion-score {
+            background: url(./../images/nutrition-score-footer.svg) no-repeat bottom left 0px;
+        }
+        &.total-participate {
         background: url(./../images/tt-participant.svg) no-repeat bottom left -45px;
         }
         &.sleep-well {
-           
             background: url(./../images/sleep-well-footer.svg) no-repeat  bottom left -45px ;
         }
         &.team-work {
@@ -106,6 +112,9 @@
 .circle-block{
     position: relative;
     .white-circle{
+        &.dark-blue-bg {
+            background: #C8E7E4;
+        }
         width: 98px;
         height: 98px;
         border-radius: 50%;
@@ -124,6 +133,16 @@
             color: #191C32;
         }
     }
+    .dark-blue-circle {
+        background: #C8E7E4;
+        width: 98px;
+        height: 98px;
+        border-radius: 50%;
+        position: absolute;
+        top: 29px;
+        left: 29px;
+        @extend .flex-center;
+    }
 }
 
 
@@ -138,10 +157,21 @@
                     color: #021D45;
                 }
                 strong{
-                    color: #166780;
+                    color: #41B9D5;
                 }
             }
         }
     }
     
+}
+
+.category-tab {
+    width: 27%;
+    padding: 20px 20px 20px 95px;
+    font-size: 25px;
+    color: #41B9D5;
+    font-weight: 600;
+    background: #0F3061;
+    margin-bottom: 40px;
+    border-radius: 0px 10px 10px 0;
 }
