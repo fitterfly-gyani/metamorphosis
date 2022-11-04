@@ -17,6 +17,48 @@
     .bg-blue {
         background: #EFF5FA !important;
     }
+    .card-progress{
+        padding: 30px;
+        .progress-bar {
+            width: 100%;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            .progress-items {
+                height: 60px;
+                &.blue {
+                    background: #41B9D5;
+                }
+                &.yellow {
+                    background: #FEC914;
+                }
+                &.red {
+                    background: #E83D62;
+                }
+                &:first-child {
+                    border-radius: 2px 0px 0px 2px;
+                }
+                &:last-child {
+                    border-radius: 0px 2px 2px 0px;
+                }
+                .progress-box {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    color: #021D45;
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+            }
+        }
+        .bullet-list {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    
 }
 
 .round-box{
@@ -71,6 +113,18 @@
             transition: all 0.5s;
             &.red{
                 background: #E83D62;
+            }
+            &.grey {
+                background:#708092 ;
+            }
+            &.dark-green {
+                background: #166780;
+            }
+            &.dark-blue {
+                background: #5E8DD1;
+            }
+            &.brown {
+                background: #C1A397;
             }
             &.green {
                 background: #1A9D25;
@@ -320,6 +374,13 @@
         .participants-text {
             color: #41B9D5;;
         }
+    }
+}
+
+
+.card-info  {
+    .progress-bar {
+
     }
 }
 .card-footer {
