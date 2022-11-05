@@ -14,6 +14,9 @@
         background: #DBF4F2; 
         height: 205px;
     }
+    .bg-weldon {
+        background-color: #DBF4F2;
+    }
     .bg-blue {
         background: #EFF5FA !important;
     }
@@ -118,7 +121,7 @@
                 background:#708092 ;
             }
             &.dark-green {
-                background: #166780;
+                background: #6FA7D0;
             }
             &.dark-blue {
                 background: #5E8DD1;
@@ -137,6 +140,9 @@
             }
             &.sky-blue{
                 background: #41B9D5;
+            }
+            &.weldon-blue {
+                background: #7DA5A8;
             }
         }
     }  

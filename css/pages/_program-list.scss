@@ -44,9 +44,15 @@ body {
 }
 
 .program-list-sec {
-    background-color: #173868;
+    // background-color: #173868;
     &.light-bg{
         background-color: #274879;
+    }
+    &.bg-blue {
+        background-color: #021D45;
+    }
+    &.dark-bg {
+        background-color: #0F3061;
     }
     .program-list {
         padding: 55px 0px;
