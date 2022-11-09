@@ -92,6 +92,7 @@ function getOTP(event) {
   $("#otp-btn").hide();
   $("#participant-btn").show();
   $("#otp").css("visibility","visible");
+  $("#resend-otp").show();
   $('#userNum').attr('readonly', true);
 
 }
