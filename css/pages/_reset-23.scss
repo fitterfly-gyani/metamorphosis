@@ -50,12 +50,16 @@
             .talk-to {
                 margin-left: 25px;
                 a {
+                display: block;
                 font-weight: 500;
                 font-size: 24px;
                 color: #FEC914;
                 border: 2px solid #FEC914;
                 border-radius: 30px;
                 padding: 10px 35px;
+                @media screen and (max-width:1200px){
+                    padding: 15px 30px;
+                }
             }
             }
         }
@@ -158,7 +162,10 @@
             max-width: 810px;
         }
         @media screen and (max-width:1250px) {
-            max-width: 690px;
+            max-width: 650px;
+        }
+        @media screen and (max-width:1150px) {
+            max-width: 600px;
         }
         @media screen and (max-width:1024px) {
             display: none;

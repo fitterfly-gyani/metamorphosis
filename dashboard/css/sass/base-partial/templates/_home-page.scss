@@ -60,6 +60,12 @@
     &.metabolic {
         &::after {
             width: 34%;
+            @media screen and (max-width:1400px) {
+                width: 40%;
+            }
+            @media screen and (max-width:1200px) {
+                width: 45%;
+            }
         }
     }
     &.sleep-well {
@@ -80,6 +86,9 @@
         margin: auto;
         width: 32%;
         border-radius: 0 10px 10px 0;
+        @media screen and (max-width:1210px) {
+            width: 36%;
+        }
     }
 }
 
