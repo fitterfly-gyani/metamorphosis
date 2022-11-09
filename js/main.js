@@ -31,19 +31,69 @@ $(".leaderboard aside-menu ul li").on("click",function(){
 
 
 function checkField() {
-  const $user = $("#username").val();
-  const $pass = $("#password").val();
+  const user = $("#username").val();
+  const pass = $("#password").val();
 
-  if($user.length <4 && $pass.length <2)
+  if(user.length <4 && pass.length <2)
   {
-    $(".btn.btn-pink").addClass('disabled');
+    $(".btn.btn-pink.corporate").addClass('disabled');
 
   }
-  if($user.length >=4 &&  $pass.length >= 2)
+  if(user.length >=4 &&  pass.length >= 2)
   {
-    $(".btn.btn-pink").removeClass('disabled');
+    $(".btn.btn-pink.corporate").removeClass('disabled');
   }
 
+
+}
+
+function checkOTP() {
+  const otp = $("#otp").val();
+  if(otp.length >=1) {
+    $("#participant-btn").removeClass('disabled');
+  }
+}
+
+function checkNum(e) {
+  const num = $("#userNum").val();
+  if(num.length >=9) {
+    $("#otp-btn").removeClass('disabled');
+    return;
+  }
+}
+
+function verifyNumber(event) {
+  $("#userNum").parent().removeClass('error');
+  $("#otp").parent().removeClass('error');
+
+  if($("#userNum").val() == '') {
+    $("#userNum").parent().addClass('error');
+    return;
+  }
+  if($("#otp").val() == '') {
+    $("#otp").parent().addClass('error');
+    return;
+  }
+  if($("#userNum").val() == '0000000000' && $("#otp").val() == '1234')
+  {
+    window.location.href="/dashboard/html/dashboard.html";
+  }
+  else {
+    $("#otp").parent().addClass('error');
+  }
+
+}
+
+function getOTP(event) {
+  if($("#userNum").val() == '') {
+    $("#userNum").parent().addClass('error');
+    return;
+  }
+  $("#otp-btn").hide();
+  $("#participant-btn").show();
+  $("#otp").css("visibility","visible");
+  $("#resend-otp").show();
+  $('#userNum').attr('readonly', true);
 
 }
 
@@ -61,7 +111,7 @@ function verifyUser(event) {
     $("#password").parent().addClass('error');
     return;
   }
-  $(".btn.btn-pink").text('Loading....')
+  $(".btn.btn-pink.corporate").text('Loading...')
   
     const username = $("#username").val();
     const password = $("#password").val();
@@ -83,7 +133,7 @@ function verifyUser(event) {
       $.ajax(settings).done(function (response) {
         if(response.status == 'error') {
 
-          $(".btn.btn-pink").text(nameOfButton);
+          $(".btn.btn-pink.corporate").text(nameOfButton);
             $("#username").parent().addClass('error');
             $("#password").parent().addClass('error');
             // $("#username").siblings().text('Invalid Access');

@@ -57,7 +57,7 @@
         <div class="container">
             <ul class="login-tabs">
                 <li class="active" onclick="showLoginform('member')">
-                    <a href="javascript:void(0);">Member Login</a>
+                    <a href="javascript:void(0);">Participants Login</a>
                 </li>
                 <li onclick="showLoginform('corporate')">
                     <a href="javascript:void(0);">Corporate Login</a>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
-                    <div class="login-form">
+                    <div class="login-form" id="corporate-Form"  style="display:none ;">
                         <div class="form-main">
                             <h2>Login with your credentials </h2>
                             <!-- <p>with your credentials</p> -->
@@ -92,8 +92,30 @@
                             </div>
                             
                             <div class="btn-block">
-                                <a href="javascript:void(0);" onclick="verifyUser(event)" style="display: none;" class="btn btn-pink corporate disabled">Corporate Login</a>
-                                <a href="javascript:void(0);" onclick="verifyUser(event)"  class="btn btn-pink member disabled">Member Login</a>
+                                <a href="javascript:void(0);" onclick="verifyUser(event)" class="btn btn-pink corporate disabled">Corporate Login</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-form" id="participants-Form">
+                        <div class="form-main">
+                            <h2>Login with your credentials </h2>
+                            <!-- <p>with your credentials</p> -->
+                            <div class="divider"></div>
+                            <div class="pt-70 pb-80">
+                                <div class="form-group">
+                                    <input type="text" id="userNum" maxlength="10" onkeydown="return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 46" onkeyup="checkNum(event)" autocomplete="off" placeholder="Enter Mobile Number" value="">
+                                    <div class="err-msg"><img class="mr-10" src="/images/info-icon.svg">Required</div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="otp" onkeyup="checkOTP()" maxlength="4" autocomplete="off" placeholder="Enter OTP" value="" style="visibility: hidden;">
+                                    <div class="err-msg" style="bottom:-8px;"><img class="mr-10" src="/images/info-icon.svg">Incorrect OTP</div>
+                                    <a href="javascript:void(0);" id="resend-otp" style="display: none;text-align: right;padding-top: 2px;">Resend OTP</a>
+                                </div>
+                            </div>
+                            
+                            <div class="btn-block">
+                                <a href="javascript:void(0);" id="otp-btn" onclick="getOTP(event)" class="btn btn-pink  participant disabled">Get OTP</a>
+                                <a href="javascript:void(0);" id="participant-btn" style="display: none;" onclick="verifyNumber(event)" class="btn btn-pink participant disabled">Participants Login</a>
                             </div>
                         </div>
                     </div>
@@ -165,14 +187,18 @@
         $("#username").parent().removeClass('error');
         $("#password").parent().removeClass('error');
         if(val == 'member') {
-            $(".btn.btn-pink.corporate").hide();
-            $(".btn.btn-pink.member").show();
-            $(".btn.btn-pink.member").text('Member Login');
+            $("#corporate-Form").hide();
+            $("#participants-Form").show();
+            // $(".btn.btn-pink.corporate").hide();
+            // $(".btn.btn-pink.member").show();
+            // $(".btn.btn-pink.member").text('Member Login');
         }
         else if(val == 'corporate') {
-            $(".btn.btn-pink.corporate").show();
-            $(".btn.btn-pink.corporate").text('Corporate Login');
-            $(".btn.btn-pink.member").hide();
+            $("#corporate-Form").show();
+            $("#participants-Form").hide();
+            // $(".btn.btn-pink.corporate").show();
+            // $(".btn.btn-pink.corporate").text('Corporate Login');
+            // $(".btn.btn-pink.member").hide();
         }
     }
     $(".login-tabs li").on("click",function(){
