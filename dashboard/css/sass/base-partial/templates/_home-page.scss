@@ -89,6 +89,9 @@
         @media screen and (max-width:1210px) {
             width: 36%;
         }
+        @media screen and (max-width:1024px) {
+            width: 43% !important;
+        }
     }
 }
 
@@ -184,4 +187,7 @@
     margin-bottom: 40px;
     margin-top: 40px;
     border-radius: 0px 10px 10px 0;
+    @media only screen and (max-width: 1024px){
+       line-height: 30px;
+    }
 }

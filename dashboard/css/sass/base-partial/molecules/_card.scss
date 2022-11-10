@@ -16,7 +16,7 @@
     }
     .bg-weldon {
         background-color: #DBF4F2;
-    }
+    } 
     .bg-blue {
         background: #EFF5FA !important;
     }
@@ -415,3 +415,16 @@
         color: #166780;        
     }
 }
+
+@media only screen and (max-width: 1024px){
+    .card-body{
+        height: 235px !important;
+    }
+    .data-name{
+        font-size: 10px !important;
+        line-height: 13px !important;
+    }
+}
+
+    
+
