@@ -228,9 +228,12 @@
 }
 
 .weekly-challenge-sec{
-    padding:0px 0px 100px 0px;
+    padding:100px 0px 100px 0px;
     background-color: #021D45;
     text-align: center;
+    &.last{
+        padding:0px 0px 100px 0px;
+    }
     .benefit-div{
         h2{
             font-size: 44px;
