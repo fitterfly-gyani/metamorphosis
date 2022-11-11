@@ -66,3 +66,17 @@
     display: flex;
     justify-content: center;
 }
+
+.btn-red {
+    display: flex;
+    min-width: 140px;
+    background-color: #E83D62;
+    margin-left: 22px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: #fff;
+    &.disabled{
+        background: #A3B2C2;
+    }
+}

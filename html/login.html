@@ -77,8 +77,8 @@
                 <div class="col-md-6 p-0">
                     <div class="login-form" id="corporate-Form"  style="display:none ;">
                         <div class="form-main">
-                            <h2>Login with your credentials </h2>
-                            <!-- <p>with your credentials</p> -->
+                            <h2>Login</h2>
+                            <p>with your credentials</p>
                             <div class="divider"></div>
                             <div class="pt-70 pb-80">
                                 <div class="form-group">
@@ -98,24 +98,39 @@
                     </div>
                     <div class="login-form" id="participants-Form">
                         <div class="form-main">
-                            <h2>Login with your credentials </h2>
-                            <!-- <p>with your credentials</p> -->
+                            <h2>Login</h2>
+                            <p>with your credentials</p>
                             <div class="divider"></div>
-                            <div class="pt-70 pb-80">
-                                <div class="form-group">
-                                    <input type="text" id="userNum" maxlength="10" onkeydown="return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 46" onkeyup="checkNum(event)" autocomplete="off" placeholder="Enter Mobile Number" value="">
-                                    <div class="err-msg"><img class="mr-10" src="/images/info-icon.svg">Required</div>
+                            <div class="pt-70 pb-80" >
+                                <div class="form-group" id="numcheckerror">
+                                    <label for="">Contact Number</label>
+                                    <div class="d-flex">
+                                        <input type="text" id="userNum" maxlength="13" onkeydown="return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 46" onkeyup="checkNum(event)" autocomplete="off" placeholder="+91" value="">
+                                        <a href="javascript:void(0);"  id="otp-btn" class="btn-red disabled" onclick="getOTP(event)">Send Otp</a>
+                                    </div>
+                                    <span class="otp-info">
+                                        You will receive a one time password(OTP) to verify your number
+                                    </span>
+                                    <!-- <div class="err-msg"><img class="mr-10" src="/images/info-icon.svg">Required</div> -->
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" id="otp" onkeyup="checkOTP()" maxlength="4" autocomplete="off" placeholder="Enter OTP" value="" style="visibility: hidden;">
-                                    <div class="err-msg" style="bottom:-8px;"><img class="mr-10" src="/images/info-icon.svg">Incorrect OTP</div>
+                                <div class="form-group" id="otp-form" style="display: none;">
+                                    <label for="">OTP</label>
+                                    <div class="otp-boxes" id="otp">
+                                        <input onmouseenter="OTPInput()" id="first-main" type="number">
+                                        <input id="second-main" type="number">
+                                        <input id="third-main" type="number">
+                                        <input id="fourth-main" onkeypress="if (this.value.length >0) return false;" type="number">
+                                    </div>
+                                    <span class="otp-info intro">Enter your 4-digit OTP here</span>
+                                    <span class="resend-otp-text" style="display: none;">Wrong OTP entered. Your code will expire in 01:08 <a href="javascipt:void(0);">Resend OTP</a></span>
+                                    <!-- <input type="password" id="otp" onkeyup="checkOTP()" maxlength="4" autocomplete="off" placeholder="Enter OTP" value="" style="visibility: hidden;"> -->
+                                    <!-- <div class="err-msg" style="bottom:-8px;"><img class="mr-10" src="/images/info-icon.svg">Incorrect OTP</div> -->
                                     <a href="javascript:void(0);" id="resend-otp" style="display: none;text-align: right;padding-top: 2px;">Resend OTP</a>
                                 </div>
                             </div>
                             
                             <div class="btn-block">
-                                <a href="javascript:void(0);" id="otp-btn" onclick="getOTP(event)" class="btn btn-pink  participant disabled">Get OTP</a>
-                                <a href="javascript:void(0);" id="participant-btn" style="display: none;" onclick="verifyNumber(event)" class="btn btn-pink participant disabled">Participants Login</a>
+                                <a href="javascript:void(0);" id="participant-btn" style="display: none;" onclick="verifyNumber(event)" class="btn btn-pink participant"> Login</a>
                             </div>
                         </div>
                     </div>
@@ -206,5 +221,33 @@
         $(this).addClass('active')
     });
    </script>
+   <script>
+    function OTPInput() {
+    const inputs = document.querySelectorAll('#otp > input');
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('keydown', function(event) {
+        if (event.key === "Backspace") {
+            inputs[i].value = '';
+            if (i !== 0)
+            inputs[i - 1].focus();
+        } else {
+            if (i === inputs.length - 1 && inputs[i].value !== '') {
+            return true;
+            } else if (event.keyCode > 47 && event.keyCode < 58) {
+            inputs[i].value = event.key;
+            if (i !== inputs.length - 1)
+                inputs[i + 1].focus();
+            event.preventDefault();
+            } else if (event.keyCode > 64 && event.keyCode < 91) {
+            inputs[i].value = String.fromCharCode(event.keyCode);
+            if (i !== inputs.length - 1)
+                inputs[i + 1].focus();
+                 event.preventDefault();
+            }
+            }
+            });
+        }
+    }
+</script>
 </body>
 </html>

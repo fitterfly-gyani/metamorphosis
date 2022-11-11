@@ -63,38 +63,62 @@ function checkNum(e) {
 }
 
 function verifyNumber(event) {
-  $("#userNum").parent().removeClass('error');
-  $("#otp").parent().removeClass('error');
+  const num = $("#userNum").val();
+  let main1 = $("#first-main").val();
+  let main2 = $("#second-main").val();
+  let main3 =  $("#third-main").val();
+  let main4 = $("#fourth-main").val();
 
-  if($("#userNum").val() == '') {
-    $("#userNum").parent().addClass('error');
+  const otp = main1 + main2 + main3 + main4;
+
+  if(otp.length <=3) {
+    $(".otp-boxes").addClass('error');
     return;
   }
-  if($("#otp").val() == '') {
-    $("#otp").parent().addClass('error');
-    return;
-  }
-  if($("#userNum").val() == '0000000000' && $("#otp").val() == '1234')
-  {
-    window.location.href="/dashboard/html/dashboard.html";
+
+  if(num == '0000000000' && otp == '1234') {
+    $("#numcheckerror").removeClass('error');
+    $(".otp-boxes").removeClass('error');
+    window.location.href="/dashboard/html/participants-dashboard.html";
   }
   else {
-    $("#otp").parent().addClass('error');
+    $(".intro.otp-info").hide();
+    $(".resend-otp-text").show();
+    $("#numcheckerror").addClass('error');
+    $(".otp-boxes").addClass('error');
   }
+
+  console.log(otp);
+  // if($("#userNum").val() == '') {
+  //   $("#userNum").parent().addClass('error');
+  //   return;
+  // }
+  // if($("#otp").val() == '') {
+  //   $("#otp").parent().addClass('error');
+  //   return;
+  // }
+  // if($("#userNum").val() == '0000000000' && $("#otp").val() == '1234')
+  // {
+  //   window.location.href="/dashboard/html/dashboard.html";
+  // }
+  // else {
+  //   $("#otp").parent().addClass('error');
+  // }
 
 }
 
 function getOTP(event) {
+  const num = $("#userNum").val();
   if($("#userNum").val() == '') {
-    $("#userNum").parent().addClass('error');
+    $("#numcheckerror").addClass('error');
     return;
   }
-  $("#otp-btn").hide();
-  $("#participant-btn").show();
-  $("#otp").css("visibility","visible");
-  $("#resend-otp").show();
-  $('#userNum').attr('readonly', true);
-
+  if(num.length >= 9) {
+    $("#numcheckerror").removeClass('error');
+    $("#otp-form").show();
+    $("#participant-btn").show();
+  }
+  
 }
 
 function verifyUser(event) {
