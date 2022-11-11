@@ -62,6 +62,11 @@
         }
     }
     
+    .no-ht{
+        height: unset;
+    }
+    
+
 }
 
 .round-box{
@@ -414,4 +419,8 @@
         line-height: 11px;
         color: #166780;        
     }
+}
+
+.text-yellow{
+    color: #FEC914 !important;
 }

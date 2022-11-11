@@ -8,12 +8,12 @@
         content: "";
         background-image: url(/images/banner-bg.svg);
         background-position: left;
-        background-size: 100% 80%;
+        background-size: 100% 75%;
         width: 100%;
         height: 100%;
         position: absolute;
-        left: -23px;
-        top: -66px;
+        left: -7px;
+        top: -105px;
         background-repeat: no-repeat;
         @media only screen and (max-width: 991px){
             display: none;
@@ -228,7 +228,7 @@
 }
 
 .weekly-challenge-sec{
-    padding: 130px 0px 100px 0px;
+    padding:0px 0px 100px 0px;
     background-color: #021D45;
     text-align: center;
     .benefit-div{
@@ -301,6 +301,13 @@
                 padding-bottom: 20px;
             }
         }
+        p.benefit-notice {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 500;
+            color: #708092;
+            margin-top: 0px;
+        }
     }
     .challenges-div{
         margin-top: 100px;
@@ -336,6 +343,7 @@
             margin-top: 20px;
         }
     }
+    
 }
 .benefit-challenge-sec {
     background-color:#1C4685;
@@ -377,7 +385,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        max-width: 420px;
+        max-width: 430px;
         .point{
             display: flex;
             align-items: flex-start;
@@ -450,7 +458,7 @@
         position: absolute;
         background-position: bottom;
         background-size: cover;
-        left: -13px;
+        left: -19px;
         bottom: -38px;
         background-repeat: no-repeat;
         z-index: 99;
