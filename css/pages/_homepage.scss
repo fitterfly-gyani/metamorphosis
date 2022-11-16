@@ -373,6 +373,7 @@
         max-height: 564px;
         background-image: url(/images/participate-bg.png);
         left: 0;
+        top: 0;
         background-repeat: no-repeat;
     }
     .ps-titel{
@@ -502,6 +503,32 @@
         background-size: cover;
         left: 0;
         bottom: -38px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.mindful-eating:before{
+        content: "";
+        width: 205px;
+        height: 330px;
+        background-image: url(/images/mindful-eating.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0;
+        bottom: -38px;
+        background-repeat: no-repeat;
+        z-index: 99;
+    }
+    &.lower-pain:before {
+        content: "";
+        width: 192px;
+        height: 352px;
+        background-image: url(/images/lower-pain.png);
+        position: absolute;
+        background-position: bottom;
+        background-size: cover;
+        left: 0;
+        bottom: 0;
         background-repeat: no-repeat;
         z-index: 99;
     }

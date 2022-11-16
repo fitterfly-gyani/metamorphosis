@@ -51,7 +51,7 @@
 .participant-box{
     position: relative;
     z-index: 4;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     &.weight {
         &::after{
             width: 22%;
@@ -90,6 +90,13 @@
             width: 36%;
         }
     }
+    .participant-title {
+        color: #166780;
+        text-align: right;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 33px;
+    }
 }
 
 .card-name{
@@ -97,7 +104,7 @@
     margin-bottom: 10px;
 }
 .new-joinee-sec {
-    margin: 70px 0;
+    margin: 60px 0 35px;
 }
 .count-block{
     .count{
