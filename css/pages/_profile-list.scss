@@ -40,6 +40,22 @@
                     overflow: hidden;
                     @extend .flex-center;
                     flex: none;
+                    &.dark {
+                        background-image: url('/images/dark.svg');
+
+                    }
+                    &.pink {
+                        background-image: url('/images/pink.svg');
+
+                    }
+                    &.blue {
+                        background-image: url('/images/blue.svg');
+
+                    }
+                    &.white-blue {
+                    background-image: url('/images/white-blue.svg');
+                    }
+
                 }
                 .profile-info{
                     flex:1;
