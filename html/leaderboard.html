@@ -64,7 +64,7 @@
                 <div class="col-md-3">
                     <div class="aside-menu">
                         <ul>
-                            <li class="active">Top Companies</li>
+                            <li class="active">Companies</li>
                             <li>Top Performers</li>
                             <li>Weekly Challenge Leaders</li>
                         </ul>
@@ -487,7 +487,7 @@
         $(".leaderboard .aside-menu ul li").on("click",function(){
         $(".leaderboard .aside-menu ul li").removeClass("active");
         $(this).addClass("active");
-            if($(this).html() == 'Top Companies') {
+            if($(this).html() == 'Companies') {
                 $("#topPerformance").hide();
                 $("#weeklyChallenge").hide();
                 $("#topCompanies").show();
