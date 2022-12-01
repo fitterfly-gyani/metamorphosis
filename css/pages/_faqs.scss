@@ -31,6 +31,23 @@
         background: #F0E7D2;
         border-radius: 0px 23px 23px 23px;
         padding: 40px 16px; 
+        .eligib-links {
+            padding-left: 25px;
+            position: absolute;
+            bottom: 60px;
+            p {
+                color: #021D45;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .link{
+                font-size: 20px;
+                color: #166780;
+                text-decoration: underline;
+            }
+        }
+        
     }
     margin-bottom: 30px;
     // &:last-child {

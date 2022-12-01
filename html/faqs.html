@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metamorphosis</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.svg">
     <link rel="stylesheet" href="/css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -12,12 +12,22 @@
     <header class="header">
         <div class="container">
             <div class="header-wrap">
+                <div class="icon-burger">
+                    <span class="burger-patty"></span>
+                    <span class="burger-patty"></span>
+                    <span class="burger-patty"></span>
+                </div>
                 <div class="logo">
                     <a href="/">
                         <img src="/images/fitterfly-logo.svg" alt="">
                     </a>
                 </div>
                 <div class="nav">
+                    <div class="mob-logo">
+                        <a href="/">
+                            <img src="/images/metamorphosis-header.svg" alt="">
+                        </a>
+                    </div>
                     <ul>
                         <li>
                             <a href="/">Home</a>
@@ -41,13 +51,11 @@
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <a href="/html/login.html" target="_blank" class="login-btn">Login</a>
-                    <div class="icon-burger">
-                        <span class="burger-patty"></span>
-                        <span class="burger-patty"></span>
-                        <span class="burger-patty"></span>
+                    <a href="/html/login.html" target="_blank"  class="login-btn">Login</a>
+                    <a href="/html/login.html" target="_blank" class="login-mob-btn" style="width: 20px;" >
+                        <img src="/images/login-icon-header.svg" alt="">
+                    </a>
                 </div>
-            </div>
             </div>          
         </div>
     </header>
@@ -59,32 +67,48 @@
 
             <h3 class="mb-60"></h3>
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="eligib-box">
                         <div class="eligib-head-card">Diabetes Challenge Participants</div>
                         <div class="eligib-body-card">
                             <ul class="bullet-list">
-                                <li>Only for people with Type 2diabetes (HbA1C>6.5)
-                                    <a class="link d-flex" href="#">(Diabetes Reversal Calculator)</a>
+                                <li>Only for people with Type 2 diabetes (HbA1C>6.5) or prediabetes
                                 </li>
                                 <li>No major surgery in the last 3 months
-                                    <a class="link d-flex" href="#">(Pre Diabetes Risk Test)</a>
                                 </li>
                                 <li>Not recommended for pregnant women</li>
                                 <li>Less than 65 years of age</li>
                             </ul>
+                            <div class="eligib-links">
+                                <p class="">
+                                    Check your eligibility with these tests:
+                                </p>
+                                <div>
+                                    <a class="link " href="#">Diabetes Reversal </a> &nbsp;
+                                    <a class="link" href="#"> Pre Diabetes Risk</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="eligib-box">
                         <div class="eligib-head-card">Weight Challenge Participants </div>
                         <div class="eligib-body-card">
                             <ul class="bullet-list">
-                                <li>If your BMI is within 25-40. <br> <a class="link" href="">(Check your BMI)</a></li>
+                                <li>If your BMI is within 25-40. </li>
                                 <li>Not recommended for pregnant women</li>
                                 <li>No major surgery in the last 3 months</li>
                             </ul>
+                            <div class="eligib-links">
+                                <p class="">
+                                    Check your eligibility with these tests:
+                                </p>
+                                <div>
+                                    <a class="link " href="#">Check your BMI</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,9 +345,22 @@
         });
     </script>
     <script>
-        $(".icon-burger").on("click",function(){
-        $(this).toggleClass('active');
-        $(".nav").toggleClass('active');
+       $(".icon-burger").on("click",function(){
+            $(this).toggleClass('active');
+            $("body").toggleClass('overflow-hide');
+            $(".nav").toggleClass('active');
+            $(document).ready(function(){
+                $(document).mouseup(function(e){
+                    var menu = $('.nav');
+                    if (!menu.is(e.target) // The target of the click isn't the container.
+                    && menu.has(e.target).length === 0) // Nor a child element of the container
+                    {
+                        $(".icon-burger").removeClass('active');
+                        $("body").removeClass('overflow-hide');
+                        $(".nav").removeClass('active');
+                    }
+                });
+            });    
         });
    </script>
 </body>
