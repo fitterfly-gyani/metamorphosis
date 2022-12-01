@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitterfly Metamorphosis Corporate Metabolic Health Challenge</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.svg">
     <link rel="stylesheet" href="/css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
@@ -15,14 +15,24 @@
     <header class="header">
         <div class="container">
             <div class="header-wrap">
+                <div class="icon-burger">
+                    <span class="burger-patty"></span>
+                    <span class="burger-patty"></span>
+                    <span class="burger-patty"></span>
+                </div>
                 <div class="logo">
                     <a href="/">
                         <img src="/images/fitterfly-logo.svg" alt="">
                     </a>
                 </div>
                 <div class="nav">
+                    <div class="mob-logo">
+                        <a href="/">
+                            <img src="/images/metamorphosis-header.svg" alt="">
+                        </a>
+                    </div>
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="/">Home</a>
                         </li>
                         <li>
@@ -44,13 +54,11 @@
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <a href="/html/login.html" target="_blank" class="login-btn">Login</a>
-                    <div class="icon-burger">
-                        <span class="burger-patty"></span>
-                        <span class="burger-patty"></span>
-                        <span class="burger-patty"></span>
+                    <a href="/html/login.html" target="_blank"  class="login-btn">Login</a>
+                    <a href="/html/login.html" target="_blank" class="login-mob-btn" style="width: 20px;" >
+                        <img src="/images/login-icon-header.svg" alt="">
+                    </a>
                 </div>
-            </div>
             </div>          
         </div>
     </header>
@@ -129,7 +137,7 @@
                             </div>
                             <h4>No "sanyas" only sustainability</h4>
                             <p>No dairy, no meat, no eating out & no fun? Don’t let unrealistic expectations demotivate you. 
-                                Reset23 gives you access to nutritious & healthy regional recipes.
+                                Fitterfly Weight Loss gives you access to nutritious & healthy regional recipes.
                             </p>
                         </div>
                     </div>
@@ -140,7 +148,7 @@
                             </div>
                             <h4>Most economical weight loss plan</h4>
                             <p>Why spend money on gym, supplements & workout gear? 
-                                Reset23 provides you with multiple consults & an inexpensive, simple home food like a diet plan
+                                Fitterfly Weight Loss provides you with multiple consults & an inexpensive, simple home food like a diet plan
                             </p>
                         </div>
                     </div>
@@ -151,7 +159,7 @@
                             </div>
                             <h4>Focuses on forming healthy habits</h4>
                             <p>Worried about having to do double work by making two different meals for 
-                                you & everyone else? Reset23's simple & delicious foods are easy to make.
+                                you & everyone else? Fitterfly Weight Loss's simple & delicious foods are easy to make.
                             </p>
                         </div>
                     </div>
@@ -261,7 +269,7 @@
                 </div>
                 <div class="col-md-5 align-self-center ">
                     <p class="program-desc">A 3-month specialised, personalized weight loss program with stubborn weight issues. 
-                        There is no one size fits all when it comes to diet, fitness & weight loss. Reset23 personalizes everything based on a detailed assessment of your food habits, stress, sleep issues & pain. To create a perfect weight loss plan for you that delivers proven results.</p>
+                        There is no one size fits all when it comes to diet, fitness & weight loss. Fitterfly Weight Loss personalizes everything based on a detailed assessment of your food habits, stress, sleep issues & pain. To create a perfect weight loss plan for you that delivers proven results.</p>
 
                     <div class="btn-block">
                         <a href="#"  class="btn btn-blue">Enroll Now
@@ -486,8 +494,21 @@
 
 <script>
     $(".icon-burger").on("click",function(){
-    $(this).toggleClass('active');
-    $(".nav").toggleClass('active');
+        $(this).toggleClass('active');
+        $("body").toggleClass('overflow-hide');
+        $(".nav").toggleClass('active');
+        $(document).ready(function(){
+            $(document).mouseup(function(e){
+                var menu = $('.nav');
+                if (!menu.is(e.target) // The target of the click isn't the container.
+                && menu.has(e.target).length === 0) // Nor a child element of the container
+                {
+                    $(".icon-burger").removeClass('active');
+                    $("body").removeClass('overflow-hide');
+                    $(".nav").removeClass('active');
+                }
+            });
+        });    
     });
 </script>
 </body>

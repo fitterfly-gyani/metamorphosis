@@ -1,10 +1,20 @@
-
-
 $(".icon-burger").on("click",function(){
   $(this).toggleClass('active');
+  $("body").toggleClass('overflow-hide');
   $(".nav").toggleClass('active');
+  $(document).ready(function(){
+      $(document).mouseup(function(e){
+          var menu = $('.nav');
+          if (!menu.is(e.target) // The target of the click isn't the container.
+          && menu.has(e.target).length === 0) // Nor a child element of the container
+          {
+              $(".icon-burger").removeClass('active');
+              $("body").removeClass('overflow-hide');
+              $(".nav").removeClass('active');
+          }
+      });
+  });    
 });
-
 
 $(function() {
     $(window).on("scroll", function() {
@@ -16,12 +26,23 @@ $(function() {
         }
     });
 });
-
 $(".icon-burger").on("click",function(){
   $(this).toggleClass('active');
+  $("body").toggleClass('overflow-hide');
   $(".nav").toggleClass('active');
+  $(document).ready(function(){
+      $(document).mouseup(function(e){
+          var menu = $('.nav');
+          if (!menu.is(e.target) // The target of the click isn't the container.
+          && menu.has(e.target).length === 0) // Nor a child element of the container
+          {
+              $(".icon-burger").removeClass('active');
+              $("body").removeClass('overflow-hide');
+              $(".nav").removeClass('active');
+          }
+      });
+  });    
 });
-
 $(".leaderboard aside-menu ul li").on("click",function(){
   $(".leaderboard aside-menu ul li").removeClass("active");
   $(this).addClass("active");

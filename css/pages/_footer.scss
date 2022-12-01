@@ -1,10 +1,13 @@
 .footer {
     background-color: #1C4685;
-    padding: 40px 0;
+    padding: 40px 0 40px;
     .logo{
         margin-bottom: 40px;
         @media screen and (max-width:1024px) {
             margin-bottom: 20px;
+        }
+        @media screen and (max-width:768px) {
+            text-align: center;
         }
     }
     .about-fitterfly {
@@ -16,17 +19,48 @@
         @media screen and (max-width:1024px) {
             margin-bottom: 10px; 
         }
+        @media screen and (max-width:768px) {
+            text-align: center;
+            margin-bottom: 25px;
+        }
     }
     .social-block {
         display: flex;
         .social-icon {
-            margin: 0 15px;
+            margin: 0 10px;
+            width: 30px;
             &:first-child{
                 margin-left: 0px;
             }
         }
         @media screen and (max-width:1024px) {
             margin-bottom: 20px;
+        }
+        @media screen and (max-width:768px) {
+            padding: 20px 0;
+            margin-bottom: 25px;
+            justify-content: center;
+            position: relative;
+            &::before {
+                width: 38%;
+                content: "";
+                position: absolute;
+                height: 1px;
+                background: #1A3D72;
+                top: 0px;
+                margin: auto;
+                margin-right: 15px;
+            }
+            &::after {
+                width: 38%;
+                content: "";
+                position: absolute;
+                height: 1px;
+                background: #1A3D72;
+                bottom: 0px;
+                margin: auto;
+                margin-right: 15px;
+            }
         }
     }
     .contact-details{
@@ -36,6 +70,9 @@
             @media screen and (max-width:1024px) {
                 margin-bottom: 20px;
             }
+            @media screen and (max-width:768px) {
+                display: none;
+            }
         }
         .contact-list{
             display: flex;
@@ -44,6 +81,9 @@
                 line-height: 25px;
                 img{
                     margin-right: 10px;
+                    @media screen and (max-width:768px) {
+                        width: 20px;
+                    }
                 }
                 color: #fff;
                 font-weight: 400;
@@ -51,9 +91,25 @@
                 margin-bottom: 15px;
                 &:last-child {
                     margin-bottom: 0;
+                    @media screen and (max-width:768px) {
+                        width: 93%;
+                        text-align: center;
+                        align-items: self-start;
+                        margin: auto;
+                    }
+                    img {
+                        margin-top: 5px;
+                    }
                 }
             }
+            @media screen and (max-width:768px) {
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
         }
         
     }
+   
 }
