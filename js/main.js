@@ -189,7 +189,7 @@ function verifyUser(event) {
         $(".btn.btn-pink").text(nameOfButton);
         // var url = window.location.origin + '/dashboard/dashboard.html';
         // window.open(url,"_blank");
-        window.location.href="/dashboard/dashboard.html";
+        window.location.href="/dashboard/";
       });
 }
 

@@ -1,33 +1,33 @@
 .home-page{
     .container-wrap{
-        //background: url('./../images/tt-participant.svg') no-repeat bottom left;
+        //background: url('./images/tt-participant.svg') no-repeat bottom left;
     }
     .footer{
         &.lab-parameter {
-            background: url(./../images/medical-report-footer.svg) no-repeat bottom left 0px;
+            background: url(../images/medical-report-footer.svg) no-repeat bottom left 0px;
             background-size: contain;
         }
         &.nutrion-score {
-            background: url(./../images/nutrition-score-footer.svg) no-repeat bottom left 0px;
+            background: url(../images/nutrition-score-footer.svg) no-repeat bottom left 0px;
         }
         &.total-participate {
-        background: url(./../images/tt-participant.svg) no-repeat bottom left -45px;
+        background: url(../images/tt-participant.svg) no-repeat bottom left -45px;
         }
         &.sleep-well {
-            background: url(./../images/sleep-well-footer.svg) no-repeat  bottom left -45px ;
+            background: url(../images/sleep-well-footer.svg) no-repeat  bottom left -45px ;
         }
         &.team-work {
-            background: url(./../images/teamwork-footer.svg) no-repeat  bottom left -15px ;
+            background: url(../images/teamwork-footer.svg) no-repeat  bottom left -15px ;
         }
         &.metabolic-health {
-            background: url(./../images/metabolic-health-score-footer.svg) no-repeat  bottom left -15px ;
+            background: url(../images/metabolic-health-score-footer.svg) no-repeat  bottom left -15px ;
         }
         &.metabolic-disease {
-            background: url(./../images/metabolic-disease-footer.svg) no-repeat  bottom left -15px ;
+            background: url(../images/metabolic-disease-footer.svg) no-repeat  bottom left -15px ;
             background-size:contain ;
         }
         &.weight {
-            background: url(./../images/weight-footer.svg) no-repeat  bottom left -15px ;
+            background: url(../images/weight-footer.svg) no-repeat  bottom left -15px ;
 
         }
         padding-top: 130px;
