@@ -1,5 +1,8 @@
 .form-sec{
     margin-bottom: 96px;
+    @media screen and (max-width:991px) {
+        margin-bottom: 0px;
+    }
 }
 
 .form-banner{
@@ -8,6 +11,9 @@
     background-color: #0F3061;
     padding-top: 100px;
     padding-bottom: 100px;
+    @media screen  and (max-width:991px){
+         display: none;
+    }
 }
 
 .login-tabs {
@@ -20,6 +26,10 @@
         font-weight: 400;
         position: relative;
         font-family: 'Inter',sans-serif;
+        @media screen and (max-width:991px) {
+            font-size: 18px;
+            line-height: 22px;
+        }
         a{
             color: #A3B2C2;
         }
@@ -38,7 +48,6 @@
             transition: width .3s;
             z-index: 99;
             @media screen and (max-width:1024px) {
-              display: none;
               
             }
           }
@@ -66,6 +75,9 @@
     padding: 64px 56px; 
     background: #EFF5FA;
     height: 100%;
+    @media screen and (max-width:768px) {
+        padding: 40px 25px;
+    }
     .form-main{
         h2{
             color: #021D45;

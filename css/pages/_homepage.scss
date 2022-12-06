@@ -335,14 +335,17 @@
 }
 
 .weekly-challenge-sec{
-    padding:100px 0px 100px 0px;
+    padding:50px 0px 50px 0px;
     background-color: #021D45;
     text-align: center;
     @media screen and (max-width:991px) {
-        padding: 50px 0px 50px 0px;
+        padding: 50px 0px 20px 0px;
     }
     &.mob-view {
-        padding-top: 20px;
+        @media screen and (max-width:768px) {
+            padding-top: 20px;
+
+        }
         .container {
             @media screen and (max-width:768px) {
                 max-width: none;
