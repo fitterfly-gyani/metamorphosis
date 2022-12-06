@@ -131,9 +131,9 @@
 
 .scoring-sec{
     padding-top: 120px;
-    background: #0F3061 url('/images/lb-circ-graph.svg') no-repeat top 34% left;
+    background: #021D45 url('/images/lb-circ-graph.svg') no-repeat top 34% left;
     @media screen and (max-width:768px) {
-        background: #0F3061 url('/images/back-leader.svg') no-repeat top left;
+        background: #021D45 url('/images/back-leader.svg') no-repeat top left;
     }
     h2{
         padding-bottom: 100px;
@@ -255,6 +255,11 @@
             line-height: 16px;
             height: 55px;
             padding: 12px;
+        }
+    }
+    .pl-5 {
+        @media screen and (max-width:768px) {
+            padding-left: 2px;
         }
     }
 }

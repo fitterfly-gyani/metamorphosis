@@ -343,7 +343,7 @@
     }
     &.mob-view {
         @media screen and (max-width:768px) {
-            padding-top: 20px;
+            padding-bottom: 60px;
 
         }
         .container {
@@ -546,7 +546,7 @@
                         font-size: 14px;
                         @media screen and (max-width:576px) {
                             font-size: 12px;
-                            line-height: 14px;
+                            line-height: 15px;
                         }
                     }
                     @media screen and (max-width:481px) {
@@ -601,7 +601,7 @@
     background: #FBF0DC;
     position: relative;
     @media screen and (max-width:991px) {
-        padding: 40px 0;
+        padding: 40px 0px;
     }
     &::before{
         content: "";
@@ -615,8 +615,9 @@
         top: 0;
         background-repeat: no-repeat;
         @media screen and (max-width:991px) {
-            background-size: 80%;
-            top: 20px;
+            background-size: 60%;
+            top: 15px;
+            left: -50px;
         }
     }
     .ps-titel{
@@ -1019,6 +1020,7 @@
         margin-top: 10px;
         @media screen and (max-width:768px) {
             font-size: 12px;
+            line-height: 15px;
         }
     }
     .nutrision{
@@ -1079,7 +1081,7 @@
             height: 100px;
             background: #41B9D5;
             left: 0;
-            bottom: 120px;
+            bottom: 90px;
             @media screen and (max-width:576px) {
                 display: block;
             }
@@ -1092,7 +1094,7 @@
                 @media screen and (max-width:768px) {
                     max-width: 196px;
                     // margin: 0 auto 80px;
-                    margin: 0 auto 120px;
+                    margin: 0 auto 90px;
                 }
             }
         }
@@ -1186,7 +1188,7 @@
         margin-top: 120px;
         position: relative;
         @media screen and (max-width:991px) {
-            margin-top: 50px;
+            margin-top: 65px;
         }
         &::before{
             content: "";
@@ -1231,7 +1233,7 @@
     background-color: #021D45;
     text-align: center;
     @media screen and (max-width:768px) {
-        padding: 30px 0 50px;
+        padding:20px 0 60px;
     }
     .wf-desc{
         font-weight: 500;
@@ -1368,11 +1370,11 @@
         }
     }
 }
-.mob {
+.mob.get-touch {
     display: none;
     @media screen and (max-width:991px) {
         display: block;
-        padding: 30px 0;
+        padding: 30px 0 50px;
     }
     
     .gs-add{
