@@ -100,7 +100,7 @@ function verifyNumber(event) {
   if(num == '0000000000' && otp == '1234') {
     $("#numcheckerror").removeClass('error');
     $(".otp-boxes").removeClass('error');
-    window.location.href="/dashboard/html/participants-dashboard.html";
+    window.location.href="/dashboard/participants-dashboard.html";
   }
   else {
     $(".intro.otp-info").hide();
@@ -120,7 +120,7 @@ function verifyNumber(event) {
   // }
   // if($("#userNum").val() == '0000000000' && $("#otp").val() == '1234')
   // {
-  //   window.location.href="/dashboard/html/dashboard.html";
+  //   window.location.href="/dashboard/dashboard.html";
   // }
   // else {
   //   $("#otp").parent().addClass('error');
@@ -187,9 +187,9 @@ function verifyUser(event) {
             // $("#password").parent().addClass('error');
         }
         $(".btn.btn-pink").text(nameOfButton);
-        // var url = window.location.origin + '/dashboard/html/dashboard.html';
+        // var url = window.location.origin + '/dashboard/dashboard.html';
         // window.open(url,"_blank");
-        window.location.href="/dashboard/html/dashboard.html";
+        window.location.href="/dashboard/dashboard.html";
       });
 }
 

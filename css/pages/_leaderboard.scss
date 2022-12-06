@@ -1,37 +1,90 @@
+.leader-bord-head {
+    h2 {
+        padding: 60px 0;
+        @media screen and (max-width:991px) {
+            padding: 40px 0;
+        }
+        @media screen and (max-width:768px) {
+            padding: 30px 0 5px;
+        }
+    }
+}
+
 .leaderboard{
     background-color: #0F3061;
     background: #0F3061 url('/images/lb-texture.svg') no-repeat bottom left;
-}
+    @media screen and (max-width:768px) {
+        background: #1C4685;
+        padding: 15px;
+    }
 
 .aside-menu{
     padding-top: 85px;
-    ul{
-        li{
-            padding: 24px 24px 17px 15px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 19px;
-            letter-spacing: 0.3px;
-            color: #F0E7D2;
-            cursor: pointer;
-            margin: 0 -15px;
-            position: relative;
-            z-index: 999;
-            &.active, &:visited{
-                background: #41B9D5;
-                color: #021D45; 
+        ul{
+            li{
+                padding: 24px 24px 17px 15px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.3px;
+                color: #F0E7D2;
+                cursor: pointer;
+                margin: 0 -15px;
+                position: relative;
                 z-index: 999;
-                &:before{
-                    content: '';
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
+                &.active, &:visited{
                     background: #41B9D5;
-                    left: -100%;
-                    top: 0;
-                    z-index: -1;
+                    color: #021D45; 
+                    z-index: 999;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        background: #41B9D5;
+                        left: -100%;
+                        top: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+.aside-menu {
+    &.desk {
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    }
+    &.mob {
+        padding: 0;
+        display: none;
+        @media screen and (max-width:768px) {
+            padding: 0;
+            display: block;
+        }
+        ul {
+            overflow: auto;
+            white-space: nowrap;
+            text-align: center;
+            padding: 25px 0 25px 15px;
+            li {
+                color: #F0E7D2;
+                border: 1px solid #F0E7D2;
+                padding: 10px;
+                border-radius: 10px;
+                margin-right: 10px;
+                display: inline-block;
+                font-weight: 500;
+
+                &.active {
+                    background-color: #41B9D5;
+                    color: #021D45;
+
                 }
             }
         }
@@ -41,6 +94,9 @@
 .lb-content{
     background: #1C4685;
     padding: 55px 77px 124px;
+    @media screen and (max-width:768px) {
+        padding: 0px;
+    }
     &.pb-55{
         padding-bottom: 55px;
     }
@@ -52,7 +108,11 @@
         line-height: 29px;
         letter-spacing: 0.3px;
         color: #FEC914;
-        margin-bottom: 8px
+        margin-bottom: 8px;
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+     
     }
     .lb-text{
         font-family: 'Inter';
@@ -72,17 +132,35 @@
 .scoring-sec{
     padding-top: 120px;
     background: #0F3061 url('/images/lb-circ-graph.svg') no-repeat top 34% left;
+    @media screen and (max-width:768px) {
+        background: #0F3061 url('/images/back-leader.svg') no-repeat top left;
+    }
     h2{
         padding-bottom: 100px;
+        @media screen and (max-width:768px) {
+            padding-bottom: 40px;
+        }
+    }
+    @media screen and (max-width:768px) {
+        padding-top: 60px;
     }
 }
 
 .scoring-block{
     padding: 0 150px;
+    @media screen and (max-width:991px) {
+        padding: 0;
+    }
     .score-item{
         padding-bottom: 100px;
         &:last-child{
             padding-bottom: 95px;
+            @media screen and (max-width:768px) {
+                padding-bottom: 60px;
+            }
+        }
+        @media screen and (max-width:768px) {
+            padding-bottom: 20px;
         }
     }
     .scoring-title{
@@ -97,9 +175,27 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+
+        @media screen and (max-width:991px) {
+            font-size: 22px;
+            line-height: 28px;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 15px;
+        }
         .title-img{
             @extend .flex-center;
             margin-right: 16px;
+            img {
+                @media screen and (max-width:768px) {
+                    width: 75%;
+                }
+            }
+            @media screen and (max-width:768px) {
+                margin-right: 6px;
+            }
         }
     }
 }
@@ -121,6 +217,17 @@
         color: #F0E7D2;
         text-align: left;
         padding:16px 24px;
+        @media screen and (max-width:991px) {
+            font-size:16px ;
+            line-height: 20px;
+            height: 80px;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 11px;
+            line-height: 16px;
+            height: 55px;
+            padding: 12px;
+        }
     }
     .score-points{
         height: 90px;
@@ -138,5 +245,16 @@
         letter-spacing: 0.3px;
         color: #021D45;
         padding:16px 24px;
+        @media screen and (max-width:991px) {
+            font-size: 18px;
+            line-height: 22px;
+            height: 80px;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 13px;
+            line-height: 16px;
+            height: 55px;
+            padding: 12px;
+        }
     }
 }

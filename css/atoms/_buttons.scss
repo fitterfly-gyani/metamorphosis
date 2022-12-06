@@ -22,12 +22,19 @@
         border-radius: 100%;
         border: 1px solid #fff;
         position: relative;
+        @media screen and (max-width:768px) {
+            width: 25px;
+            height: 25px;
+        }
         &::after {
             content: "";
             width: 25px;
             height: 25px;
             display: flex;
             background: url(/images/right-arw.svg) no-repeat;
+            @media screen  and (max-width:768px){
+                transform: scale(0.7);
+            }
         }
     }
     @media screen and (max-width:1024px) {
@@ -59,6 +66,11 @@
     }
     &.disable{
         background: #A3B2C2;
+    }
+    @media screen and (max-width:768px) {
+        padding: 12px 20px !important;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 

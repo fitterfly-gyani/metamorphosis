@@ -1,6 +1,9 @@
 .program-description-sec {
     background-color: #021D45;
     padding: 100px 0;
+    @media screen and (max-width:991px) {
+        padding: 60px 0;
+    }
     h2 {
         font-size: 32px;
         line-height: 40px;
@@ -13,10 +16,20 @@
     }
     .btn-block{
         justify-content: flex-start;
+        .btn.btn-pink {
+            border: none;
+            padding: 8px 20px !important;
+        }
     }
     .program-desc{
         margin-bottom: 40px;
         color: #41B9D5;
+        @media screen and (max-width:576px) {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+        }
     }
 }
 
@@ -26,15 +39,26 @@
     color: #fff;
     background-color:#021D45 ;
     padding: 100px 0;
+    @media screen and (max-width:991px) {
+        padding: 60px 0;
+    }
     h2 {
         margin-bottom: 40px;
         color: #F0E7D2;
+        @media screen and (max-width:481px) {
+            br {
+                display: none;
+            }
+        }
     }
     .achivement-main {
         position: relative;
         width: fit-content;
         margin: auto;
         padding: 15px 0;
+        @media screen and (max-width:768px) {
+            max-width: 255px;
+        }
         .ach-list {
             display: flex;
             margin-bottom: 15px;
@@ -78,5 +102,23 @@
             height: 100%;
             border-radius: 50px;
         }
+        &.reset,&.diabefly {
+            .ach-list {
+                .text {
+                    @media screen and (max-width:768px) {
+                        max-width: 168px;
+                    }
+                }
+            }
+        }
+        //  {
+        //     .ach-list {
+        //         .text {
+        //             @media screen and (max-width:768px) {
+        //                 max-width: 168px;
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
