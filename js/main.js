@@ -187,7 +187,7 @@ function getMobOTP(event){
     $("#resend-otp-mob").show();
     $("#numcheckerror").hide();
     $(".send-otp").hide();
-    $("#participant-btn").show();
+    $("#participant-btn-mob").show();
   }
 }
 
@@ -197,10 +197,11 @@ function getOTP(event) {
     $("#numcheckerror").addClass('error');
     return;
   }
-  if(num.length >= 9) {
+  console.log(num.length);
+  if(num.length == 10) {
     $("#numcheckerror").removeClass('error');
     $("#otp-form").show();
-    $("#participant-btn").show();
+    $("#participant-btn-desk").show();
   }
   
 }
