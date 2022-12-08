@@ -19,6 +19,7 @@
 .login-tabs {
     display: flex;
     margin-top: 50px;
+    position: relative;
     li {
         // padding: 0 10px;
         font-size: 25px;
@@ -69,14 +70,28 @@
 
         //   }
     }
+    &::after {
+        content: "";
+        width: 417px;
+        height: 1px;
+        background: #ff000042;
+        display: block;
+        position: absolute;
+        bottom: -5px;
+    }
 }
 
 .login-form{
-    padding: 64px 56px; 
+    padding: 30px 50px; 
     background: #EFF5FA;
     height: 100%;
-    @media screen and (max-width:768px) {
-        padding: 40px 25px;
+    @media screen and (max-width:991px) {
+        padding:  25px;
+    }
+    &.participant {
+        @media screen and (max-width:991px) {
+            
+        }
     }
     .form-main{
         h2{
@@ -114,6 +129,16 @@
             &.disabled{
                 background: #A3B2C2;
             }
+            @media screen and (max-width:991px) {
+                height: 50px !important;
+                font-size: 20px !important;
+            }
+        }
+        .form-container {
+            padding: 50px 0;
+        }
+        .corporate-form {
+            padding: 50px 0;
         }
     }
     .otp-info{
@@ -134,7 +159,15 @@
             color:#166780;
             margin-left: 10px;
             border-bottom: 1px solid #166780;
+            @media screen and (max-width:991px) {
+                margin-top: 10px;
+            }
         }
+        @media screen and (max-width:991px) {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
     }
     .otp-boxes {
         display: flex;
@@ -148,11 +181,55 @@
             border-radius: 6px;
             padding: 0px;
             text-align: center;
+            @media screen and (max-width:991px) {
+                width: 50px;
+                height: 70px;
+                border: 1px solid #8692A6;
+            }
         }
         &.error {
             input {
                 border: 2px solid red;
             }
+        }
+    }
+}
+#otp-btn.desk {
+    @media screen and (max-width:991px) {
+        display: none;
+    }
+}
+
+.resend-otp-mob {
+    padding-top: 2px;text-align: center;
+    color: #166780;
+    margin-left: 10px;
+    border-bottom: 1px solid #166780;
+    // display: none !important;
+    @media screen and(max-width:991px) {
+    }
+}
+.mob-otp-time {
+    display: none;
+    @media screen and (max-width:991px) {
+        display: block;     
+        color: #708092;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;  
+        margin-bottom: 5px;
+    }
+}
+.btn-block {
+    &.desk {
+        @media screen and (max-width:991px) {
+            display: none;
+        }
+    }
+    &.mob {
+        display: none;
+        @media screen and (max-width:991px) {
+            display: flex;
         }
     }
 }

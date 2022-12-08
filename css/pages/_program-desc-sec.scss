@@ -2,7 +2,7 @@
     background-color: #021D45;
     padding: 100px 0;
     @media screen and (max-width:991px) {
-        padding: 60px 0;
+        padding: 60px 0 20px;
     }
     h2 {
         font-size: 32px;
@@ -17,7 +17,6 @@
     .btn-block{
         justify-content: flex-start;
         .btn.btn-pink {
-            border: none;
             padding: 8px 20px !important;
         }
     }
@@ -56,9 +55,7 @@
         width: fit-content;
         margin: auto;
         padding: 15px 0;
-        @media screen and (max-width:768px) {
-            max-width: 255px;
-        }
+       
         .ach-list {
             display: flex;
             margin-bottom: 15px;
@@ -102,15 +99,15 @@
             height: 100%;
             border-radius: 50px;
         }
-        &.reset,&.diabefly {
-            .ach-list {
-                .text {
-                    @media screen and (max-width:768px) {
-                        max-width: 168px;
-                    }
-                }
-            }
-        }
+        // &.reset,&.diabefly {
+        //     .ach-list {
+        //         .text {
+        //             @media screen and (max-width:768px) {
+        //                 max-width: 168px;
+        //             }
+        //         }
+        //     }
+        // }
         //  {
         //     .ach-list {
         //         .text {

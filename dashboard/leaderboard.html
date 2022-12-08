@@ -1,0 +1,822 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>Fitterfly Metamorphosis Corporate Metabolic Health Challenge</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="wrapper home-page">
+        <div class="container-wrap">
+            <div class="header">
+                <div class="header-wrap container">
+                    <div class="company-logo">
+                        <span class="img"><a href="/dashboard"><img src="./images/acme-logo.svg" /></a></span>
+                        <div class="logo-text">
+                            <strong class="company-name">KAM Inc</strong>
+                            <span class="company-user">HR Manager</span>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <span class="img"><img src="./images/metamorphsis.svg" /></span>
+                        <div class="img ml-40"></div>
+                        <!-- <a href="/login.html" style="cursor: pointer;position: absolute;right: -40px;">
+                            <svg width="50px" height="50px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon" style="
+                            ">
+                            <path d="M868 732h-70.3c-4.8 0-9.3 2.1-12.3 5.8-7 8.5-14.5 16.7-22.4 24.5a353.84 353.84 0 0 1-112.7 75.9A352.8 352.8 0 0 1 512.4 866c-47.9 0-94.3-9.4-137.9-27.8a353.84 353.84 0 0 1-112.7-75.9 353.28 353.28 0 0 1-76-112.5C167.3 606.2 158 559.9 158 512s9.4-94.2 27.8-137.8c17.8-42.1 43.4-80 76-112.5s70.5-58.1 112.7-75.9c43.6-18.4 90-27.8 137.9-27.8 47.9 0 94.3 9.3 137.9 27.8 42.2 17.8 80.1 43.4 112.7 75.9 7.9 7.9 15.3 16.1 22.4 24.5 3 3.7 7.6 5.8 12.3 5.8H868c6.3 0 10.2-7 6.7-12.3C798 160.5 663.8 81.6 511.3 82 271.7 82.6 79.6 277.1 82 516.4 84.4 751.9 276.2 942 512.4 942c152.1 0 285.7-78.8 362.3-197.7 3.4-5.3-.4-12.3-6.7-12.3zm88.9-226.3L815 393.7c-5.3-4.2-13-.4-13 6.3v76H488c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z" style="stroke: white;" stroke="white" stroke-width="9" fill="white"></path>
+                            </svg>
+                        </a> -->
+                        <a href="/login.html"class="login-btn">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+               
+                <div class="participant-box " style="margin-top: 60px;">
+                    <div class="container">
+                        <div class="row justify-content-between ">
+                            <div class="col-lg-5">
+                                <div class="round-box">
+                                    <div class="flex-align-center">
+                                        <span class="img mr-15"><img src="./images/leaderboard.svg" /></span>
+                                        <strong>Leaderboard</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="leaderboard">
+                    <div class="container offset-lg-0 offset-md-0 offset-sm-0">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="aside-menu desk">
+                                    <ul>
+                                        <li >Daily</li>
+                                        <li class="active">Weekly</li>
+                                        <li>Monthly </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-8 p-0">
+                                <div id="topCompanies" class="lb-content " style="display: none;">
+                                    <!-- <div class="lb-head">Top 10 companies in the race</div> -->
+                                    <!-- <div class="lb-text">This leaderboard will list the top 5 companies in the race</div> -->
+                                    <div class="mt-30">
+                                        <ul class="profile-list leaderboard-sec">
+                                            <li>
+                                                <div class="item">
+                                                    <div class="list-head">Name</div>
+                                                    <div class="list-head">Points</div>
+                                                    <div class="list-head">Rank</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="profile-list leaderboard-sec scroll">
+                                            <li></li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">KAM Inc</div>
+                                                            <span class="team-name">Mumbai</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">9,800</div>
+                                                    <div class="rank">1</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic white-blue"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">HYBG finance</div>
+                                                            <span class="team-name">Mumbai</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,900</div>
+                                                    <div class="rank">2</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic pink"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Troy Holdings</div>
+                                                            <span class="team-name">Bangalore</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,300</div>
+                                                    <div class="rank">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic blue"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">YesLife Health</div>
+                                                            <span class="team-name">Mumbai</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,900</div>
+                                                    <div class="rank">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic dark"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">GRB Foods</div>
+                                                            <span class="team-name">Delhi</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,800</div>
+                                                    <div class="rank">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">KAM Inc</div>
+                                                            <span class="team-name">Mumbai</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">9,800</div>
+                                                    <div class="rank">6</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic white-blue"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">HYBG finance</div>
+                                                            <span class="team-name">Mumbai</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,900</div>
+                                                    <div class="rank">7</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic pink"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Troy Holdings</div>
+                                                            <span class="team-name">Bangalore</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,300</div>
+                                                    <div class="rank">8</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic blue"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">YesLife Health</div>
+                                                            <span class="team-name">Mumbai</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,900</div>
+                                                    <div class="rank">9</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic dark"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">GRB Foods</div>
+                                                            <span class="team-name">Delhi</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,800</div>
+                                                    <div class="rank">10</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="topPerformance" class="lb-content">
+                                    <!-- <div class="lb-head">Top Performers</div> -->
+                                    <!-- <div class="lb-text">The top performers based on the scoring mechanism</div> -->
+                                    <div class="mt-30">
+                                        <ul class="profile-list leaderboard-sec">
+                                            <li>
+                                                <div class="item">
+                                                    <div class="list-head">Name</div>
+                                                    <div class="list-head">Points</div>
+                                                    <div class="list-head">Rank</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="profile-list leaderboard-sec scroll">
+                                            <li></li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">9,800</div>
+                                                    <div class="rank">1</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Brijesh Yadav</div>
+                                                            <span class="team-name">YesLife Health</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,900</div>
+                                                    <div class="rank">2</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Isha Singh</div>
+                                                            <span class="team-name">GRB Foods</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,300</div>
+                                                    <div class="rank">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">Troy Holdings</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,900</div>
+                                                    <div class="rank">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Aman Dhavale</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,800</div>
+                                                    <div class="rank">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">9,800</div>
+                                                    <div class="rank">6</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Brijesh Yadav</div>
+                                                            <span class="team-name">YesLife Health</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,900</div>
+                                                    <div class="rank">7</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Isha Singh</div>
+                                                            <span class="team-name">GRB Foods</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,300</div>
+                                                    <div class="rank">8</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">Troy Holdings</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,900</div>
+                                                    <div class="rank">9</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Aman Dhavale</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,800</div>
+                                                    <div class="rank">10</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="weeklyChallenge" class="lb-content " style="display: none;">
+                                    <!-- <div class="lb-head">Weekly Challenge Leaders</div> -->
+                                    <!-- <div class="lb-text">The weekly challenge winners</div> -->
+                                    <div class="mt-30">
+                                        <ul class="profile-list leaderboard-sec">
+                                            <li>
+                                                <div class="item">
+                                                    <div class="list-head">Name</div>
+                                                    <div class="list-head">Points</div>
+                                                    <div class="list-head">Rank</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="profile-list leaderboard-sec scroll">
+                                           <li></li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Aman Dhavale</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,800</div>
+                                                    <div class="rank">1</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">Troy Holdings</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,900</div>
+                                                    <div class="rank">2</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Isha Singh</div>
+                                                            <span class="team-name">GRB Foods</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,300</div>
+                                                    <div class="rank">3</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Brijesh Yadav</div>
+                                                            <span class="team-name">YesLife Health</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,900</div>
+                                                    <div class="rank">4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">9,800</div>
+                                                    <div class="rank">5</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Aman Dhavale</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,800</div>
+                                                    <div class="rank">6</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">Troy Holdings</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">7,900</div>
+                                                    <div class="rank">7</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Isha Singh</div>
+                                                            <span class="team-name">GRB Foods</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,300</div>
+                                                    <div class="rank">8</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Brijesh Yadav</div>
+                                                            <span class="team-name">YesLife Health</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">8,900</div>
+                                                    <div class="rank">9</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="item">
+                                                    <div class="profile">
+                                                        <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                                        <div class="profile-info">
+                                                            <div class="person-name">Sushmita Kapoor</div>
+                                                            <span class="team-name">KAM Inc</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="points">9,800</div>
+                                                    <div class="rank">10</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+<!--                 
+                <div style="background: #0F3061;">   
+                    <div class="container offset-md-0 offset-lg-0 offset-sm-0">
+                        <div class="row">
+                            <div class="col-lg-4 nopadding ">
+                                <div class="leaderboard-sidebar">
+                                    <ul class="leaderboard-menu">
+                                        <li>
+                                            Daily
+                                        </li>
+                                        <li class="active">Weekly</li>
+                                        <li>
+                                            Monthly 
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 nopadding">
+                                <div class="lb-card leaderboard">
+                                    
+                                    <div class="card-body"> 
+                                        <div>
+                                            <ul class="profile-list">
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="list-head">Name</div>
+                                                        <div class="list-head">Points</div>
+                                                        <div class="list-head">Rank</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Brijesh Yadav</div>
+                                                                <span class="team-name">Tech</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">9,800</div>
+                                                        <div class="rank">1</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Isha Singh</div>
+                                                                <span class="team-name">Marketing</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">8,800</div>
+                                                        <div class="rank">2</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic2.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Monika Kapoor</div>
+                                                                <span class="team-name">Human Resources</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">7,800</div>
+                                                        <div class="rank">3</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic3.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Abhijeet Sharma</div>
+                                                                <span class="team-name">Sales</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">6,800</div>
+                                                        <div class="rank">4</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic4.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Anya</div>
+                                                                <span class="team-name">Tech</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">5,800</div>
+                                                        <div class="rank">5</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic5.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Sonali Srivastava</div>
+                                                                <span class="team-name">Marketing</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">4,800</div>
+                                                        <div class="rank">6</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic6.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Akshay Pal</div>
+                                                                <span class="team-name">Human Resources</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">4,400</div>
+                                                        <div class="rank">7</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic7.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Akansha Awasthi</div>
+                                                                <span class="team-name">Marketing</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">3,800</div>
+                                                        <div class="rank">8</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic8.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Aman Dhavale</div>
+                                                                <span class="team-name">Design</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">2,800</div>
+                                                        <div class="rank">9</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic9.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Mohan Sharma</div>
+                                                                <span class="team-name">Sales</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">1,800</div>
+                                                        <div class="rank">10</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic3.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Abhijeet Sharma</div>
+                                                                <span class="team-name">Sales</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">6,800</div>
+                                                        <div class="rank">4</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic4.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Anya</div>
+                                                                <span class="team-name">Tech</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">5,800</div>
+                                                        <div class="rank">5</div>
+                                                    </div>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+    
+                            </div>
+                        </div>
+                    </div>   
+                    
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+    <style>
+        .svg-item {
+            animation: donutfade 1s;
+        }
+
+        @keyframes donutfade {
+        /* this applies to the whole svg item wrapper */
+            0% {
+                opacity: .2;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .svg-item {
+                width: 80%;
+            }
+        }
+
+        .donut-ring {
+            stroke: #41B9D5;
+        }
+
+        .donut-segment {
+            transform-origin: center;
+            stroke: #FF6200;
+        }
+
+        .donut-segment-2 {
+            stroke: #1A9D25;
+            animation: donut1 3s;
+        }
+
+        @keyframes donut1 {
+            0% {
+                stroke-dasharray: 0, 100;
+            }
+            100% {
+                stroke-dasharray: 50, 50;
+            }
+        }
+    </style>
+    <script>
+        
+
+        $(".leaderboard .aside-menu ul li").on("click",function(){
+            console.log($(this).html());
+        $(".leaderboard .aside-menu ul li").removeClass("active");
+        $(this).addClass("active");
+            if($(this).html() == 'Daily') {
+                $("#topPerformance").hide();
+                $("#weeklyChallenge").hide();
+                $("#topCompanies").show();
+
+            }
+            else if ($(this).html() == 'Weekly') {
+                $("#weeklyChallenge").hide();
+                $("#topCompanies").hide();
+                $("#topPerformance").show();
+              
+            }
+            else if ($(this).html() == 'Monthly') {
+                $("#topCompanies").hide();
+                $("#topPerformance").hide();    
+                $("#weeklyChallenge").show();
+              
+            }
+            
+        return;
+        });
+
+
+        $(".leader-bord-head .aside-menu ul li").on("click",function(){
+        $(".leader-bord-head .aside-menu ul li").removeClass("active");
+        $(this).addClass("active");
+            if($(this).html() == 'Companies') {
+                $("#topPerformance").hide();
+                $("#weeklyChallenge").hide();
+                $("#topCompanies").show();
+
+            }
+            else if ($(this).html() == 'Top Performers') {
+                $("#weeklyChallenge").hide();
+                $("#topCompanies").hide();
+                $("#topPerformance").show();
+              
+            }
+            else if ($(this).html() == 'Weekly Challenge Leaders') {
+                $("#topCompanies").hide();
+                $("#topPerformance").hide();    
+                $("#weeklyChallenge").show();
+              
+            }
+            
+        return;
+        });
+
+    </script>
+</body>
+</html>

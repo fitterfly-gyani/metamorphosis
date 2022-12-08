@@ -30,7 +30,7 @@
                         </a>
                     </div>
                     <ul>
-                        <li class="active">
+                        <li >
                             <a href="/">Home</a>
                         </li>
                         <li>
@@ -88,7 +88,7 @@
                             <h2>Login</h2>
                             <p>with your credentials</p>
                             <div class="divider"></div>
-                            <div class="pt-70 pb-80">
+                            <div class="corporate-form">
                                 <div class="form-group">
                                     <input type="text" id="username" onkeyup="checkField()" autocomplete="off" placeholder="Username/Email id" value="">
                                     <div class="err-msg"><img class="mr-10" src="/images/info-icon.svg">Incorrect Username/Email id</div>
@@ -104,17 +104,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="login-form" id="participants-Form">
+                    <div class="login-form participant" id="participants-Form">
                         <div class="form-main">
                             <h2>Login</h2>
                             <p>with your credentials</p>
                             <div class="divider"></div>
-                            <div class="pt-70 pb-80" >
+                            <div class="form-container" >
                                 <div class="form-group" id="numcheckerror">
                                     <label for="">Contact Number</label>
-                                    <div class="d-flex">
-                                        <input type="text" id="userNum" maxlength="13" onkeydown="return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 46" onkeyup="checkNum(event)" autocomplete="off" placeholder="+91" value="">
-                                        <a href="javascript:void(0);"  id="otp-btn" class="btn-red disabled" onclick="getOTP(event)">Send Otp</a>
+                                    <div class="d-flex " style="position: relative;">
+                                        <input type="text" class="disabled-mob" placeholder="+91" disabled style="border: none;position: absolute;width: 33px;padding: 0px;top: 17px;left: 20px;">
+                                        <input type="text" id="userNum" maxlength="10" onkeydown="return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which == 46" onkeyup="checkNum(event)" autocomplete="off"  value="" style="padding-left: 60px">
+                                        <a href="javascript:void(0);"  id="otp-btn" class="btn-red disabled desk" onclick="getOTP(event)">Send Otp</a>
                                     </div>
                                     <span class="otp-info">
                                         You will receive a one time password(OTP) to verify your number
@@ -135,9 +136,21 @@
                                     <!-- <div class="err-msg" style="bottom:-8px;"><img class="mr-10" src="/images/info-icon.svg">Incorrect OTP</div> -->
                                     <a href="javascript:void(0);" id="resend-otp" style="display: none;text-align: right;padding-top: 2px;">Resend OTP</a>
                                 </div>
+                                <div class="">
+
+                                </div>
                             </div>
-                            
-                            <div class="btn-block">
+                            <div style="text-align: center;margin-bottom: 10px;">
+                                <span class="mob-otp-time" style="display: none;">Wrong OTP entered. Your code will expire in 01:08 </span>
+                                <a href="javascript:void(0);" id="resend-otp-mob" class="resend-otp-mob" style="display: none;">Resend OTP</a>
+                            </div>
+                            <div class="btn-block send-otp">
+                                <a href="javascript:void(0);"  id="otp-btn" class="btn btn-pink  participant" onclick="getMobOTP(event)">Send OTP</a>
+                            </div>
+                            <div class="btn-block mob">
+                                <a href="javascript:void(0);" id="participant-btn" style="display: none;" onclick="verifyNumberMob(event)" class="btn btn-pink participant"> Login</a>
+                            </div>
+                            <div class="btn-block desk">
                                 <a href="javascript:void(0);" id="participant-btn" style="display: none;" onclick="verifyNumber(event)" class="btn btn-pink participant"> Login</a>
                             </div>
                         </div>

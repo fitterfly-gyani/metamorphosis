@@ -80,6 +80,9 @@
             }
             .talk-to {
                 margin-left: 25px;
+                @media screen and (max-width:768px) {
+                    margin-left: 20px;
+                }
                 a {
                     display: block;
                     font-weight: 500;
@@ -92,7 +95,7 @@
                         padding: 15px 30px;
                     }
                     @media screen and (max-width:768px) {
-                        padding: 12px 20px;
+                        padding: 12px 22px;
                         font-size: 16px;
                         line-height: 20px;
                     }
@@ -148,6 +151,7 @@
                 }
             }
             &.second {
+                padding-top: 10px;
                 @media screen and (max-width:991px) {
                     margin-bottom: 40px;
                 }
@@ -188,12 +192,9 @@
 }
 
 .join-program-sec{
-    padding: 70px 0 120px 0;
+    padding: 70px 0 70px 0;
     @media screen and (max-width:991px) {
-        padding: 0px 0 60px;
-    }
-    &.pt {
-        padding-top: 60px;
+        padding:40px 0;
     }
     .jp-main{
         text-align: center;
@@ -282,6 +283,9 @@
         top: 30px;
         transform: rotate(180deg);
         z-index: 9;
+        @media screen and (max-width:991px) {
+            display: none;
+        }
     }
     .wps-title{
         font-weight: 700;

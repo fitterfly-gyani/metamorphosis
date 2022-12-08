@@ -12,14 +12,14 @@
 
 .leaderboard{
     background-color: #0F3061;
-    background: #0F3061 url('/images/lb-texture.svg') no-repeat bottom left;
+    background: #0F3061 url('/images/lb-texture.svg') no-repeat center left;
     @media screen and (max-width:768px) {
         background: #1C4685;
         padding: 15px;
     }
 
 .aside-menu{
-    padding-top: 85px;
+    padding-top: 100px;
         ul{
             li{
                 padding: 24px 24px 17px 15px;
@@ -32,12 +32,13 @@
                 color: #F0E7D2;
                 cursor: pointer;
                 margin: 0 -15px;
+                text-align: center;
                 position: relative;
-                z-index: 999;
+                // z-index: 999;
                 &.active, &:visited{
                     background: #41B9D5;
                     color: #021D45; 
-                    z-index: 999;
+                    // z-index: 999;
                     &:before{
                         content: '';
                         position: absolute;
@@ -93,7 +94,9 @@
 
 .lb-content{
     background: #1C4685;
-    padding: 55px 77px 124px;
+    padding: 20px 77px 0;
+    height: 600px;
+    overflow: auto;
     @media screen and (max-width:768px) {
         padding: 0px;
         background: unset;

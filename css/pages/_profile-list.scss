@@ -22,6 +22,7 @@
                 @media screen and (max-width:768px) {
                     font-size: 12px;
                     line-height: 14px;
+                    width: 25px;
                 }
                 &:first-child{
                     flex:1;
@@ -112,6 +113,7 @@
                 text-align: center;
                 @media screen and (max-width:768px) {
                     font-size: 14px;
+                    width: 25px;
                 }
             }
             .rank{
@@ -130,6 +132,14 @@
                 border-radius: 0px;
             }
         }
+    }
+    &.scroll {
+            max-height: 375px;
+            height: 100%;
+            overflow: auto;
+            @media screen and (max-width:768px) {
+                max-height: unset;
+            }
     }
 }
 

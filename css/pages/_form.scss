@@ -12,6 +12,9 @@ label {
 input{
   &:focus {
     border: 2px solid #166780 !important;
+    @media screen and (max-width:991px) {
+      border: 1px solid  #166780 !important; ;
+    }
   }
 }
 
@@ -33,7 +36,10 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
     -webkit-border-radius: 4px;
     width: 100%;
     -webkit-appearance: none;
-      appearance: none;  
+      appearance: none;
+      @media screen and (max-width:991px) {
+        border: 1px solid #8692A6;
+      }  
     &:hover{
       -webkit-appearance: none;
       appearance: none;
@@ -153,6 +159,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
       input, select, area{
         border: 2px solid #E43A40;
         border-radius: 6px;
+        @media screen and (max-width:991px) {
+          border: 1px solid #E43A40;
+        }
       }
     .err-msg{
       display: flex;
@@ -204,6 +213,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 }
 
+.disabled-mob {
+  border: none;
+  position: absolute;
+  width: 33px;
+  padding: 0px;
+  top: 17px;
+  left: 20px;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
