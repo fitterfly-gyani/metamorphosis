@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/base.css">
+    <link rel="stylesheet" href="./css/base.css">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.svg">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -16,21 +16,22 @@
             <div class="header">
                 <div class="header-wrap container">
                     <div class="company-logo">
-                        <span class="img"><img src="./../images/acme-logo.svg" /></span>
+                        <span class="img"><img src="./images/acme-logo.svg" /></span>
                         <div class="logo-text">
                             <strong class="company-name">KAM Inc</strong>
                             <span class="company-user">HR Manager</span>
                         </div>
                     </div>
                     <div class="logo">
-                        <span class="img"><img src="./../images/metamorphsis.svg" /></span>
+                        <span class="img"><img src="./images/metamorphsis.svg" /></span>
                         <div class="img ml-40"></div>
-                        <a href="/html/login.html" style="cursor: pointer;position: absolute;right: -40px;">
+                        <!-- <a href="/login.html" style="cursor: pointer;position: absolute;right: -40px;">
                             <svg width="50px" height="50px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon" style="
                             ">
                             <path d="M868 732h-70.3c-4.8 0-9.3 2.1-12.3 5.8-7 8.5-14.5 16.7-22.4 24.5a353.84 353.84 0 0 1-112.7 75.9A352.8 352.8 0 0 1 512.4 866c-47.9 0-94.3-9.4-137.9-27.8a353.84 353.84 0 0 1-112.7-75.9 353.28 353.28 0 0 1-76-112.5C167.3 606.2 158 559.9 158 512s9.4-94.2 27.8-137.8c17.8-42.1 43.4-80 76-112.5s70.5-58.1 112.7-75.9c43.6-18.4 90-27.8 137.9-27.8 47.9 0 94.3 9.3 137.9 27.8 42.2 17.8 80.1 43.4 112.7 75.9 7.9 7.9 15.3 16.1 22.4 24.5 3 3.7 7.6 5.8 12.3 5.8H868c6.3 0 10.2-7 6.7-12.3C798 160.5 663.8 81.6 511.3 82 271.7 82.6 79.6 277.1 82 516.4 84.4 751.9 276.2 942 512.4 942c152.1 0 285.7-78.8 362.3-197.7 3.4-5.3-.4-12.3-6.7-12.3zm88.9-226.3L815 393.7c-5.3-4.2-13-.4-13 6.3v76H488c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h314v76c0 6.7 7.8 10.5 13 6.3l141.9-112a8 8 0 0 0 0-12.6z" style="stroke: white;" stroke="white" stroke-width="9" fill="white"></path>
                             </svg>
-                        </a>
+                        </a> -->
+                        <a href="/login.html"class="login-btn">Log Out</a>
                     </div>
                     
                 </div>
@@ -49,15 +50,15 @@
                                 <div class="cardwrap-sec">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <a href="/dashboard/html/total-participants.html">
+                                            <a href="/dashboard/total-participants.html">
                                                 <div class="card mb-30">
                                                     <div class="card-head flex-align-center">
                                                         <div class="flex-align-center">
-                                                            <span class="img mr-10"><img src="./../images/people.svg" width="26"></span>
+                                                            <span class="img mr-10"><img src="./images/people.svg" width="26"></span>
                                                             <h4>Total Participants</h4>
                                                         </div>
                                                         <div>
-                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                            <span><img src="./images/side-arrow.svg" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
@@ -76,10 +77,14 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="joined-membar">
+                                                            <div class="improvement">
+                                                                <div class="improvement-score">5000</div>
+                                                                <div class="improvement-text">Participants joined</div>
+                                                            </div>
+                                                            <!-- <div class="joined-membar">
                                                                 <div class="participants-number">5000</div>
                                                                 <div class="participants-text">participants joined</div>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -87,15 +92,15 @@
                                         </div>
                                             
                                         <div class="col-lg-6">
-                                           <a href="/dashboard/html/metabolic-health.html">
+                                           <a href="/dashboard/metabolic-health.html">
                                             <div class="card mb-30">
                                                 <div class="card-head flex-align-center">
                                                     <div class="flex-align-center">
-                                                        <span class="img mr-10"><img src="./../images/Metabolic-Health Score-logo.svg" width="26"></span>
+                                                        <span class="img mr-10"><img src="./images/Metabolic-Health Score-logo.svg" width="26"></span>
                                                         <h4>Metabolic Health Score</h4>
                                                     </div>
                                                     <div>
-                                                        <span><img src="./../images/side-arrow.svg" /></span>
+                                                        <span><img src="./images/side-arrow.svg" /></span>
                                                     </div>
                                                 </div>
                                                 <div class="card-body bg-blue" style="padding-top: 0; padding-bottom: 0;">
@@ -158,15 +163,15 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <a href="/dashboard/html/metabolic-disease.html">
+                                            <a href="/dashboard/metabolic-disease.html">
                                                 <div class="card mb-30">
                                                     <div class="card-head flex-align-center">
                                                         <div class="flex-align-center">
-                                                            <span class="img mr-10"><img src="./../images/Metabolic-Disease-Risk-logo.svg" width="26"></span>
+                                                            <span class="img mr-10"><img src="./images/Metabolic-Disease-Risk-logo.svg" width="26"></span>
                                                             <h4>Metabolic Disease Risk</h4>
                                                         </div>
                                                         <div>
-                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                            <span><img src="./images/side-arrow.svg" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
@@ -229,15 +234,15 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <a href="/dashboard/html/weight.html">
+                                            <a href="/dashboard/weight.html">
                                                 <div class="card mb-30">
                                                     <div class="card-head flex-align-center">
                                                         <div class="flex-align-center">
-                                                            <span class="img mr-10"><img src="./../images/Weight-logo.svg" width="26"></span>
+                                                            <span class="img mr-10"><img src="./images/Weight-logo.svg" width="26"></span>
                                                             <h4>Weight</h4>
                                                         </div>
                                                         <div>
-                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                            <span><img src="./images/side-arrow.svg" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
@@ -300,15 +305,15 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <a href="/dashboard/html/lab-parameter.html">
+                                            <a href="/dashboard/lab-parameter.html">
                                                 <div class="card mb-30">
                                                     <div class="card-head flex-align-center">
                                                         <div class="flex-align-center">
-                                                            <span class="img mr-10"><img src="./../images/medical-report.svg" width="26"></span>
+                                                            <span class="img mr-10"><img src="./images/medical-report.svg" width="26"></span>
                                                             <h4>Lab Parameter Risk Zone</h4>
                                                         </div>
                                                         <div>
-                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                            <span><img src="./images/side-arrow.svg" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
@@ -371,15 +376,15 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <a href="/dashboard/html/nutrition-score.html">
+                                            <a href="/dashboard/nutrition-score.html">
                                                 <div class="card mb-30">
                                                     <div class="card-head flex-align-center">
                                                         <div class="flex-align-center">
-                                                            <span class="img mr-10"><img src="./../images/nutrition-logo.svg" width="26"></span>
+                                                            <span class="img mr-10"><img src="./images/nutrition-logo.svg" width="26"></span>
                                                             <h4>Nutrition Score</h4>
                                                         </div>
                                                         <div>
-                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                            <span><img src="./images/side-arrow.svg" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
@@ -442,15 +447,15 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                            <a href="/dashboard/html/fitness-score.html">
+                                            <a href="/dashboard/fitness-score.html">
                                                 <div class="card mb-30">
                                                     <div class="card-head flex-align-center">
                                                         <div class="flex-align-center">
-                                                            <span class="img mr-10"><img src="./../images/fitness-score.svg" width="26"></span>
+                                                            <span class="img mr-10"><img src="./images/fitness-score.svg" width="26"></span>
                                                             <h4>Fitness Score</h4>
                                                         </div>
                                                         <div>
-                                                            <span><img src="./../images/side-arrow.svg" /></span>
+                                                            <span><img src="./images/side-arrow.svg" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
@@ -513,15 +518,15 @@
                                         </div>
 
                                         <div class="col-lg-6">
-                                          <a class="" href="/dashboard/html/sleep-well.html">
+                                          <a class="" href="/dashboard/sleep-well.html">
                                             <div class="card mb-30">
                                                 <div class="card-head flex-align-center">
                                                     <div class="flex-align-center">
-                                                        <span class="img mr-10"><img src="./../images/sleeping-logo.svg" width="26"></span>
+                                                        <span class="img mr-10"><img src="./images/sleeping-logo.svg" width="26"></span>
                                                         <h4>Sleep & Well-being Score</h4>
                                                     </div>
                                                     <div>
-                                                        <span><img src="./../images/side-arrow.svg" /></span>
+                                                        <span><img src="./images/side-arrow.svg" /></span>
                                                     </div>
                                                 </div>
                                                 <div class="card-body" style="padding-top: 0; padding-bottom: 0;">
@@ -587,17 +592,12 @@
                             </div>
                             <div class="col-xl-5">
                                 <div class="lb-card">
-                                    <div class="card-head">
+                                    <a href="/leaderboard.html" style="display: block;" class="card-head">
                                         <div class="flex-space-between">
                                             <h4>Leaderboard</h4>
-                                            <div class="dropdown">
-                                                <span>Weekly</span>
-                                                <span class="downarrow">
-                                                    <img src="./../images/down-arrow.svg">
-                                                </span>
-                                            </div>
+                                                <span><img src="./images/side-arrow-black.svg"></span>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="card-body" style="padding-bottom: 25px;"> 
                                         <div>
                                             <ul class="profile-list">
@@ -637,7 +637,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic2.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic2.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Monika Kapoor</div>
                                                                 <span class="team-name">Human Resources</span>
@@ -650,7 +650,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic3.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Abhijeet Sharma</div>
                                                                 <span class="team-name">Sales</span>
@@ -663,7 +663,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic4.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic4.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Anya</div>
                                                                 <span class="team-name">Tech</span>
@@ -676,7 +676,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic5.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic5.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Sonali Srivastava</div>
                                                                 <span class="team-name">Marketing</span>
@@ -689,7 +689,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic6.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Akshay Pal</div>
                                                                 <span class="team-name">Human Resources</span>
@@ -702,7 +702,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic7.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Akansha Awasthi</div>
                                                                 <span class="team-name">Marketing</span>
@@ -715,7 +715,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic8.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Aman Dhavale</div>
                                                                 <span class="team-name">Design</span>
@@ -728,7 +728,7 @@
                                                 <li>
                                                     <div class="item">
                                                         <div class="profile">
-                                                            <div class="profile-pic" style="background-image: url(./../images/default-pic9.png);"></div>
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic9.png);"></div>
                                                             <div class="profile-info">
                                                                 <div class="person-name">Mohan Sharma</div>
                                                                 <span class="team-name">Sales</span>
@@ -738,10 +738,36 @@
                                                         <div class="rank">10</div>
                                                     </div>
                                                 </li>
-                                                
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic3.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Abhijeet Sharma</div>
+                                                                <span class="team-name">Sales</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">6,800</div>
+                                                        <div class="rank">4</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="item">
+                                                        <div class="profile">
+                                                            <div class="profile-pic" style="background-image: url(./images/default-pic4.png);"></div>
+                                                            <div class="profile-info">
+                                                                <div class="person-name">Anya</div>
+                                                                <span class="team-name">Tech</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="points">5,800</div>
+                                                        <div class="rank">5</div>
+                                                    </div>
+                                                </li>
+                                               
                                             </ul>
                                             <div class="view-all">
-                                                <a href="">View all ></a>
+                                                <a href="/leaderboard.html">View all ></a>
                                             </div>
                                         </div>
                                     </div>
@@ -753,7 +779,7 @@
                 
             </div>
             <div class="footer container flex-align-right">
-                <div class="ff-logo"><img src="./../images/ff-logo.svg" /></div>
+                <div class="ff-logo"><img src="./images/ff-logo.svg" /></div>
             </div>
         </div>
     </div>

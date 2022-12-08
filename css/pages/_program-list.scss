@@ -4,9 +4,12 @@ body {
 .program-banner-sec {
     background-color: #021D45;
     padding-top: 95px;
+    @media screen and (max-width:991px) {
+        padding-top: 30px;
+    }
     .row {
         .section-head {
-            h3 {
+            h2 {
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 600;
@@ -16,28 +19,31 @@ body {
                 letter-spacing: 0.03em;
                 color: #41B9D5; 
                 padding: 95px 0px 35px;
-                @media screen and (max-width:1024px){
-                    font-size: 24px;
-                    line-height: 30px;
-                    padding: 0px 0px 25px;
+              @media screen and (max-width:991px) {
+                font-size: 18px;
+                line-height: 21px;
+                padding: 0px 20px 30px;
+                br {
+                    display: none
                 }
+              }
             }
-            h2 {
+            h3 {
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 40px;
-                line-height: 127.02%;
                 text-align: center;
-                letter-spacing: 0.03em;
                 color: #F0E7D2;
                 padding-bottom: 90px;
-                @media screen and (max-width:1024px){
-                    font-size: 35px;
-                    line-height: 115.02%;
-                    letter-spacing: 0.03em;
-                    padding-bottom: 50px;
+                @media screen and (max-width:991px){
+                    margin-bottom: 30px;
+                    padding-bottom: 0;
+                    font-size:20px ;
                 } 
+                @media screen and (max-width:768px) {
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -56,15 +62,19 @@ body {
     }
     .program-list {
         padding: 55px 0px;
+       &.first {
+        padding: 30px 0;
+       }
     }
+   
     .row {
         justify-content: center;
         align-items: center;
     }
     img {
-        @media screen and (max-width:1024px){
+        @media screen and (max-width:768px){
             padding-bottom: 25px;
-            width: 65%;
+            width: 160px;
         }
     }
     h4 {
@@ -76,6 +86,15 @@ body {
         letter-spacing: 0.03em;
         color: #F0E7D2;
         padding-bottom: 15px;  
+        @media screen and (max-width:991px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 16px;
+            line-height: 20px;
+            color: #FEC914;
+        }
     }
     p{
         font-family: 'Inter';
@@ -86,12 +105,19 @@ body {
         letter-spacing: 0.03em;
         color: #41B9D5; 
         padding-bottom: 25px;
+        @media screen and (max-width:991px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
     .btn-block {
         justify-content: flex-start;
+        @media screen and (max-width:768px) {
+            display: block;
+        }
     }
-}
-
-.mb-95 {
-    margin-bottom: 95px;
 }

@@ -11,6 +11,7 @@
   -moz-transition: all ease-out .5s;
   -o-transition: all ease-out .5s;
   transition: all ease-out .5s;
+  top: 0;
   &.active {
     background-color: #021D45;
     position: fixed;
@@ -91,6 +92,7 @@
             a {
               padding: 15px 0;
               margin:0 25px;
+              color: #fff;
             }
             &.active {
               justify-content: space-between;
@@ -188,7 +190,6 @@
       flex-direction: column;
       position: unset;
       margin: unset;
-      padding-left: 10px;
       width: 40px;
       height: 40px;
       cursor: pointer;

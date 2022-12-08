@@ -76,11 +76,58 @@ function checkOTP() {
 }
 
 function checkNum(e) {
+  console.log(e);
   const num = $("#userNum").val();
-  if(num.length >=9) {
+
+  if(num.length >9) {
     $("#otp-btn").removeClass('disabled');
     return;
   }
+}
+
+function verifyNumberMob(event) {
+  const num = $("#userNum").val();
+  let main1 = $("#first-main").val();
+  let main2 = $("#second-main").val();
+  let main3 =  $("#third-main").val();
+  let main4 = $("#fourth-main").val();
+
+  const otp = main1 + main2 + main3 + main4;
+
+  if(otp.length <=3) {
+    $(".otp-boxes").addClass('error');
+    return;
+  }
+
+  if(num == '0000000000' && otp == '1234') {
+    $("#numcheckerror").removeClass('error');
+    $(".otp-boxes").removeClass('error');
+    window.location.href="/dashboard/participants-dashboard.html";
+  }
+  else {
+    $(".intro.otp-info").hide();
+    $(".mob-otp-time").show();
+    $("#numcheckerror").addClass('error');
+    $(".otp-boxes").addClass('error');
+  }
+
+  console.log(otp);
+  // if($("#userNum").val() == '') {
+  //   $("#userNum").parent().addClass('error');
+  //   return;
+  // }
+  // if($("#otp").val() == '') {
+  //   $("#otp").parent().addClass('error');
+  //   return;
+  // }
+  // if($("#userNum").val() == '0000000000' && $("#otp").val() == '1234')
+  // {
+  //   window.location.href="/dashboard/dashboard.html";
+  // }
+  // else {
+  //   $("#otp").parent().addClass('error');
+  // }
+
 }
 
 function verifyNumber(event) {
@@ -100,7 +147,7 @@ function verifyNumber(event) {
   if(num == '0000000000' && otp == '1234') {
     $("#numcheckerror").removeClass('error');
     $(".otp-boxes").removeClass('error');
-    window.location.href="/dashboard/html/participants-dashboard.html";
+    window.location.href="/dashboard/participants-dashboard.html";
   }
   else {
     $(".intro.otp-info").hide();
@@ -120,12 +167,28 @@ function verifyNumber(event) {
   // }
   // if($("#userNum").val() == '0000000000' && $("#otp").val() == '1234')
   // {
-  //   window.location.href="/dashboard/html/dashboard.html";
+  //   window.location.href="/dashboard/dashboard.html";
   // }
   // else {
   //   $("#otp").parent().addClass('error');
   // }
 
+}
+
+function getMobOTP(event){
+  const num = $("#userNum").val();
+  if($("#userNum").val() == '' || num.length != 10) {
+    $("#numcheckerror").addClass('error');
+    return;
+  }
+  if(num.length == 10) {
+    $("#numcheckerror").removeClass('error');
+    $("#otp-form").show();
+    $("#resend-otp-mob").show();
+    $("#numcheckerror").hide();
+    $(".send-otp").hide();
+    $("#participant-btn-mob").show();
+  }
 }
 
 function getOTP(event) {
@@ -134,10 +197,11 @@ function getOTP(event) {
     $("#numcheckerror").addClass('error');
     return;
   }
-  if(num.length >= 9) {
+  console.log(num.length);
+  if(num.length == 10) {
     $("#numcheckerror").removeClass('error');
     $("#otp-form").show();
-    $("#participant-btn").show();
+    $("#participant-btn-desk").show();
   }
   
 }
@@ -187,9 +251,9 @@ function verifyUser(event) {
             // $("#password").parent().addClass('error');
         }
         $(".btn.btn-pink").text(nameOfButton);
-        // var url = window.location.origin + '/dashboard/html/dashboard.html';
+        // var url = window.location.origin + '/dashboard/dashboard.html';
         // window.open(url,"_blank");
-        window.location.href="/dashboard/html/dashboard.html";
+        window.location.href="/dashboard/";
       });
 }
 

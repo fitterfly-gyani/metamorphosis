@@ -14,6 +14,15 @@ h2 {
     font-size: 36px;
     line-height: 45px;
     color:#F0E7D2;
+    @media screen and (max-width:991px) {
+        font-size: 28px !important;
+        line-height: 36px;
+    }
+    @media screen and (max-width:768px) {
+        font-size: 20px !important;
+        line-height: 26px !important;
+        
+    }
 }
 
 h3 {
@@ -24,4 +33,8 @@ p{
     font-size: 18px;
     line-height: 22px;
     color: #fff;
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

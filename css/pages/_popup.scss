@@ -15,6 +15,10 @@
     min-width: 700px;
     max-width: 700px;
     margin: auto;
+    @media screen and (max-width:768px) {
+        min-width: unset;
+        max-height:unset;
+    }
     .popup-pad{
         position: relative; 
         // min-width: 700px;
@@ -23,11 +27,20 @@
         border-radius: 15px;
         overflow:auto;
         margin: 25px 0;
+        @media screen and (max-width:768px) {
+            width: 100%;
+            margin: 25px 0 0;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
     }
     
     .popup-body{
         .popup-inner-pad {
             padding: 30px 96px;
+            @media screen and (max-width:768px) {
+                padding: 15px 20px;
+            }
             h3 {
                 font-family: 'Inter';
                 font-style: normal;
@@ -38,6 +51,10 @@
                 align-items: center;
                 color: #021D45;
                 padding-bottom: 20px;
+                @media screen and (max-width:768px) {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
             }
             p {
                 font-family: 'Inter';
@@ -48,11 +65,31 @@
                 display: flex;
                 align-items: center;
                 color: #2C3C4B;
-                border-bottom: 1px solid red;
                 padding-bottom: 30px;
                 margin-bottom: 20px;
                 padding-right: 50px;
                 display: inline-block;
+                border-bottom: 1px solid #E83D62;
+                position: relative;
+                @media screen and (max-width:768px) {
+                    border: none;
+                    font-size: 14px;
+                    padding: 0;
+                    line-height: 18px;
+                }
+                
+                &::after {
+                    content: "";
+                    width: 40%;
+                    height: 1px;
+                    background-color: #E83D62;
+                    display: none;
+                    @media screen and (max-width:768px) {
+                        display: block;
+                        position: relative;
+                        top: 10px;
+                    }
+                }
             }
             .popup-btn {
                 .btn{
@@ -67,6 +104,36 @@
                         background: #A3B2C2;
                     }
                 }
+            }
+        }
+    }
+    .back-icon img {
+        @media screen and (max-width:768px) {
+            padding-bottom: 10px;
+        }
+    }
+    .form-main {
+        label {
+            @media screen and (max-width:768px) {
+                font-size: 14px;
+                line-height: 16px;
+                padding-bottom: 8px;
+            }
+        }
+        .form-group {
+            @media screen and (max-width:768px) {
+                margin-bottom: 15px;
+                
+            }
+        }
+        .form-field-holder {
+            @media screen and (max-width:768px) {
+                display: block;
+            }
+        }
+        input {
+            @media screen and (max-width:768px) {
+                border: 1px solid #8692A6;
             }
         }
     }

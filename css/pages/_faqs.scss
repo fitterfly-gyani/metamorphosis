@@ -1,5 +1,8 @@
 .faqs-criteria-sec{
     padding-bottom: 100px;
+    @media screen and (max-width:991px) {
+        padding-bottom: 20px;
+    }
     h3{
         font-family: Inter;
         font-size: 36px;
@@ -8,6 +11,12 @@
         letter-spacing: 0.03em;
         text-align: left;
         color: #FEC914;
+    }
+    h2 {
+        @media screen and (max-width:768px) {
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
     }
 }
 
@@ -25,6 +34,13 @@
         line-height: 28px;
         color: #41B9D5;
         margin-right: 50px;
+        @media screen and (max-width:768px) {
+            border-radius: 15px 15px 0 0;
+            font-size: 16px;
+            line-height: 18px;
+            padding: 16px 14px 16px;
+            margin-right: 35px;
+        }
     }
     .eligib-body-card{
         min-height: 404px;
@@ -40,14 +56,50 @@
                 font-size: 20px;
                 font-weight: 500;
                 margin-bottom: 10px;
+                @media screen and (max-width:768px) {
+                    font-size: 16px;
+                }
             }
             .link{
                 font-size: 20px;
                 color: #166780;
                 text-decoration: underline;
+                @media screen and (max-width:768px) {
+                    font-size: 16px;
+                    display: block;
+
+                }
+               
+            }
+            @media screen and (max-width:768px) {
+                padding-left: 20px;
             }
         }
-        
+        .bullet-list {
+            li {
+                @media screen and (max-width:768px) {
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-left: 28px;
+                }
+                &::before {
+                    @media screen and (max-width:768px ) {
+                        top: 8px;
+                        left: 7px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:768px) {
+            padding:25px 8px;
+            min-height: 300px;
+            border-radius: 0px 15px 15px 15px;
+        }
+        &.last {
+            @media screen and (max-width:768px) {
+                min-height: 230px;
+            }
+        }
     }
     margin-bottom: 30px;
     // &:last-child {
@@ -129,6 +181,10 @@
             text-align: left;
             color: #FEC914;
             margin-bottom: 60px;
+            @media screen and (max-width:991px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -171,6 +227,9 @@
                 color: #F0E7D2;
                 text-align: left;
                 margin-right: 30px;
+                @media screen and (max-width:991px) {
+                    font-size: 16px;
+                }
             }
             .accordion-icon {
                 height: 24px;
@@ -188,6 +247,9 @@
                     width: 24px;
                 }
             }
+            @media screen and (max-width:991px) {
+                padding: 15px 0;
+            }
         }
         .faq-ans {
             display: none;
@@ -203,6 +265,10 @@
                 font-size: 16px;
                 line-height: 22px;
                 color: #DBF4F2;
+                @media screen and (max-width:991px) {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
             a{
                 font-weight: 400;
@@ -220,6 +286,9 @@
                 font-size: 16px;
                 line-height: 22px;
                 color: #DBF4F2;
+            }
+            @media screen and (max-width:991px) {
+                padding-left: 10px;
             }
         }
     }

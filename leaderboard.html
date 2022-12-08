@@ -34,26 +34,26 @@
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/html/about-us.html">About MM</a>
+                            <a href="/about-mm.html">About MM</a>
                         </li>
                         <li>
-                            <a href="/html/Program-list.html">Programs</a>
+                            <a href="/programs.html">Programs</a>
                         </li>
                         <li  class="active">
-                            <a href="/html/leaderboard.html">Leaderboard</a>
+                            <a href="/leaderboard.html">Leaderboard</a>
                         </li>
                         <li>
-                            <a href="/html/upcoming-event.html">Challenges</a>
+                            <a href="/challenges.html">Challenges</a>
                         </li>
                         <li>
-                            <a href="/html/faqs.html">FAQs</a>
+                            <a href="/faqs.html">FAQs</a>
                         </li>
                          
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <a href="/html/login.html" target="_blank"  class="login-btn">Login</a>
-                    <a href="/html/login.html" target="_blank" class="login-mob-btn" style="width: 20px;" >
+                    <a href="/login.html" target="_blank"  class="login-btn">Login</a>
+                    <a href="/login.html" target="_blank" class="login-mob-btn" style="width: 20px;" >
                         <img src="/images/login-icon-header.svg" alt="">
                     </a>
                 </div>
@@ -61,16 +61,23 @@
         </div>
     </header>
 
-    <section class="header-pad-100">
+    <section class="header-pad-100 leader-bord-head">
         <div class="container">
-            <h2 class="ptb-60">Leaderboard</h2>
+            <h2 >Leaderboard</h2>
+        </div>
+        <div class="aside-menu mob">
+            <ul>
+                <li class="active">Companies</li>
+                <li>Top Performers</li>
+                <li>Weekly Challenge Leaders</li>
+            </ul>
         </div>
     </section>
     <section class="leaderboard">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="aside-menu">
+                    <div class="aside-menu desk">
                         <ul>
                             <li class="active">Companies</li>
                             <li>Top Performers</li>
@@ -79,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-md-9 p-0">
-                    <div id="topCompanies" class="lb-content pb-55">
+                    <div id="topCompanies" class="lb-content leaderboard pb-55">
                         <div class="lb-head">Top 10 companies in the race</div>
                         <!-- <div class="lb-text">This leaderboard will list the top 5 companies in the race</div> -->
                         <div class="mt-30">
@@ -91,6 +98,9 @@
                                         <div class="list-head">Rank</div>
                                     </div>
                                 </li>
+                            </ul>
+                            <ul class="profile-list scroll">
+                                <li></li>
                                 <li>
                                     <div class="item">
                                         <div class="profile">
@@ -156,10 +166,75 @@
                                         <div class="rank">5</div>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">KAM Inc</div>
+                                                <span class="team-name">Mumbai</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">9,800</div>
+                                        <div class="rank">6</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic white-blue"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">HYBG finance</div>
+                                                <span class="team-name">Mumbai</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">8,900</div>
+                                        <div class="rank">7</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic pink"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Troy Holdings</div>
+                                                <span class="team-name">Bangalore</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">8,300</div>
+                                        <div class="rank">8</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic blue"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">YesLife Health</div>
+                                                <span class="team-name">Mumbai</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">7,900</div>
+                                        <div class="rank">9</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic dark"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">GRB Foods</div>
+                                                <span class="team-name">Delhi</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">7,800</div>
+                                        <div class="rank">10</div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div id="topPerformance" class="lb-content pb-55" style="display: none;">
+                    <div id="topPerformance" class="lb-content leaderboard pb-55" style="display: none;">
                         <div class="lb-head">Top Performers</div>
                         <!-- <div class="lb-text">The top performers based on the scoring mechanism</div> -->
                         <div class="mt-30">
@@ -171,6 +246,9 @@
                                         <div class="list-head">Rank</div>
                                     </div>
                                 </li>
+                            </ul>
+                            <ul class="profile-list scroll">
+                                <li></li>
                                 <li>
                                     <div class="item">
                                         <div class="profile">
@@ -236,10 +314,75 @@
                                         <div class="rank">5</div>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <span class="team-name">KAM Inc</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">9,800</div>
+                                        <div class="rank">6</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">YesLife Health</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">8,900</div>
+                                        <div class="rank">7</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Isha Singh</div>
+                                                <span class="team-name">GRB Foods</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">8,300</div>
+                                        <div class="rank">8</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <span class="team-name">Troy Holdings</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">7,900</div>
+                                        <div class="rank">9</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Aman Dhavale</div>
+                                                <span class="team-name">KAM Inc</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">7,800</div>
+                                        <div class="rank">10</div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div id="weeklyChallenge" class="lb-content pb-55" style="display: none;">
+                    <div id="weeklyChallenge" class="lb-content leaderboard pb-55" style="display: none;">
                         <div class="lb-head">Weekly Challenge Leaders</div>
                         <!-- <div class="lb-text">The weekly challenge winners</div> -->
                         <div class="mt-30">
@@ -251,29 +394,32 @@
                                         <div class="list-head">Rank</div>
                                     </div>
                                 </li>
+                            </ul>
+                            <ul class="profile-list scroll">
+                               <li></li>
                                 <li>
                                     <div class="item">
                                         <div class="profile">
-                                            <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic3.png);"></div>
                                             <div class="profile-info">
-                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <div class="person-name">Aman Dhavale</div>
                                                 <span class="team-name">KAM Inc</span>
                                             </div>
                                         </div>
-                                        <div class="points">9,800</div>
+                                        <div class="points">7,800</div>
                                         <div class="rank">1</div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="item">
                                         <div class="profile">
-                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
                                             <div class="profile-info">
-                                                <div class="person-name">Brijesh Yadav</div>
-                                                <span class="team-name">YesLife Health</span>
+                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <span class="team-name">Troy Holdings</span>
                                             </div>
                                         </div>
-                                        <div class="points">8,900</div>
+                                        <div class="points">7,900</div>
                                         <div class="rank">2</div>
                                     </div>
                                 </li>
@@ -293,14 +439,27 @@
                                 <li>
                                     <div class="item">
                                         <div class="profile">
-                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
                                             <div class="profile-info">
-                                                <div class="person-name">Sushmita Kapoor</div>
-                                                <span class="team-name">Troy Holdings</span>
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">YesLife Health</span>
                                             </div>
                                         </div>
-                                        <div class="points">7,900</div>
+                                        <div class="points">8,900</div>
                                         <div class="rank">4</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <span class="team-name">KAM Inc</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">9,800</div>
+                                        <div class="rank">5</div>
                                     </div>
                                 </li>
                                 <li>
@@ -313,7 +472,59 @@
                                             </div>
                                         </div>
                                         <div class="points">7,800</div>
-                                        <div class="rank">5</div>
+                                        <div class="rank">6</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic6.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <span class="team-name">Troy Holdings</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">7,900</div>
+                                        <div class="rank">7</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic7.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Isha Singh</div>
+                                                <span class="team-name">GRB Foods</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">8,300</div>
+                                        <div class="rank">8</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic8.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Brijesh Yadav</div>
+                                                <span class="team-name">YesLife Health</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">8,900</div>
+                                        <div class="rank">9</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="profile">
+                                            <div class="profile-pic" style="background-image: url(./../images/default-pic10.png);"></div>
+                                            <div class="profile-info">
+                                                <div class="person-name">Sushmita Kapoor</div>
+                                                <span class="team-name">KAM Inc</span>
+                                            </div>
+                                        </div>
+                                        <div class="points">9,800</div>
+                                        <div class="rank">10</div>
                                     </div>
                                 </li>
                             </ul>
@@ -332,38 +543,39 @@
 
                     <div class="score-item">
                         <div class="scoring-title">
-                            <span class="title-img"><img src="/images/enagement.svg" alt=""></span>Engagement
+                            <span class="title-img first "><img src="/images/enagement.svg" alt=""></span>
+                            <span>Engagement</span>
                         </div>
                         <div class="scoring-list">
                             <div class="row">
-                                <div class="col-md-8 pr-5">
+                                <div class="col-md-8 col-sm-8 col-8 pr-5">
                                     <div class="scoring-area">Completion of daily step count goal set by your coach</div>
                                 </div>
-                                <div class="col-md-4 pl-5">
+                                <div class="col-md-4 col-sm-4 col-4 pl-5">
                                     <div class="score-points">200 Points/Day</div>
                                 </div>
-                                <div class="col-md-8 pr-5">
+                                <div class="col-md-8 col-sm-8 col-8 pr-5">
                                     <div class="scoring-area">30 mins exercise logging per day</div>
                                 </div>
-                                <div class="col-md-4 pl-5">
+                                <div class="col-md-4 col-sm-4 col-4 pl-5">
                                     <div class="score-points">200 Points/Day</div>
                                 </div>
-                                <div class="col-md-8 pr-5">
+                                <div class="col-md-8 col-sm-8 col-8 pr-5">
                                     <div class="scoring-area">Meeting sleep goals - 6 hrs/day</div>
                                 </div>
-                                <div class="col-md-4 pl-5">
+                                <div class="col-md-4 col-sm-4 col-4 pl-5">
                                     <div class="score-points">200 Points</div>
                                 </div>
-                                <div class="col-md-8 pr-5">
+                                <div class="col-md-8 col-sm-8 col-8 pr-5">
                                     <div class="scoring-area">Using the app for atleast 5 min/day</div>
                                 </div>
-                                <div class="col-md-4 pl-5">
+                                <div class="col-md-4 col-sm-4 col-4 pl-5">
                                     <div class="score-points">100 Points</div>
                                 </div>
-                                <div class="col-md-8 pr-5">
+                                <div class="col-md-8 col-sm-8 col-8 pr-5">
                                     <div class="scoring-area">Weekly challenge completion</div>
                                 </div>
-                                <div class="col-md-4 pl-5">
+                                <div class="col-md-4 col-sm-4 col-4 pl-5">
                                     <div class="score-points">100 Points/Day</div>
                                 </div>
                             </div>
@@ -376,11 +588,11 @@
                         </div>
                         <div class="scoring-list">
                             <div class="row">
-                                <div class="col-md-8 pr-5">
+                                <div class="col-md-8 col-sm-8 col-8 pr-5">
                                     <div class="scoring-area">Achieving atleast 70% of the 5 goals set in the beginning of the program</div>
                                 </div>
-                                <div class="col-md-4 pl-5">
-                                    <div class="score-points">500 Points/goal achieved</div>
+                                <div class="col-md-4 col-sm-4 col-4 pl-5">
+                                    <div class="score-points">500 Points/Goal achieved</div>
                                 </div>
                             </div>
                         </div>
@@ -391,40 +603,40 @@
                     </div>
                     <div class="scoring-list">
                         <div class="row">
-                            <div class="col-md-8 pr-5">
+                            <div class="col-md-8 col-sm-8 col-8 pr-5">
                                 <div class="scoring-area">Completion of onboarding process</div>
                             </div>
-                            <div class="col-md-4 pl-5">
+                            <div class="col-md-4 col-sm-4 col-4 pl-5">
                                 <div class="score-points">100 Points</div>
                             </div>
-                            <div class="col-md-8 pr-5">
+                            <div class="col-md-8 col-sm-8 col-8 pr-5">
                                 <div class="scoring-area">Syncing of Google Fit/Apple health with the app</div>
                             </div>
-                            <div class="col-md-4 pl-5">
+                            <div class="col-md-4 col-sm-4 col-4 pl-5">
                                 <div class="score-points">100 Points</div>
                             </div>
-                            <div class="col-md-8 pr-5">
+                            <div class="col-md-8 col-sm-8 col-8 pr-5">
                                 <div class="scoring-area">Completion of goal setting with your Nutrition coach</div>
                             </div>
-                            <div class="col-md-4 pl-5">
+                            <div class="col-md-4 col-sm-4 col-4 pl-5">
                                 <div class="score-points">100 Points</div>
                             </div>
-                            <div class="col-md-8 pr-5">
+                            <div class="col-md-8 col-sm-8 col-8 pr-5">
                                 <div class="scoring-area">Completion of Fitness assessment with your Physio coach</div>
                             </div>
-                            <div class="col-md-4 pl-5">
+                            <div class="col-md-4 col-sm-4 col-4 pl-5">
                                 <div class="score-points">150 Points</div>
                             </div>
-                            <div class="col-md-8 pr-5">
+                            <div class="col-md-8 col-sm-8 col-8 pr-5">
                                 <div class="scoring-area">Completion of Stress and Sleep assessments</div>
                             </div>
-                            <div class="col-md-4 pl-5">
-                                <div class="score-points">100 Points/ assessment due</div>
+                            <div class="col-md-4 col-sm-4 col-4 pl-5">
+                                <div class="score-points">100 Points/ Assessment due</div>
                             </div>
-                            <div class="col-md-8 pr-5">
+                            <div class="col-md-8 col-sm-8 col-8 pr-5">
                                 <div class="scoring-area">Completion of atleast 3 meal logs/day</div>
                             </div>
-                            <div class="col-md-4 pl-5">
+                            <div class="col-md-4 col-sm-4 col-4 pl-5">
                                 <div class="score-points">25 Points/Day</div>
                             </div>
                         </div>
@@ -494,6 +706,32 @@
 
         $(".leaderboard .aside-menu ul li").on("click",function(){
         $(".leaderboard .aside-menu ul li").removeClass("active");
+        $(this).addClass("active");
+            if($(this).html() == 'Companies') {
+                $("#topPerformance").hide();
+                $("#weeklyChallenge").hide();
+                $("#topCompanies").show();
+
+            }
+            else if ($(this).html() == 'Top Performers') {
+                $("#weeklyChallenge").hide();
+                $("#topCompanies").hide();
+                $("#topPerformance").show();
+              
+            }
+            else if ($(this).html() == 'Weekly Challenge Leaders') {
+                $("#topCompanies").hide();
+                $("#topPerformance").hide();    
+                $("#weeklyChallenge").show();
+              
+            }
+            
+        return;
+        });
+
+
+        $(".leader-bord-head .aside-menu ul li").on("click",function(){
+        $(".leader-bord-head .aside-menu ul li").removeClass("active");
         $(this).addClass("active");
             if($(this).html() == 'Companies') {
                 $("#topPerformance").hide();

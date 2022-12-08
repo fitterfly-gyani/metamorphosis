@@ -2,9 +2,13 @@
     background-color:  rgba($color:#021D45, $alpha: 1.0);
     .banner-pad {
         padding: 80px 0;
+        
     }
     .row {
         margin-bottom: 40px;
+        @media screen and (max-width:991px) {
+            margin-bottom: 0px;
+        }
     }
     h2 {
         margin-bottom: 20px;
@@ -13,10 +17,19 @@
             line-height: 34px;
         }
     }
+    p {
+        @media screen and (max-width:991px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
     .metamorphosis-logo{
         text-align: center;
         // background-color: rgba($color:#0f3052, $alpha: 0.9);
         margin-top: 30px;
+    }
+    .pr-sm-0 {
+        padding-right: 0px;
     }
     .banner-image {
         display: flex;
@@ -27,6 +40,26 @@
             background: url(/images/banner-pattern.png) no-repeat;
             width: 100px;
             height: 100px;
+            @media screen and (max-width:991px) {
+                display: none;
+            }
+        }
+        @media screen and (max-width:768px) {
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        .desk-view {
+
+            @media screen  and (max-width:768px){
+                display: none;
+            }
+            
+        }
+        .mob-view {
+            display: none;
+            @media screen and (max-width:768px) {
+                display: block;
+            }
         }
     }
 }
@@ -55,6 +88,7 @@
         }
        
     }
+    
     .challenge-detail{
         position: relative;
         z-index: 2;
@@ -75,12 +109,6 @@
             }
             &.blue-text {
                 color: #41B9D5;
-            }
-            @media screen and (max-width:1024px) {
-                font-size: 18px;
-                font-weight: 500;
-                line-height: normal;
-
             }
         }
         &::after {
@@ -111,10 +139,12 @@
     background: url(/images/about-us-trans.png) no-repeat rgba($color:#0f3052, $alpha: 1.0);
     background-size: cover;
     padding-top: 120px;
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:991px) {
         height: initial;
+        background-position: center;
         padding: 40px 0;
     }
+   
     .find-more-sec-block{
         display: flex;
         align-content: center;
@@ -131,16 +161,24 @@
             }
             p{
                 font-size: 22px;
+                @media screen and (max-width:991px) {
+                    font-size: 16px;
+                }
             }
         }
 
         .btn-block {
             margin-bottom: 20px;
+            a {
+                font-size: 14px;
+            }
         }
         .find-more-link{
             border-bottom: 1px solid;
             font-size: 22px;
-
+            @media screen and (max-width:991px) {
+                font-size: 16px;
+            }
         }
     }
 }

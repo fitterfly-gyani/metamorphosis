@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/css/base.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -35,26 +38,26 @@
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/html/about-us.html">About MM</a>
+                            <a href="/about-mm.html">About MM</a>
                         </li>
                         <li>
-                            <a href="/html/Program-list.html">Programs</a>
+                            <a href="/programs.html">Programs</a>
                         </li>
                         <li>
-                            <a href="/html/leaderboard.html">Leaderboard</a>
+                            <a href="/leaderboard.html">Leaderboard</a>
                         </li>
                         <li>
-                            <a href="/html/upcoming-event.html">Challenges</a>
+                            <a href="/challenges.html">Challenges</a>
                         </li>
                         <li>
-                            <a href="/html/faqs.html">FAQs</a>
+                            <a href="/faqs.html">FAQs</a>
                         </li>
                          
                     </ul>
                 </div>  
                 <div class="nav-items">
-                    <a href="/html/login.html" target="_blank"  class="login-btn">Login</a>
-                    <a href="/html/login.html" target="_blank" class="login-mob-btn" style="width: 20px;" >
+                    <a href="/login.html" target="_blank"  class="login-btn">Login</a>
+                    <a href="/login.html" target="_blank" class="login-mob-btn" style="width: 20px;" >
                         <img src="/images/login-icon-header.svg" alt="">
                     </a>
                 </div>
@@ -64,8 +67,11 @@
 
    <section class="home-banner">
     <div class="container">
+        <div class="mob-img">
+            <img src="/images/metamorphosis-header.svg" alt="">
+        </div>
         <div class="row">
-            <div class="col-lg-5 d-flex justify-content-end">
+            <div class="col-lg-5 banner-img ">
                 <!-- <div class="hb-left-text">
                     <p>India's 1st<br>METABOLIC HEALTH<br>challenge</p>
                 </div> -->
@@ -73,7 +79,7 @@
                      <img src="/images/homepage-banner.png" alt="metamorphosis">
                  </div>
             </div>
-            <div class="col-lg-7 d-flex justify-content-end align-self-center">
+            <div class="col-lg-7 banner-content">
                  <div class="hb-content">
                      <!-- <div class="hbc-img">
                          <img src="/images/meta-logo.svg" alt="metamorphosis">
@@ -81,11 +87,11 @@
                      <h1 class="hbc-title">
                          META <span class="morphisis">M<span class="oring"><img src="/images/two-circle.svg"></span>RPHOSIS</span>
                      </h1>
-                     <h2 class="hbc-highlight-text" style="margin-bottom: 40px;">India's 1<sup>st</sup> 90-day Metabolic <br> Health Challenge
+                     <h2 class="hbc-highlight-text">India's 1<sup>st</sup> 90-day Metabolic <br> Health Challenge
                     </h2>
                      <!-- <p class="hbc-para">India's 1st <br> METABOLIC HEALTH challenge</p> -->
                      <div class="btn-block">
-                        <a href="/html/Program-list.html" class="btn">Let’s get started
+                        <a href="/programs.html" class="btn">Let’s get started
                             <span class="right-arrow"></span>
                         </a>
                     </div>
@@ -100,7 +106,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2 class="vs-title">Take the first step towards<br>
-                    the rest of your healthier life.</h2>
+                    the rest of your healthier life</h2>
                 <div class="vs-thumnail">
                     <!-- <img  class="play-btn" src="/images/play-btn.svg" alt="play">
                     <img class="play-img" src="/images/video-thumbnail.png" alt="thumbnail"> -->
@@ -110,7 +116,7 @@
                 </div>
                 <p class="vs-desc">Our mission is to get your employees healthier and allow them to take control over their lifestyle and chronic condition.</p>
                 <div class="btn-block">
-                    <a href="/html/Program-list.html" class="btn">Sign Up 
+                    <a href="/programs.html" class="btn">Sign Up 
                         <span class="right-arrow"></span>
                     </a>
                 </div>
@@ -127,7 +133,7 @@
                        <h2>Understanding Metabolic Health</h2>
                        <!-- <p>Lorem Ipsum Dolar</p> -->
                    </div>
-                    <!-- <a href="/html/Program-list.html" class="mhs-arrw"><img src="/images/right-arrow.svg"></a> -->
+                    <!-- <a href="/programs.html" class="mhs-arrw"><img src="/images/right-arrow.svg"></a> -->
                    
                </div>
                <div class="col-lg-8">
@@ -151,7 +157,7 @@
                         </p>
                         <div class="benefit-main-div">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box bg-offyellow">
                                         <div class="ben-desc">
                                             <div class="d-flex align-items-start flex-column">
@@ -165,7 +171,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box bg-blue">
                                         <div class="ben-desc">
                                             <div class="d-flex align-items-start flex-column">
@@ -179,7 +185,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box bg-offyellow">
                                         <div class="ben-desc">
                                             <div class="d-flex align-items-start flex-column">
@@ -193,7 +199,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box bg-blue">
                                         <div class="ben-desc">
                                             <div class="d-flex align-items-start flex-column">
@@ -207,7 +213,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box bg-offyellow">
                                         <div class="ben-desc">
                                             <div class="d-flex align-items-start flex-column">
@@ -221,7 +227,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box bg-blue">
                                         <div class="ben-desc">
                                             <div class="d-flex align-items-start flex-column">
@@ -294,7 +300,7 @@
     </section> -->
 
 
-   <section class="weekly-challenge-sec last">
+   <section class="weekly-challenge-sec mob-view ">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -302,9 +308,9 @@
                         <h2>Weekly Challenges</h2>
                         <p>Stay motivated with fun challenges, and <br> win some amazing prizes.
                         </p>
-                        <div class="challenges-list">
+                        <div class="challenges-list desktop-view">
                             <div class="row">
-                                <div class="col-xl-6">
+                                <div class="col-xl-6 col-lg-6">
                                     <div class="challenge-box bg-teal meal-tracker">
                                         <img class="cb-img" src="/images/challenge-frame.png">
                                         <div class="cb-date">
@@ -319,7 +325,7 @@
                                         <span class="nutrision">Nutrition</span>
                                     </div>
                                 </div>
-                                <div class="col-xl-6">
+                                <div class="col-xl-6 col-lg-6">
                                     <div class="challenge-box bg-teal protein-pro">
                                         <img class="cb-img" src="/images/challenge-frame.png">
                                         <div class="cb-date">
@@ -334,7 +340,7 @@
                                         <span class="nutrision">Nutrition</span>
                                     </div>
                                 </div>
-                                <div class="col-xl-6">
+                                <div class="col-xl-6 col-lg-6">
                                     <div class="challenge-box bg-teal fab-fiber">
                                         <img class="cb-img" src="/images/challenge-frame.png">
                                         <div class="cb-date">
@@ -349,7 +355,7 @@
                                         <span class="nutrision">Nutrition</span>
                                     </div>
                                 </div>
-                                <div class="col-xl-6">
+                                <div class="col-xl-6 col-lg-6">
                                     <div class="challenge-box bg-teal cheeni-kum">
                                         <img class="cb-img" src="/images/challenge-frame.png">
                                         <div class="cb-date">
@@ -366,8 +372,76 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="challenges-list mob-view">
+                            <div class="row">
+                                <div id="owl-carousel-2" class="owl-carousel owl-theme">
+                                    <div class="col-xl-6 ">
+                                        <div class="challenge-box bg-teal meal-tracker">
+                                            <img class="cb-img" src="/images/challenge-frame.png">
+                                            <div class="cb-date">
+                                                14 Nov, 2022
+                                            </div>
+                                            <div class="cb-title">
+                                                Meal Tracker <br> Challenge
+                                            </div>
+                                            <div class="cb-desc">
+                                                Enter the meal entries in the app regularly & track your nutritional intake.
+                                            </div>
+                                            <span class="nutrision">Nutrition</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 ">
+                                        <div class="challenge-box bg-teal protein-pro">
+                                            <img class="cb-img" src="/images/challenge-frame.png">
+                                            <div class="cb-date">
+                                                21 Nov, 2022
+                                            </div>
+                                            <div class="cb-title">
+                                                Protein <br>Pro Challenge
+                                            </div>
+                                            <div class="cb-desc">
+                                                Become a Protein Pro by consuming the recommended protein in your meal throughout the week to meet the protein intake that your body requires.
+                                            </div>
+                                            <span class="nutrision">Nutrition</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 ">
+                                        <div class="challenge-box bg-teal fab-fiber">
+                                            <img class="cb-img" src="/images/challenge-frame.png">
+                                            <div class="cb-date">
+                                                28 Nov, 2022
+                                            </div>
+                                            <div class="cb-title">
+                                                Fab Fiber<br> Challenge
+                                            </div>
+                                            <div class="cb-desc">
+                                                To get that fab transformation, make sure you consume the recommended amount of fiber in your meal.
+                                            </div>
+                                            <span class="nutrision">Nutrition</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 ">
+                                        <div class="challenge-box bg-teal cheeni-kum">
+                                            <img class="cb-img" src="/images/challenge-frame.png">
+                                            <div class="cb-date">
+                                                05 Dec, 2022
+                                            </div>
+                                            <div class="cb-title">
+                                                Cheeni kum <br>Challenge
+                                            </div>
+                                            <div class="cb-desc">
+                                                No added sugar in tea/coffee/beverages for a week.
+                                            </div>
+                                            <span class="nutrision">Nutrition</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="view-more">
-                            <a href="/html/upcoming-event.html">View more Challenges</a>
+                            <a href="/challenges.html">View more Challenges</a>
                         </div>
                     </div>
                 </div>
@@ -426,8 +500,8 @@
         <div class="quarterly-reward-list">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="rl-box">
+                    <div class="col-lg-4 iphone-back">
+                        <div class="rl-box first">
                             <div class="box-top">
                                 <img src="/images/mobile.png">
                             </div>
@@ -437,7 +511,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col">
                     <div class="rl-box">
                         <div class="box-top bg-orange">
                             <img src="/images/fitbit.png">
@@ -448,7 +522,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col">
                     <div class="rl-box">
                         <div class="box-top bg-yellow">
                             <img src="/images/tablate.png">
@@ -465,7 +539,7 @@
         <div class="monthly-reward-list">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col">
                         <div class="mr-heading text-yellow">Monthly Rewards</div>
                         <div class="rl-box">
                             <div class="box-top">
@@ -477,7 +551,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 offset-sm-1">
+                    <div class="col-lg-4 col">
                         <div class="mr-heading text-yellow">Weekly Rewards</div>
                         <div class="rl-box">
                             <div class="box-top">
@@ -497,18 +571,13 @@
    <section class="waiting-for-sec">
        <div class="container">
             <div class="col-sm-12">
-                <p class="wf-desc">Participants have an opportunity to score points for every challenge and move up the leaderboard.
-                    <br><br>
-
-                   <span class="text-yellow"> All winners will additionally receive a 90-day subscription to <br>  Fitterfly Weight Loss  or Fitterfly Diabetes Care <br> for their loved ones.</span></p>
-                <!-- <div class="wf-btn"> -->
-                    <!-- <h2>What are you waiting for?</h2> -->
-                    <!-- <div class="btn-block">
-                        <a href="/html/Program-list.html" class="btn">Register Now 
-                            <span class="right-arrow"></span>
-                        </a>
-                    </div> -->
-                <!-- </div> -->
+                <p class="wf-desc">
+                    Participants have an opportunity to score points for every challenge, to move up the leaderboard.  
+                    <br>
+                    <br>
+                        <span class="text-yellow"> All winners will additionally receive a free 90-day subscription to  Fitterfly Weight Loss or Fitterfly Diabetes Care
+                    for their loved ones.</span>
+                    </p>
             </div>
        </div>
    </section>
@@ -517,7 +586,7 @@
        <div class="container">
            <div class="row align-items-center">
                <div class="col-lg-6">
-                   <div class="gs-add">
+                   <div class="gs-add desk">
                        <h3>Get In Touch</h3>
                        <div class="btn-block justify-content-start">
                         <a class="btn btn-blue" style="cursor: pointer;" onclick="openPopup()">Call me back
@@ -534,13 +603,25 @@
            </div>
        </div>
    </section>
+   <section class="mob get-touch"> 
+        <div class="container">
+            <div class="gs-add ">
+                <h3>Get In Touch</h3>
+                <div class="btn-block ">
+                 <a class="btn btn-blue" style="cursor: pointer;" onclick="openPopup()">Call me back
+                     <span class="right-arrow"></span>
+                 </a>
+                </div>
+            </div>
+        </div>
+   </section>
 
 
    <div class="overlay" onclick="closePopup()">
 
 </div>
 <!-- popup -->
-<div class="popup" style="display: none;">
+<div class="popup" style="display: none;" >
     <div class="popup-pad">
         <div class="popup-body">
             <div class="popup-inner-pad">
@@ -742,6 +823,43 @@
         $(".thank-you-popup").show();
         console.log($("#mark").is(":checked"));
     }
+    </script>
+    <script>
+        $('#owl-carousel-2').owlCarousel({
+            loop:true,
+            rtl: false,
+            lazyLoad:true,
+            margin: 10,
+            mouseDrag: true,
+            touchDrag: true,
+            nav:false,
+            dots: true,
+            slideSpeed: 5000,
+            paginationSpeed: 1000,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            responsive:{
+                0:{
+                    items: 1,
+                    margin:0,
+                },
+                400:{
+                    items: 1.2,
+                    margin:0,
+                },
+                800:{
+                    items: 1.7,
+                    margin: 80
+                },
+                1000:{
+                    items: 1.7,
+                    margin: 10
+                },
+                1200:{
+                    items: 1.7
+                }
+            } 
+        })
     </script>
 </body>
 </html>
