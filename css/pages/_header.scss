@@ -267,6 +267,10 @@
   @media screen and (max-width:1024px) {
     display: none;
   }
+  &:hover {
+    background: #03275B;
+  }
+
 }
 .login-mob-btn {
   display: none;
