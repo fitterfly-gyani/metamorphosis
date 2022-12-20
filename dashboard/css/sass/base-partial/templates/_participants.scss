@@ -154,3 +154,234 @@
         }
     }
 }
+.mm-journey-sec {
+    padding: 80px 0;
+    background: url(../images/background.jpg) no-repeat ;
+    background-size: cover;
+    background-position: 0px -230px;
+    h2 {
+        color: #F0E7D2;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .week-sec {
+        display: flex;
+        position: relative;
+        .heading {
+            // position: absolute;
+            // left: 0;
+            // top: 0;
+            height: fit-content;
+            background: #0C274E;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
+            border-radius: 100px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            width: 400px;
+            h3 {
+                font-size: 28px;
+                line-height: 36px;
+                color: #FEC914;
+            }
+            p {
+                font-size: 24px;
+                line-height: 26px;
+                color:#41B9D5;
+                font-weight: 500;
+                margin-bottom: 0px;
+            }
+        }
+        &.week-1 {
+            .path-img {
+                position: relative;
+                left: -144px;
+                margin-top: 135px;
+                .completed {
+                    display: none;
+                    &.active-1 {
+                        display: block;
+                        position: absolute;
+                        top: 98px;
+                        left: 272px;
+                    }
+                    &.active-2 {
+                        display: block;
+                        position: absolute;
+                        top: 316px;
+                        left: 282px;
+                    }
+                }
+            }
+        }
+        &.week-2 {
+            .path-img {
+                position: relative;
+                top: -21px;
+                right: 6px;
+                .completed {
+                    display: none;
+                    &.active-1 {
+                        display: block;
+                        position: absolute;
+                        top: 28px;
+                        right: 318px
+                    }
+                    &.active-2 {
+                        display: block;
+                        position: absolute;
+                        top: 158px;
+                        left: 244px;
+                    }
+                    &.active-3 {
+                        display: block;
+                        position: absolute;
+                        top: 340px;
+                        left: 336px;
+                    }
+                }
+            }
+        }
+        &.week-3 {
+            .path-img {
+                position: relative;
+                top: -37px;
+                left: -190px;
+                .completed {
+                    display: none;
+                    &.active-1 {
+                        display: block;
+                        position: absolute;
+                        top: 130px;
+                        right: 158px;
+                    }
+                    &.active-2 {
+                        display: block;
+                        position: absolute;
+                        top: 254px;
+                        left: 250px;
+                    }
+                    &.active-3 {
+                        display: block;
+                        position: absolute;
+                        bottom: 372px;
+                        left: 466px;
+                    }
+                    &.active-4 {
+                        display: block;
+                        position: absolute;
+                        bottom: 190px;
+                        left: 464px;
+                    }
+                }
+            }
+        }
+        &.week-4 {
+            .path-img {
+                position: relative;
+                right: 172px;
+                top: -47px;
+                .completed {
+                    display: none;
+                    &.active-1 {
+                        display: block;
+                        position: absolute;
+                        top: 130px;
+                        right: 326px;
+                    }
+                    &.active-2 {
+                        display: block;
+                        position: absolute;
+                        bottom: 166px;
+                        left: 528px;
+                    }
+                }
+            }
+        }
+        &.week-5 {
+            .path-img {
+                position: relative;
+                right: 150px;
+                top: -60px;
+                .completed {
+                    display: none;
+                    &.active-1 {
+                        display: block;
+                        position: absolute;
+                        top: 174px;
+                        left: 364px;
+                    }
+                    &.active-2 {
+                        display: block;
+                        position: absolute;
+                        bottom: 626px;
+                        left: 534px;
+                    }
+                    &.active-3 {
+                        display: block;
+                        position: absolute;
+                        bottom: 486px;
+                        left: 618px;
+                    }
+                    &.active-4 {
+                        display: block;
+                        position: absolute;
+                        bottom: 386px;
+                        left: 316px;
+                    }
+                    &.active-5 {
+                        display: block;
+                        position: absolute;
+                        bottom: 199px;
+                        left: 338px;
+                    }
+                    &.active-6 {
+                        display: block;
+                        position: absolute;
+                        bottom: 139px;
+                        left: 492px;
+                    }
+                }
+            }
+        }
+        &.week-6 {
+            .path-img {
+                position: relative;
+                top: -72px;
+                left: -112px;
+                .completed {
+                    display: none;
+                    &.active-1 {
+                        display: block;
+                        position: absolute;
+                        top: 184px;
+                        left: 472px;
+                    }
+                    &.active-2 {
+                        display: block;
+                        position: absolute;
+                        top: 354px;
+                        left: 244px;
+                    }
+                    &.active-3 {
+                        display: block;
+                        position: absolute;
+                        bottom: 250px;
+                        left: 322px;
+                    }
+                    &.active-4 {
+                        display: block;
+                        position: absolute;
+                        bottom: 108px;
+                        left: 606px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
