@@ -33,6 +33,10 @@
         }
         a{
             color: #A3B2C2;
+            @media screen and (max-width:991px) {
+                display: inline-block;
+                padding-bottom: 10px;
+            }
         }
         &:last-child{
             margin-left: 20px;

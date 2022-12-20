@@ -257,7 +257,7 @@
         left: 0;
         z-index: 0;
         @media screen and (max-width:991px) {
-            border-radius: 255px;
+            border-radius: 150px;
             border-bottom-right-radius: 0px;
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
@@ -1210,11 +1210,6 @@
             left: 0;
             @media screen and (max-width:768px) {
                 height:100px ;
-            }
-        }
-        .box-top {
-            @media screen and (max-width:768px) {
-                background-color: #FC7D00;
             }
         }
         .mr-heading{
