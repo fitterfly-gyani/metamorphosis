@@ -1,5 +1,5 @@
 .faqs-criteria-sec{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     @media screen and (max-width:991px) {
         padding-bottom: 20px;
     }
@@ -47,20 +47,27 @@
         background: #F0E7D2;
         border-radius: 0px 23px 23px 23px;
         padding: 40px 16px; 
+        @media screen and (max-width:1024px) {
+           min-height: 520px;
+        } 
+        @media only screen and (min-width: 1500px)and (max-width: 1900px){ 
+           min-height: 525px;
+        }
         .eligib-links {
-            padding-left: 25px;
+            padding-left: 20px;
             position: absolute;
             bottom: 60px;
             p {
                 color: #021D45;
                 font-size: 20px;
                 font-weight: 500;
-                margin-bottom: 10px;
-                @media screen and (max-width:768px) {
-                    font-size: 16px;
+                margin-bottom: 10px; 
+                @media screen and (max-width:768px) {     
+                    font-size: 16px;    
                 }
             }
             .link{
+                line-height: 25px;
                 font-size: 20px;
                 color: #166780;
                 text-decoration: underline;
@@ -71,9 +78,14 @@
                 }
                
             }
-            @media screen and (max-width:768px) {
+            @media screen and (max-width:768px) { 
                 padding-left: 20px;
             }
+        }
+        .mr-10{
+            @media screen and (max-width: 1024px) { 
+                margin-right: 10px;
+            } 
         }
         .bullet-list {
             li {
@@ -92,7 +104,7 @@
         }
         @media screen and (max-width:768px) {
             padding:25px 8px;
-            min-height: 300px;
+            min-height: 335px;
             border-radius: 0px 15px 15px 15px;
         }
         &.last {

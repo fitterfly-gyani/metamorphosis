@@ -30,7 +30,7 @@
             background: url(../images/weight-footer.svg) no-repeat  bottom left -15px ;
 
         }
-        padding-top: 130px;
+        padding-top: 50px;
         height: auto;
         .ff-logo{
             padding-bottom: 50px;
@@ -71,6 +71,12 @@
     &.sleep-well {
         &::after {
             width: 35%;
+            @media screen and (max-width:1400px) {
+                width: 40%;
+            }
+            @media screen and (max-width:1200px) {
+                width: 43%;
+            }
         }
     }
 
@@ -89,6 +95,7 @@
         @media screen and (max-width:1210px) {
             width: 36%;
         }
+        
     }
     .participant-title {
         color: #166780;
@@ -104,7 +111,7 @@
     margin-bottom: 10px;
 }
 .new-joinee-sec {
-    margin: 60px 0 35px;
+    margin: 0px 0 35px;
 }
 .count-block{
     .count{

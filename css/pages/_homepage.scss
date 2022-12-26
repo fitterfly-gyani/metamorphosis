@@ -701,20 +701,26 @@
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
-    min-height: 330px;
-    @media screen and (max-width:768px) {
+    min-height: 345px;
+    @media screen and (min-width: 1500px)and (max-width: 1900px){ 
+        min-height: 350px;
+    }
+    @media screen and (max-width:1024px) { 
+        min-height: 345px;
+    }
+    @media screen and (max-width:768px) { 
         padding: 75px 20px 50px 150px;
         min-height: 270px;
     }
     @media screen and (max-width:481px) {
         min-height: 200px;
-    padding: 48px 24px 55px 135px;
+    padding: 48px 24px 55px 135px;  
     }
     &.bg-teal {
         background-color:#DBF4F2 ;
     }
-    &.bg-yellow {
-        background-color:#FBF0DC ;
+    &.bg-yellow {  
+        background-color:#FBF0DC ; 
     }
     &.bg-pink {
         background-color: #FCD7D1;
