@@ -26,6 +26,7 @@
     }
     .social-block {
         display: flex;
+        align-items: center;
         .social-icon {
             margin: 0 10px;
             width: 30px;
@@ -98,9 +99,9 @@
                         margin: auto;
                     }
                     img {
-                        margin-top: 5px;
+                        margin-bottom: 25px;  
                     }
-                }
+                } 
                 @media screen and (max-width:768px) {
                     font-size: 14px;
                 }
