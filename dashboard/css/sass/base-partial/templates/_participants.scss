@@ -115,6 +115,10 @@
 
         .app-screen {
             height: 100%;
+            @media only screen and (max-width: 991px){
+                height: 250px;
+                border-radius: 10px;
+            }
             .row {
                 height: 100%;
                 .col-lg-6 {
@@ -125,6 +129,9 @@
                             position: absolute;
                             top: 50px;
                             transform: scale(0.9);
+                            @media only screen and (max-width: 991px){
+                                top: 24px;
+                            }
                         }                        
                     }
                 }
@@ -133,6 +140,14 @@
                 color: #FEC914;
                 font-weight: 600;
                 line-height: 20px;
+                @media only screen and (max-width: 991px){
+                    margin-left: 50%;
+                }
+            }
+            .btn-small-pink{
+                @media only screen and (max-width: 991px){
+                    margin-left: 50%;
+                }
             }
             background: url(../images/back-participate.png) no-repeat #1C4685;
         }
@@ -763,5 +778,13 @@
             }
         }
     }
-    
-} 
+}
+
+@media only screen and (max-width: 991px){
+    .mob-mb-20{
+        margin-bottom: 20px !important;
+    }
+    .mob-mt-20{
+        margin-top: 20px !important;
+    }
+}
