@@ -127,7 +127,7 @@
         }
         &:first-child{
             .item{
-                padding: 0 20px 0 8px;
+                padding: 0 50px 0 8px;
                 background-color: unset;
                 border-radius: 0px;
             }
@@ -138,6 +138,7 @@
         height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
+        padding-right: 25px;
         @media screen and (max-width:768px) {
             max-height: unset;
         }
@@ -148,20 +149,21 @@
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #1C4685;
+	background-color:  #0F2F5F;
 }
 
 .scroll::-webkit-scrollbar
 {
 	width: 12px;
-	background-color:  #1C4685;
+    border-radius: 50px;
+	background-color:  #0F2F5F;
 }
 
 .scroll::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #021D45;
+	background-color:  #41B9D5;
 }
 
 
