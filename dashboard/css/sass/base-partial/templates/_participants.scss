@@ -158,13 +158,30 @@
     padding: 80px 0;
     background: url(../images/background.jpg) no-repeat ;
     background-size: cover;
-    background-position: 0px -230px;
+    //background-position: 0px -230px;
+    background-position: 0px -170px;
+    background-color: #113061;
+    overflow-x: hidden;
+    @media only screen and (max-width: 991px){
+        background: #113061;
+        background-size: unset;
+        background-position: unset;
+        border-radius: 40px 40px 0 0;
+        padding: 30px 0;
+    }
     h2 {
         color: #F0E7D2;
         font-size: 32px;
         line-height: 38px;
         text-align: center;
         margin-bottom: 50px;
+        @media only screen and (max-width: 991px){
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 23px;
+            margin-bottom: 40px;
+            letter-spacing: 0.3px;
+        }
     }
     .week-sec {
         display: flex;
@@ -183,10 +200,20 @@
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
             width: 400px;
+            @media only screen and (max-width: 991px){
+                padding: 20px 20px 20px 12px;
+                width: 150px;
+            }
             h3 {
                 font-size: 28px;
                 line-height: 36px;
                 color: #FEC914;
+                @media only screen and (max-width: 991px){
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    letter-spacing: 0.3px;
+                }
             }
             p {
                 font-size: 24px;
@@ -194,26 +221,157 @@
                 color:#41B9D5;
                 font-weight: 500;
                 margin-bottom: 0px;
+                @media only screen and (max-width: 991px){
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+        .path-img{
+            position: relative;
+            @media only screen and (max-width: 991px){
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    left: 38px;
+                    width: 5px;
+                    height: 100%;
+                    background: #325D84;
+                }
+            }
+            .milestone-step{
+                position: absolute;
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                @media only screen and (max-width: 991px){
+                    position: relative;
+                }
+                .stand{
+                    position: relative;
+                    background: url('../../images/stand-img.svg')no-repeat center;
+                    width: 78px;
+                    height: 123px;
+                    display: flex;
+                    justify-content: center;
+                    flex: none;
+                    @media only screen and (max-width: 991px){
+                        width: 40px;
+                        height: 64px;
+                        background-size: 40px 64px;
+                    }
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        background: url('../images/tick-completed.svg')no-repeat center;
+                        display: none;
+                        width: 27px;
+                        height: 24px;
+                        top: 26px;
+                        @media only screen and (max-width: 991px){
+                            width: 16px;
+                            height: 16px;
+                            top: 13px;
+                            background-size: 16px;
+                        }
+                    }
+                }
+                &.completed{
+                    .stand{
+                        &:before{
+                            display: block;
+                        }
+                    }
+                }
+                .stand-content{
+                    margin-left: 16px;
+                    margin-right: 16px;
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    //justify-content: center;
+                    @media only screen and (max-width: 991px){
+                        margin-left: 8px;
+                        margin-right: 8px;
+                    }
+                    .st-img{
+                        display: inline-block;
+                        margin-bottom: 8px;
+                        @media only screen and (max-width: 991px){
+                            img{
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                    .st-text{
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0;
+                        text-align: left;
+                        color: #708092;
+                        text-transform: capitalize;
+                        @media only screen and (max-width: 991px){
+                            font-size: 14px;
+                            line-height: 18px;
+                            letter-spacing: 0;
+                            width: 140px;
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                    &.right{
+                        text-align: right;
+                        .st-text{
+                            text-align: right;
+                        }
+                    }
+                }
             }
         }
         &.week-1 {
             .path-img {
-                position: relative;
-                left: -144px;
-                margin-top: 135px;
-                .completed {
-                    display: none;
-                    &.active-1 {
-                        display: block;
-                        position: absolute;
-                        top: 98px;
-                        left: 272px;
+                left: -70px;
+                margin-top: 140px;
+                @media only screen and (max-width: 991px){
+                    left: unset;
+                    //margin: auto;
+                    margin-top: 120px;
+                }
+                .milestone-step{
+                    @media only screen and (max-width: 991px){
+                        margin-bottom: 70px;
                     }
+                    &.active-1{
+                        top: 68px;
+                        left: 178px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: 20px;
+                        }
+                    }
+                }
+                .milestone-step{
                     &.active-2 {
-                        display: block;
-                        position: absolute;
-                        top: 316px;
-                        left: 282px;
+                        top: 295px;
+                        left: 209px;
+                        @media only screen and (max-width: 991px){
+                            flex-direction: row-reverse;
+                            left: -136px;
+                            top: 0px;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -222,26 +380,41 @@
             .path-img {
                 position: relative;
                 top: -21px;
-                right: 6px;
-                .completed {
-                    display: none;
-                    &.active-1 {
-                        display: block;
-                        position: absolute;
-                        top: 28px;
-                        right: 318px
+                .img{
+                    margin-left: 114px;
+                }
+                .milestone-step{
+                    &.active-1{
+                        top: -10px;
+                        left: 440px;
+                        @media only screen and (max-width: 991px){
+                            margin-top: 140px;
+                            top: 0px;
+                            left: 20px;
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-2 {
-                        display: block;
-                        position: absolute;
-                        top: 158px;
-                        left: 244px;
+                        top: 118px;
+                        left: 8px;
+                        @media only screen and (max-width: 991px){
+                            left: -136px;
+                            top: 0px;
+                            margin-top: 70px;
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-3 {
-                        display: block;
-                        position: absolute;
-                        top: 340px;
-                        left: 336px;
+                        top: 306px;
+                        left: 316px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: 20px;
+                            margin-top: 70px;
+                            margin-bottom: 30px;
+                        }
                     }
                 }
             }
@@ -249,33 +422,75 @@
         &.week-3 {
             .path-img {
                 position: relative;
-                top: -37px;
-                left: -190px;
-                .completed {
-                    display: none;
-                    &.active-1 {
-                        display: block;
-                        position: absolute;
-                        top: 130px;
-                        right: 158px;
+                top: -30px;
+                left: 82px;
+                @media only screen and (max-width: 991px){
+                    top: -22px;
+                    left: 0;
+                }
+                .milestone-step{
+                    &.active-1{
+                        top: 100px;
+                        left: 50px;
+                        @media only screen and (max-width: 991px){
+                            top:0;
+                            left:-136px;
+                            margin-top: 120px;
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-2 {
-                        display: block;
-                        position: absolute;
-                        top: 254px;
-                        left: 250px;
+                        top: 230px;
+                        left: -250px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: 20px;
+                            flex-direction: row-reverse;
+                            margin-top: 70px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-3 {
-                        display: block;
-                        position: absolute;
-                        bottom: 372px;
-                        left: 466px;
+                        top: 400px;
+                        left: 140px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: -136px;
+                            margin-top: 70px;
+                            flex-direction: row-reverse;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-4 {
-                        display: block;
-                        position: absolute;
-                        bottom: 190px;
-                        left: 464px;
+                        bottom: 115px;
+                        left: -5px;
+                        @media only screen and (max-width: 991px){
+                            bottom: 0;
+                            left: 20px;
+                            flex-direction: row-reverse;
+                            margin-top: 70px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -283,21 +498,58 @@
         &.week-4 {
             .path-img {
                 position: relative;
-                right: 172px;
-                top: -47px;
-                .completed {
-                    display: none;
-                    &.active-1 {
-                        display: block;
-                        position: absolute;
-                        top: 130px;
-                        right: 326px;
+                top: -42px;
+                left: 128px;
+                @media only screen and (max-width: 991px){
+                    top: -22px;
+                    left: 0;
+                }
+                .milestone-step{
+                    &.active-1{
+                        top: 102px;
+                        left: 20px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: -136px;
+                            margin-top: 130px;
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-2 {
-                        display: block;
-                        position: absolute;
-                        bottom: 166px;
-                        left: 528px;
+                        top: 200px;
+                        left: -266px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            flex-direction: row-reverse;
+                            left: 20px;
+                            margin-top: 70px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+                .milestone-step{
+                    &.active-3 {
+                        bottom: 94px;
+                        left: 230px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            flex-direction: row-reverse;
+                            left: -136px;
+                            margin-top: 70px;
+                            bottom: unset;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -305,45 +557,120 @@
         &.week-5 {
             .path-img {
                 position: relative;
-                right: 150px;
-                top: -60px;
-                .completed {
-                    display: none;
-                    &.active-1 {
-                        display: block;
-                        position: absolute;
-                        top: 174px;
-                        left: 364px;
+                left: 132px;
+                top: -56px;
+                @media only screen and (max-width: 991px){
+                    top: -22px;
+                    left: 0;
+                }
+                .milestone-step{
+                    &.active-1{
+                        top: 148px;
+                        left: -80px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            flex-direction: row-reverse;
+                            left: 20px;
+                            margin-top: 140px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-2 {
-                        display: block;
-                        position: absolute;
-                        bottom: 626px;
-                        left: 534px;
+                        top: 290px;
+                        left: 246px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: -136px;
+                            margin-top: 70px;
+                            flex-direction: row-reverse;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-3 {
-                        display: block;
-                        position: absolute;
-                        bottom: 486px;
-                        left: 618px;
+                        bottom: 410px;
+                        left: 340px;
+                        @media only screen and (max-width: 991px){
+                            bottom: unset;
+                            top: 0;
+                            left: 20px;
+                            margin-top: 70px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
-                    &.active-4 {
-                        display: block;
-                        position: absolute;
-                        bottom: 386px;
-                        left: 316px;
+                }
+                .milestone-step{
+                    &.active-4{
+                        bottom: 310px;
+                        left: -110px;
+                        @media only screen and (max-width: 991px){
+                            bottom: unset;
+                            margin-top: 70px;
+                            left: -136px;
+                            top: 0;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-5 {
-                        display: block;
-                        position: absolute;
-                        bottom: 199px;
-                        left: 338px;
+                        bottom: 118px;
+                        left: -220px;
+                        @media only screen and (max-width: 991px){
+                            bottom: unset;
+                            top: 0;
+                            flex-direction: row-reverse;
+                            left: 20px;
+                            margin-top: 70px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-6 {
-                        display: block;
-                        position: absolute;
-                        bottom: 139px;
-                        left: 492px;
+                        bottom: 60px;
+                        left: 220px;
+                        @media only screen and (max-width: 991px){
+                            bottom: unset;
+                            top: 0;
+                            left: -136px;
+                            margin-top: 70px;
+                            flex-direction: row-reverse;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -351,37 +678,89 @@
         &.week-6 {
             .path-img {
                 position: relative;
-                top: -72px;
-                left: -112px;
-                .completed {
-                    display: none;
-                    &.active-1 {
-                        display: block;
-                        position: absolute;
-                        top: 184px;
-                        left: 472px;
+                left: -94px;
+                top: -69px;
+                @media only screen and (max-width: 991px){
+                    top: -22px;
+                    left: 0;
+                    &:before{
+                        height: 87%;
                     }
+                }
+                .milestone-step{
+                    &.active-1{
+                        top: 162px;
+                        left: 448px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: 20px;
+                            margin-top: 130px;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+                .milestone-step{
                     &.active-2 {
-                        display: block;
-                        position: absolute;
-                        top: 354px;
-                        left: 244px;
+                        bottom: 324px;
+                        left: 42px;
+                        @media only screen and (max-width: 991px){
+                            bottom: unset;
+                            top: 0;
+                            left: -136px;
+                            margin-top: 70px;
+                        }
                     }
+                }
+                .milestone-step{
                     &.active-3 {
-                        display: block;
-                        position: absolute;
-                        bottom: 250px;
-                        left: 322px;
+                        bottom: 178px;
+                        left: 304px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: 20px;
+                            margin-top: 70px;
+                            bottom: unset;
+                            .stand-content{
+                                text-align: left;
+                                .st-text{
+                                    text-align: left;
+                                }
+                            }
+                        }
                     }
-                    &.active-4 {
-                        display: block;
-                        position: absolute;
-                        bottom: 108px;
-                        left: 606px;
+                }
+                .milestone-step{
+                    &.active-4{
+                        bottom: 44px;
+                        left: 590px;
+                        @media only screen and (max-width: 991px){
+                            top: 0;
+                            left: -136px;
+                            margin-top: 70px;
+                            bottom: unset;
+                            flex-direction: row-reverse;
+                            .stand-content{
+                                text-align: right;
+                                .st-text{
+                                    text-align: right;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+        .path-img{
+            @media only screen and (max-width: 991px){
+                .img{
+                    display: none;
+                }
+            }
+        }
     }
-    
 }
