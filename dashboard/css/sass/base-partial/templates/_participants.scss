@@ -171,12 +171,13 @@
 }
 .mm-journey-sec {
     padding: 80px 0;
-    background: url(../images/background.jpg) no-repeat ;
-    background-size: cover;
+    background: url(../images/journey-texture.svg) no-repeat ;
+    //background-size: cover;
     //background-position: 0px -230px;
-    background-position: 0px -170px;
+    //background-position: 0px -230px;
     background-color: #113061;
     overflow-x: hidden;
+    background-position: top right;
     @media only screen and (max-width: 991px){
         background: #113061;
         background-size: unset;
@@ -246,6 +247,7 @@
         }
         .path-img{
             position: relative;
+            z-index: 4;
             @media only screen and (max-width: 991px){
                 margin: auto;
                 &:before{
@@ -350,6 +352,13 @@
                     }
                 }
             }
+            .pt-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: -1;
+            }
         }
         &.week-1 {
             .path-img {
@@ -390,6 +399,14 @@
                         }
                     }
                 }
+                .tree-img{
+                    top: 200px;
+                    left: -170px;
+                }
+                .tile-img{
+                    top: 320px;
+                    left: -100px;
+                }
             }
         }
         &.week-2 {
@@ -398,6 +415,10 @@
                 top: -21px;
                 .img{
                     margin-left: 114px;
+                }
+                .tree-img{
+                    top: 270px;
+                    left: -150px;
                 }
                 .milestone-step{
                     &.active-1{
@@ -443,6 +464,16 @@
                 @media only screen and (max-width: 991px){
                     top: -22px;
                     left: 0;
+                }
+                .double-tree-img{
+                    top: 240px;
+                    left: 330px;
+                }
+                .run-girl-img{
+                    top: 315px;
+                    left: 75px;
+                    filter: grayscale(1);
+                    img{ width: 50px;}
                 }
                 .milestone-step{
                     &.active-1{
@@ -520,6 +551,17 @@
                     top: -22px;
                     left: 0;
                 }
+                .tree-img{
+                    top: 440px;
+                    left: -230px;
+                }
+                .run-girl-img{
+                    top: 258px;
+                    left: 80px;
+                    filter: grayscale(1);
+                    z-index: 4;
+                    img{ width: 120px;}
+                }
                 .milestone-step{
                     &.active-1{
                         top: 102px;
@@ -571,6 +613,7 @@
             }
         }
         &.week-5 {
+            background: url(../images/road-1.svg) no-repeat left center;
             .path-img {
                 position: relative;
                 left: 132px;
@@ -578,6 +621,10 @@
                 @media only screen and (max-width: 991px){
                     top: -22px;
                     left: 0;
+                }
+                .tree-img{
+                    bottom: 40px;
+                    left: -430px;
                 }
                 .milestone-step{
                     &.active-1{
@@ -692,6 +739,7 @@
             }
         }
         &.week-6 {
+            background: url(../images/road-2.svg) no-repeat left top 120px;
             .path-img {
                 position: relative;
                 left: -94px;
@@ -702,6 +750,11 @@
                     &:before{
                         height: 87%;
                     }
+                }
+                .double-tree-img{
+                    top: 528px;
+                    left: -90px;
+                    transform: scale(1.5);
                 }
                 .milestone-step{
                     &.active-1{
