@@ -20,6 +20,9 @@
         &.text-white{
             color: #fff;
         }
+        &.mb-20{
+            margin-bottom: 20px;
+        }
     } 
     p{
         font-family: 'Inter';
@@ -196,12 +199,14 @@
             padding-top: 140px;
         }
         .recomded-table{
+            border: 1px solid #41B9D5;
+            border-radius: 10px;
+            overflow: hidden;
             table{
                 background: #1C4685;
                 //border-radius: 10px;
                 overflow: hidden;
                 width: 100%;
-                border: 1px solid #41B9D5;
                 tr th{
                     font-family: 'Inter';
                     font-weight: 700;
@@ -240,23 +245,17 @@
                     height: 60px;
                     padding: 0 12px;
                     border: 1px solid #41B9D5;
-                    border-bottom: 0px;
-                    border-right:0px;
+                    border-top: 0px;
+                    border-left:0px;
                     vertical-align: middle;
                     &:last-child{
-                        border-right: 1px solid #41B9D5;
-                    }
-                    &.bl-radius{
-                        border-radius: 0 0 0 10px;
-                    }
-                    &.br-radius{
-                        border-radius: 0 0 10px 0;
+                        border-right: 0px;
                     }
                 }
                 tr{
                     &:last-child{
                         td{
-                            border-bottom: 1px solid #41B9D5;
+                            border-bottom: 0px;
                         }
                     }
                 }
@@ -265,43 +264,65 @@
     }
     .score-card-sec {
         position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            background: url('/images/bg-rings-img.svg') no-repeat center left;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .report-pad{
+            padding-top: 57px;
+            padding-bottom: 60px;
+        }
         .score-card-list{
             .score-card-item{
-                padding-bottom: 50px;
+                padding-bottom: 40px;
+                &:last-child{
+                    padding-bottom: 0px;
+                }
                 .score-card-head {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
-                    padding-bottom: 10px;
-                    img {
-                        width: 25px;
+                    padding-bottom: 6px;
+                    .img-cir{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                        background: #2D4974;
+                        border: 1px solid #000000;
                     }
+                    
                     h5 {
-                        font-size: 24px;
-                        line-height: 26px;
+                        font-size: 16px;
+                        line-height: 21px;
                         font-weight: 600;
                         font-family: Inter;
-                        padding-left: 10px;
+                        padding-left: 6px;
                         color: #FFFFFF;
-                        @media screen and (max-width:768px) {
-                        font-size: 20px;
-                        line-height: 24px;
-                        font-weight: 500;
-                        }
                     }
                 }
                 .score-card-body {
-                    padding-left: 70px;
-                    ul{
+                    padding-left: px;
+                    .bullet-list{
                         li{
-                            list-style: disc;
                             color: #41B9D5;
-                            padding-bottom: 10px;
-                            font-size: 24px;
-                            line-height: 28px;
-                            @media screen and (max-width:768px) {
-                                font-size: 18px;
-                                line-height: 24px;
+                            padding-bottom: 6px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            padding-left: 54px;
+                            font-weight: 400;
+                            &:before{
+                                width: 5px;
+                                height: 5px;
+                                background: #41B9D5;
+                                top: 6px;
+                                left: 40px;
                             }
                         }
                     }
