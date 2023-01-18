@@ -5,301 +5,303 @@
     margin: auto;
     @media screen and (max-width:1024px) {
         max-width: 100%;
-        .report-pad{
-            padding: 30px 16px;
+    }
+    .report-pad{
+        padding: 30px 16px;
+    }
+    h3{
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: #FEC914;
+        margin-bottom: 15px;
+        &.text-white{
+            color: #fff;
         }
-        h3{
-            font-family: Inter;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 22px;
-            letter-spacing: 0.03em;
-            color: #FEC914;
-            margin-bottom: 15px;
-            &.text-white{
-                color: #fff;
-            }
-        } 
+    } 
+    p{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #41B9D5;
+    }
+    .report-logo{
+        padding: 20px 16px 10px;
+        text-align: center;
+    }
+    .report-header{
         p{
-            font-family: 'Inter';
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #41B9D5;
+            strong{
+                display: block;
+                font-size: 16px;
+                line-height: 19px;
+                color: #41B9D5;
+            }
         }
-        .report-logo{
-            padding: 20px 16px 10px;
+    }
+    .report-summary{
+        background: #0F2F5F;
+        border-radius: 16px 16px 0 0;
+        p{
+            font-size: 12px;
+            line-height: 15px;
             text-align: center;
+            letter-spacing: 0.03em;
+            color: #708092;
+            margin-bottom: 30px;
         }
-        .report-header{
-            p{
-                strong{
-                    display: block;
+        .score-summary{
+            border-radius: 10px 10px;
+            overflow: hidden;
+            border: 1px solid #41B9D5;
+            position: relative;
+            .health-score{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 95px;
+                background: #021D45;
+                h4{
+                    font-family: 'Inter';
+                    font-weight: 600;
                     font-size: 16px;
                     line-height: 19px;
-                    color: #41B9D5;
+                    letter-spacing: 0.03em;
+                    color: #F0E7D2;
+                    padding-left: 14px;
+                }
+                .score{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 95px;
+                    width: 100px;
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 26px;
+                    color: #5BE967;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        background: url('/images/hs-cricle.svg') no-repeat center;
+                        width: 120px;
+                        height: 95px;
+                        top:0;
+                        right: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
                 }
             }
-        }
-        .report-summary{
-            background: #0F2F5F;
-            border-radius: 16px 16px 0 0;
-            p{
-                font-size: 12px;
-                line-height: 15px;
-                text-align: center;
-                letter-spacing: 0.03em;
-                color: #708092;
-                margin-bottom: 30px;
+            .avg-score-detail{
+                background: #0F2F5F;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .one-half{
+                    width: 50%;
+                    &:first-child{
+                        border-right: 1px solid #1C4685;
+                    }
+                }
+                .avg-info{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 80px;
+                    .avg-score{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 8px;
+                        strong{
+                            font-family: 'Inter';
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 26px;
+                            color: #F0E7D2;
+                            margin-left: 8px;
+                        }
+                    }
+                    .avg-text{
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 9px;
+                        line-height: 11px;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        color: #41B9D5;
+                        padding: 0 30px;
+                    }
+                }
             }
-            .score-summary{
-                border-radius: 10px 10px;
-                overflow: hidden;
-                border: 1px solid #41B9D5;
-                position: relative;
-                .health-score{
+            .avg-heart-score{
+                background: #1C4685;
+                padding: 15px 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                strong{
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.03em;
+                    color: #F0E7D2;
+                    margin-left: 8px;
+                }
+            }
+            .health-result{
+                background: #41B9D5;
+                padding: 15px;
+                p{
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.03em;
+                    color: #2C3C4B;
+                    margin-bottom: 15px;
+                    text-align: left;
+                }
+                ul{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    height: 95px;
-                    background: #021D45;
-                    h4{
+                    li{
                         font-family: 'Inter';
                         font-weight: 600;
-                        font-size: 16px;
-                        line-height: 19px;
+                        font-size: 9px;
+                        line-height: 11px;
                         letter-spacing: 0.03em;
-                        color: #F0E7D2;
-                        padding-left: 14px;
+                        color: #2C3C4B;    
+                        padding-right: 20px;
+                        margin-right: 6px;                        
                     }
-                    .score{
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 95px;
-                        width: 100px;
-                        font-family: 'Inter';
-                        font-weight: 700;
-                        font-size: 32px;
+                }
+            }
+        }
+    }
+    .report-recomded{
+        background: #1C4685;
+        margin-top: -138px;
+        .report-pad{
+            padding-top: 140px;
+        }
+        .recomded-table{
+            table{
+                background: #1C4685;
+                //border-radius: 10px;
+                overflow: hidden;
+                width: 100%;
+                border: 1px solid #41B9D5;
+                tr th{
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 17px;
+                    letter-spacing: 0.03em;
+                    color: #0F2F5F;
+                    text-align: left;
+                    height: 53px;
+                    padding: 0 12px;
+                    vertical-align: middle;
+                    &.bg-lightorange{
+                        background-color: #E2B6B6;
+                    }
+                    &.bg-lightyellow{
+                        background-color: #FDF8CF;
+                    }
+                    &.bg-lightblue{
+                        background-color: #C8EBE2;
+                    }
+                    &.lt-radius{
+                        border-radius: 10px 0 0 0;
+                    }
+                    &.rt-radius{
+                        border-radius: 0 10px 0 0;
+                    }
+                }
+                tr td{
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.03em;
+                    color: #F0E7D2;
+                    text-align: left;
+                    height: 60px;
+                    padding: 0 12px;
+                    border: 1px solid #41B9D5;
+                    border-bottom: 0px;
+                    border-right:0px;
+                    vertical-align: middle;
+                    &:last-child{
+                        border-right: 1px solid #41B9D5;
+                    }
+                    &.bl-radius{
+                        border-radius: 0 0 0 10px;
+                    }
+                    &.br-radius{
+                        border-radius: 0 0 10px 0;
+                    }
+                }
+                tr{
+                    &:last-child{
+                        td{
+                            border-bottom: 1px solid #41B9D5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .score-card-sec {
+        position: relative;
+        .score-card-list{
+            .score-card-item{
+                padding-bottom: 50px;
+                .score-card-head {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    img {
+                        width: 25px;
+                    }
+                    h5 {
+                        font-size: 24px;
                         line-height: 26px;
-                        color: #5BE967;
-                        &:after{
-                            content: '';
-                            position: absolute;
-                            background: url('/images/hs-cricle.svg') no-repeat center;
-                            width: 120px;
-                            height: 95px;
-                            top:0;
-                            right: 0;
-                            display: flex;
-                            justify-content: flex-end;
-                            align-items: center;
-                        }
-                    }
-                }
-                .avg-score-detail{
-                    background: #0F2F5F;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .one-half{
-                        width: 50%;
-                        &:first-child{
-                            border-right: 1px solid #1C4685;
-                        }
-                    }
-                    .avg-info{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        height: 80px;
-                        .avg-score{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-bottom: 8px;
-                            strong{
-                                font-family: 'Inter';
-                                font-weight: 600;
-                                font-size: 24px;
-                                line-height: 26px;
-                                color: #F0E7D2;
-                                margin-left: 8px;
-                            }
-                        }
-                        .avg-text{
-                            font-family: 'Inter';
-                            font-weight: 400;
-                            font-size: 9px;
-                            line-height: 11px;
-                            text-align: center;
-                            letter-spacing: 0.03em;
-                            color: #41B9D5;
-                            padding: 0 30px;
-                        }
-                    }
-                }
-                .avg-heart-score{
-                    background: #1C4685;
-                    padding: 15px 15px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    strong{
-                        font-family: 'Inter';
                         font-weight: 600;
-                        font-size: 16px;
-                        line-height: 19px;
-                        letter-spacing: 0.03em;
-                        color: #F0E7D2;
-                        margin-left: 8px;
-                    }
-                }
-                .health-result{
-                    background: #41B9D5;
-                    padding: 15px;
-                    p{
-                        font-family: 'Inter';
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 17px;
-                        letter-spacing: 0.03em;
-                        color: #2C3C4B;
-                        margin-bottom: 15px;
-                        text-align: left;
-                    }
-                    ul{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        li{
-                            font-family: 'Inter';
-                            font-weight: 600;
-                            font-size: 9px;
-                            line-height: 11px;
-                            letter-spacing: 0.03em;
-                            color: #2C3C4B;    
-                            padding-right: 20px;
-                            margin-right: 6px;                        
-                        }
-                    }
-                }
-            }
-        }
-        .report-recomded{
-            background: #1C4685;
-            margin-top: -138px;
-            .report-pad{
-                padding-top: 140px;
-            }
-            .recomded-table{
-                table{
-                    background: #1C4685;
-                    //border-radius: 10px;
-                    overflow: hidden;
-                    tr th{
-                        font-family: 'Inter';
-                        font-weight: 700;
-                        font-size: 13px;
-                        line-height: 17px;
-                        letter-spacing: 0.03em;
-                        color: #0F2F5F;
-                        text-align: left;
-                        height: 53px;
-                        padding: 0 12px;
-                        vertical-align: middle;
-                        &.bg-lightorange{
-                            background-color: #E2B6B6;
-                        }
-                        &.bg-lightyellow{
-                            background-color: #FDF8CF;
-                        }
-                        &.bg-lightblue{
-                            background-color: #FDF8CF;
-                        }
-                        &.lt-radius{
-                            border-radius: 10px 0 0 0;
-                        }
-                        &.rt-radius{
-                            border-radius: 0 10px 0 0;
-                        }
-                    }
-                    tr td{
-                        font-family: 'Inter';
+                        font-family: Inter;
+                        padding-left: 10px;
+                        color: #FFFFFF;
+                        @media screen and (max-width:768px) {
+                        font-size: 20px;
+                        line-height: 24px;
                         font-weight: 500;
-                        font-size: 12px;
-                        line-height: 15px;
-                        letter-spacing: 0.03em;
-                        color: #F0E7D2;
-                        text-align: left;
-                        height: 60px;
-                        padding: 0 12px;
-                        border: 1px solid #41B9D5;
-                        border-bottom: 0px;
-                        border-right:0px;
-                        vertical-align: middle;
-                        &:last-child{
-                            border-right: 1px solid #41B9D5;
-                        }
-                        &.bl-radius{
-                            border-radius: 0 0 0 10px;
-                        }
-                        &.br-radius{
-                            border-radius: 0 0 10px 0;
-                        }
-                    }
-                    tr{
-                        &:last-child{
-                            td{
-                                border-bottom: 1px solid #41B9D5;
-                            }
                         }
                     }
                 }
-            }
-        }
-        .score-card-sec {
-            position: relative;
-            .score-card-list{
-                .score-card-item{
-                    padding-bottom: 50px;
-                    .score-card-head {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        padding-bottom: 10px;
-                        img {
-                            width: 25px;
-                        }
-                        h5 {
+                .score-card-body {
+                    padding-left: 70px;
+                    ul{
+                        li{
+                            list-style: disc;
+                            color: #41B9D5;
+                            padding-bottom: 10px;
                             font-size: 24px;
-                            line-height: 26px;
-                            font-weight: 600;
-                            font-family: Inter;
-                            padding-left: 10px;
-                            color: #FFFFFF;
+                            line-height: 28px;
                             @media screen and (max-width:768px) {
-                            font-size: 20px;
-                            line-height: 24px;
-                            font-weight: 500;
-                            }
-                        }
-                    }
-                    .score-card-body {
-                        padding-left: 70px;
-                        ul{
-                            li{
-                                list-style: disc;
-                                color: #41B9D5;
-                                padding-bottom: 10px;
-                                font-size: 24px;
-                                line-height: 28px;
-                                @media screen and (max-width:768px) {
-                                    font-size: 18px;
-                                    line-height: 24px;
-                                }
+                                font-size: 18px;
+                                line-height: 24px;
                             }
                         }
                     }
@@ -308,5 +310,6 @@
         }
     }
 }
+
 
 
