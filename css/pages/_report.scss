@@ -47,7 +47,7 @@
             p{
                 font-size: 12px;
                 line-height: 15px;
-                text-align: center;
+                text-align: center; 
                 letter-spacing: 0.03em;
                 color: #708092;
                 margin-bottom: 30px;
@@ -56,6 +56,7 @@
                 border-radius: 10px 10px;
                 overflow: hidden;
                 border: 1px solid #41B9D5;
+                position: relative;
                 .health-score{
                     display: flex;
                     justify-content: space-between;
@@ -189,6 +190,10 @@
         }
         .report-recomded{
             background: #1C4685;
+            margin-top: -138px;
+            .report-pad{
+                padding-top: 140px;
+            }
             .recomded-table{
                 table{
                     background: #1C4685;
