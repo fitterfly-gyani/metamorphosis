@@ -1,0 +1,17 @@
+// Core variables and mixins
+@import 'atoms/_variables.scss';
+@import 'atoms/_mixin.scss';
+
+// Normalize and reset
+@import 'atoms/_reset-and-normalize.scss';
+@import 'atoms/_grid.scss';
+@import 'atoms/_extend.scss';
+
+// Components
+@import 'atoms/_button-groups.scss';
+@import 'atoms/_typography.scss'; 
+@import 'atoms/_pattern.scss';
+@import 'molecules/_sidebar.scss';
+@import 'molecules/_header.scss';
+@import 'molecules/_form.scss';
+@import 'template/_dashboard.scss';

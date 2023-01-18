@@ -1,0 +1,16 @@
+.header {
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    .active-nav {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .right-layout {
+        display: flex;
+        align-items: center;
+        gap:15px;
+    }
+}
