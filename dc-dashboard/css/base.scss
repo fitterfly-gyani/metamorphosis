@@ -11,7 +11,12 @@
 @import 'atoms/_button-groups.scss';
 @import 'atoms/_typography.scss'; 
 @import 'atoms/_pattern.scss';
+
+// molecules
 @import 'molecules/_sidebar.scss';
 @import 'molecules/_header.scss';
 @import 'molecules/_form.scss';
+@import 'molecules/_card.scss';
+
+// templates
 @import 'template/_dashboard.scss';

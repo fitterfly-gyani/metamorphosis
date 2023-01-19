@@ -29,9 +29,9 @@ h3{
 h4{
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 16px; 
-  line-height: 26px;
-  color: #F0E7D2;
+  font-size: 14px; 
+  line-height: 20px;
+  color: #1C1C1C;
 }
 
 
@@ -54,4 +54,39 @@ p{
 }
 .wt-yellow{
   background: #FBF0DC;
+}
+
+.bg-lt-blue{
+  background: #EFF5FA;
+}
+.bg-lt-orange{
+  background: #FCD7D1;
+}
+.bg-lt-green{
+  background: #DBF4F2;
+}
+.bg-lt-yellow{
+  background: #FBF0DC;
+}
+.bg-lt-grey{
+  background: #F7F9FB;
+}
+
+.pink{
+  background: #F62088;
+}
+.orange{
+  background: #FC7D00;
+}
+.green{
+  background: #1A9D25;
+}
+.text-pink{
+  color: #F62088;
+}
+.text-orange{
+  color: #FC7D00;
+}
+.text-green{
+  color: #1A9D25;
 }

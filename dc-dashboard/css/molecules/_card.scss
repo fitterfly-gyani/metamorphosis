@@ -1,0 +1,43 @@
+.card-block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card{
+    border-radius: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-head{
+    padding: 16px 16px;
+    &.pb-0{
+        padding-bottom: 0px;
+    }
+} 
+.card-title{
+    @extend .flex-space-between;
+    h4{
+        flex:1;
+    }
+    .count{
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1C1C1C;
+    }
+}
+.card-body{
+    padding: 16px 16px;
+    height: 100%;
+}
+
+.card-sm{
+    height: 112px;
+}
