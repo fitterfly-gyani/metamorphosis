@@ -1,0 +1,161 @@
+.Patient-page {
+    .header {
+        align-items: center;
+    }
+    .right-layout {
+        justify-content: space-between;
+        .refer-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1C1C1C;
+            border-radius: 8px;
+            height: 40px;
+            color: #FFFFFF;
+        }
+        .custome-filter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                width: 50%;
+            }
+        }
+        .search-box {
+            width: 48%;
+            input {
+                max-width: 400px;
+            }
+            .search {
+                background: url(/dc-dashboard/images/search.svg) no-repeat 5% center;
+                padding: 5px 15px 5px 45px;
+            }
+        }
+        .drop-down {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 50px;
+            border-radius: 8px;
+            height: 40px;
+            color: #FFFFFF;
+        }
+    }
+}
+.consultation-fee {
+    .right-layout {
+        justify-content: flex-end;
+    }
+    .update-sec {
+        padding: 20px 25px;
+        .card-body {
+            height: 180px;
+        }
+    }
+}
+.refer-sec {
+    .heading {
+        height: 88px;
+        left: 212px;
+        background: #FFFFFF;
+        padding: 40px 0px 28px 32px; 
+        border-bottom: 1.05415px solid rgba(0, 0, 0, 0.1);
+        span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #0A0A0A; 
+        }
+    }
+    .refer-page-info {
+        display: flex;
+    }
+    
+    .refer-page-table {
+        padding: 24px 24px 0px 24px;
+        background: #DBF4F2;
+        .teble-heading {
+            padding: 24px 0px 10px 0px;
+        }
+        .table-head {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center;
+            padding-bottom: 15px;
+            .search-box {
+                padding-right: 30px;
+                width: 50%;
+                input {
+                    max-width: 391px;
+                }
+                .search {
+                    background: url(/dc-dashboard/images/search.svg) no-repeat 5% center;
+                    padding: 5px 15px 5px 45px;
+                    background-color: #fff;
+                }
+            }
+        }
+        table {
+            background: #FFFFFF;
+        }
+    }
+    .refer-page-form {
+        padding: 24px;
+        .form-grup {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+            label {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #1C1C1C;
+                padding-bottom: 10px;
+            }
+            input {
+                max-width: 350px;
+            }
+            select {
+                outline: none;
+                border: 1px solid #9E9E9E;
+                border-radius: 8px;
+                height: 40px;
+                padding: 10px;
+                width: 100%;
+                max-width: 350px;
+                background-color: #fff;
+            }
+            textarea {
+                outline: none;
+                border: 1px solid #9E9E9E;
+                border-radius: 8px;
+                height: 40px;
+                padding: 10px;
+                width: 100%;
+                max-width: 350px;
+                height: 328px;
+                background-color: #fff;
+            }
+        }
+        .refer-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1C1C1C;
+            border-radius: 8px;
+            height: 40px;
+            color: #FFFFFF;
+            width: 350px;
+        } 
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="/dc-dashboard/css/base.css">
+</head>
+<body>
+  <div class="row row-eq-height">
+    <div class="col-lg-2 nopadding">
+      <div class="sidebar"> 
+        <div class="doctor-details">
+            <div class="doctor-profile-pic">
+              <img src="images/dcprofil.png"  alt="" />
+            </div>
+            <div class="doctor-info">
+                <span class="name">Doctor's Name</span>
+                <a href="#" class="email">Doctor@fitterfly.com</a>
+            </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="active nav-item">
+                <span class="nav-icon">
+                  <img src="images/chartpieslice.svg" alt="">
+                </span>
+                <span class="nav-item-name">
+                  Dashboard
+                </span>
+            </li>
+            <li class=" nav-item">
+              <span class="nav-icon">
+                <img src="images/usersthree.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Patient
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/notebook.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Contact
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/chatsteardrop.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Refer
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/wallet.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Consultation Fee
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/signout.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Log Out
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-lg-10 nopadding Patient-page">
+      <div class="middle-content consultation-fee">
+        <div class="header">
+          <div class="col-lg-3">
+            <strong class="active-nav">Consultation Fee</strong>
+          </div>
+          <div class="col-lg-9 right-layout"> 
+            <div class="custome-filter">
+              <input type="text" placeholder="Date" disabled class="filter">
+            </div>
+            <div class="custome-filter">
+                <input type="text" placeholder="Program" disabled class="filter">
+              </div>
+              <div class="custome-filter">
+                <input type="text" placeholder="Fee Status" disabled class="filter">
+              </div>
+          </div>
+        </div>
+        <div class="patients-table">
+            <table>
+                <thead class="bg-gray">
+                    <tr>
+                        <th>Name</th>
+                        <th>Program Enrolled</th>
+                        <th>Consultation Fee</th>
+                        <th>Date of Enrollment</th>
+                        <th>Fee Status</th>
+                      </tr>
+                </thead>
+                <tr>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                </tr>
+                <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/bad-dot.svg" alt=""><span class="text-red">Failed</span></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/onhold-dot.svg" alt=""><span class="text-orange">Unpaid</span></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/onhold-dot.svg" alt=""><span class="text-orange">Unpaid</span></div></td>
+                  </tr>
+                  <tr class="Competed-status">
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/koray-okumus.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/competed-dot.svg" alt=""><span class="text-green">Paid</span></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                  </tr>
+                  <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>Rs. 999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                  </tr>
+              </table>
+        </div>
+        <div class="update-sec">
+            <div class="card-block">
+              <div class="card bg-lt-grey">
+                <div class="card-head bg-lt-blue">
+                  <div class="card-title">
+                    <h4>Monthly Stats and Updates</h4>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
