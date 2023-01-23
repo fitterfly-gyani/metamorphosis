@@ -284,3 +284,299 @@
         } 
     }
 }
+
+.dc-dashboard-popup {
+    .popup{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0,0,0,0.5); */
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        min-width: 700px;
+        max-width: 700px;
+        margin: auto;
+        @media screen and (max-width:768px) {
+            min-width: unset;
+            max-height:unset;
+        }
+        .popup-pad{
+            position: relative; 
+            // min-width: 700px;
+            // max-width: 700px;
+            background: #EFF5FA;;
+            border-radius: 15px;
+            overflow:auto;
+            margin: 25px 0;
+            @media screen and (max-width:768px) {
+                width: 100%;
+                margin: 25px 0 0;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+        
+        .popup-body{
+            .popup-inner-pad {
+                padding: 30px 96px;
+                @media screen and (max-width:768px) {
+                    padding: 15px 20px;
+                }
+                h3 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    display: flex;
+                    align-items: center;
+                    color: #021D45;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #E83D62;
+                    margin-bottom: 20px;
+                    @media screen and (max-width:768px) {
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+                }
+                p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    display: flex;
+                    align-items: center;
+                    color: #2C3C4B;
+                    padding-bottom: 30px;
+                    margin-bottom: 20px;
+                    padding-right: 50px;
+                    display: inline-block;
+                    border-bottom: 1px solid #E83D62;
+                    position: relative;
+                    @media screen and (max-width:768px) {
+                        border: none;
+                        font-size: 14px;
+                        padding: 0;
+                        line-height: 18px;
+                    }
+                    
+                    &::after {
+                        content: "";
+                        width: 40%;
+                        height: 1px;
+                        background-color: #E83D62;
+                        display: none;
+                        @media screen and (max-width:768px) {
+                            display: block;
+                            position: relative;
+                            top: 10px;
+                        }
+                    }
+                }
+                .popup-btn {
+                    .btn{
+                        width: 607.99px;
+                        background: #E83D62;
+                        border-radius: 6px;
+                        color: #EFF5FA;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 29px;
+                        &.disabled{
+                            background: #A3B2C2;
+                        }
+                    }
+                }
+                label {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    display: flex;
+                    align-items: center;
+                    color: #696F79;
+                    padding-bottom: 15px;
+                }
+                input{
+                  &:focus {
+                    border: 2px solid #166780 !important;
+                    @media screen and (max-width:991px) {
+                      border: 1px solid  #166780 !important; ;
+                    }
+                  }
+                }
+                input[type="text"], input[type="password"], input[type="number"], input[type="email"], select, textarea, input[type="date"], input[type="time"],input[type="file"],input[type="search"] {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: -0.3px;
+                    padding: 15px 25px;
+                    // height: 64px;
+                    color: #000000;
+                    background: #EFF5FA;
+                    border: 2px solid #8692A6;
+                    border-radius: 6px;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    width: 100%;
+                    -webkit-appearance: none;
+                      appearance: none;
+                      @media screen and (max-width:991px) {
+                        border: 1px solid #8692A6;
+                      }  
+                    &:hover{
+                      -webkit-appearance: none;
+                      appearance: none;
+                    }
+                    &:placeholder {
+                      font-family: 'Inter';
+                      font-weight: 400;
+                      font-size: 16px;
+                      font-style: normal;
+                      line-height: 19px;
+                      color: #708092;
+                      letter-spacing: -0.2px;
+                    }
+                    
+                    &:-webkit-input-placeholder { /* Internet Explorer 10-11 */
+                      font-family: 'Inter';
+                      font-weight: 400;
+                      font-size: 16px;
+                      font-style: normal;
+                      line-height: 19px;
+                      color: #708092; 
+                      letter-spacing: -0.2px; 
+                    }
+                
+                    &:-ms-input-placeholder { /* Microsoft Edge */
+                      font-family: 'Inter';
+                      font-weight: 400;
+                      font-size: 16px;
+                      font-style: normal;
+                      line-height: 19px;
+                      color: #708092;
+                      letter-spacing: -0.2px; 
+                    }
+                    
+                    &:-moz-placeholder { /* Microsoft Edge */
+                      font-family: 'Inter';
+                      font-weight: 400;
+                      font-size: 16px;
+                      font-style: normal;
+                      line-height: 19px;
+                      color: #708092;
+                      letter-spacing: -0.2px; 
+                    }
+                }
+                .form-group{  
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                    position: relative;
+                    // input:checked {
+                    //   background-color: green;
+                    // }
+                    input {
+                      &.mark{
+                          margin-right: 5px;
+                          width: 20px;
+                        }
+                    }
+                    &.checkbox{
+                      flex-direction: row;
+                      justify-content: flex-start;
+                      line-height: 20px;
+                    }
+                    .err-msg {
+                      display: none;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 17px;
+                      letter-spacing: 0.02em;
+                      color: #E43A40;
+                      position: absolute;
+                      bottom: -25px;
+                      left: 0px;
+                    }
+                    &.error{
+                        input, select, area{
+                          border: 2px solid #E43A40;
+                          border-radius: 6px;
+                          @media screen and (max-width:991px) {
+                            border: 1px solid #E43A40;
+                          }
+                        }
+                      .err-msg{
+                        display: flex;
+                      }
+                    }
+                    .undrline {
+                      text-decoration: underline;
+                    }
+                    span {
+                      font-family: 'Inter';
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 19px;
+                      display: flex;
+                      align-items: center;
+                      color: #696F79;    
+                    }
+                    .text {
+                      font-family: 'Inter';
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 18px;
+                      line-height: 22px;
+                      display: flex;
+                      align-items: center;
+                      color: #021D45;
+                      
+                    }
+                  }
+            }
+        }
+        .back-icon img {
+            @media screen and (max-width:768px) {
+                padding-bottom: 10px;
+            }
+        }
+        .form-main {
+            label {
+                @media screen and (max-width:768px) {
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding-bottom: 8px;
+                }
+            }
+            .form-group {
+                @media screen and (max-width:768px) {
+                    margin-bottom: 15px;
+                    
+                }
+            }
+            .form-field-holder {
+                @media screen and (max-width:768px) {
+                    display: block;
+                }
+            }
+            input {
+                @media screen and (max-width:768px) {
+                    border: 1px solid #8692A6;
+                }
+            }
+        }
+    }
+}
