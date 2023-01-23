@@ -43,6 +43,15 @@
     }
 }
 
+.program-card{
+    border: 1px solid #A3B2C2;
+    border-radius: 15px;
+    overflow: hidden;
+    .card-head{
+        background: #FCD7D1;
+    }
+}
+
 .entry-table{
     table{
         border: 0px;
