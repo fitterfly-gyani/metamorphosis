@@ -51,8 +51,98 @@
     }
     .update-sec {
         padding: 20px 25px;
-        .card-body {
-            height: 180px;
+        .card{
+            border: 1px solid #E0E0E0;
+        }
+        .stats-update-cards {
+            display: flex;
+            .stats-card {
+                width: 287px;
+                margin: 15px;
+                background: #EFF5FA;
+                border-radius: 10px;
+                padding: 16px 20px 20px 16px;
+                .card-heading{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #191C32;
+                    padding: 0px 0px 15px 15px;
+                }
+                .circle-block {
+                    position: relative;
+                    .white-circle {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background: #fff;
+                        position: absolute;
+                        top: 17px;
+                        left: 17px;
+                    }
+                }
+                .bullet-list{
+                    li{
+                        position: relative;
+                        padding-left: 21px;
+                        margin-bottom: 15px;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 8px;
+                            height: 8px;
+                            background: #41B9D5;
+                            border-radius: 20px;
+                            top:5px;
+                            left:0;
+                        }
+                        
+                        &.green{
+                            &:before{
+                                background: #1A9D25;
+                            }
+                        }
+                        &.yellow{
+                            &:before{
+                                background: #FEC914;
+                            }
+                        }
+                        &.red{
+                            &:before{
+                                background: #E83D62;
+                            }
+                        }
+                
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        .item{
+                            @extend .flex-align-center;
+                            span, strong{
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #EFF5FA;
+                            }
+                            span{
+                                display: flex;
+                                flex: 1;
+                                text-transform: capitalize;
+                                color: #0A0A0A;
+                            }
+                            strong{
+                                font-weight: 700;
+                                color: #166780;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -144,6 +234,41 @@
                 height: 328px;
                 background-color: #fff;
             }
+            .patient-info {
+                position: relative;
+            }
+            .three-button{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                position: absolute;
+                bottom: 85px;
+                width: 87%;
+                .report-btn {
+                    display: flex; 
+                    align-items: center;
+                    .report-btn-one {
+                        padding-right: 10px;
+                        .Report-button {
+                            background: rgba(0, 0, 0, 0.05);
+                            border-radius: 4px;
+                            width: 75px;
+                            height: 20px;
+                            padding: 0px 2px 0px 4px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .attach-file-btn {
+                    background: #F5F5F5;
+                    border: 1px solid #424242;
+                    border-radius: 8px;
+                    padding: 4px 8px;
+                    height: 35px;
+                    cursor: pointer;
+                }
+            } 
         }
         .refer-btn {
             display: flex;
