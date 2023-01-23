@@ -300,3 +300,42 @@
     border-radius: 8px;
     color: #fff;
 }
+
+
+.pat-search-list{
+    table{
+        border-right: 0px;
+    }
+    th{
+        border-top: 0px;
+        border-right: 0px;
+        &:first-child{
+            border-left: 0px;
+        }
+    }
+    .rec-link{
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #3363A5;
+    }
+}
+
+.top-align{
+    vertical-align: top;
+}
+
+.pin-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2px 0px 4px;
+    width: 22px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
