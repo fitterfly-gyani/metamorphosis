@@ -1,0 +1,78 @@
+.patients-table {
+    padding-right: 30px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    border-right: 1px solid #dddddd;
+}
+  
+th {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+}
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+.bg-gray {
+    background-color: #F7F9FB;
+}
+.profile-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    span {
+        padding-left: 10px;
+    }
+}
+.blue-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 6px;
+    width: 43px;
+    height: 18px;
+    background: #E2F5FF;
+    color: #59A8D4;
+    border-radius: 18px;
+}
+.white-bg {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px 8px;
+    width: 45px;
+    height: 25px;
+    background: #ffffff;
+    color: #59A8D4;
+    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+}
+.brown-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 6px;
+    width: 35px;
+    height: 18px;
+    background: #E2B6B6;
+    color: #541212;
+    border-radius: 18px;
+}
+.Competed-status {
+    background-color: #1A9D250D;
+}

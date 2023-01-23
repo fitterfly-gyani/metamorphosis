@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="/dc-dashboard/css/base.css">
+</head>
+<body>
+  <div class="row row-eq-height">
+    <div class="col-lg-2 nopadding">
+      <div class="sidebar"> 
+        <div class="doctor-details">
+            <div class="doctor-profile-pic">
+              <img src="images/dcprofil.png"  alt="" />
+            </div>
+            <div class="doctor-info">
+                <span class="name">Doctor's Name</span>
+                <a href="#" class="email">Doctor@fitterfly.com</a>
+            </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="active nav-item">
+                <span class="nav-icon">
+                  <img src="images/chartpieslice.svg" alt="">
+                </span>
+                <span class="nav-item-name">
+                  Dashboard
+                </span>
+            </li>
+            <li class=" nav-item">
+              <span class="nav-icon">
+                <img src="images/usersthree.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Patient
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/notebook.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Contact
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/chatsteardrop.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Refer
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/wallet.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Consultation Fee
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/signout.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Log Out
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-lg-7 nopadding row-eq-height">
+      <div class="middle-content">
+        <div class="header">
+          <strong class="active-nav">Dashboard</strong>
+          <div class="right-layout"> 
+            <div class="custome-filter">
+              <input type="text" placeholder="Filter" disabled class="filter">
+              <ul class="custome-filter-menu">
+                <li class="active">
+                  <span class="radio-btn"></span>
+                  Last 1 Month</li>
+                <li>
+                  <span class="radio-btn"></span>
+                  Last 3 Months</li>
+                <li>
+                  <span class="radio-btn"></span>
+                  Last 1 Year</li>
+                <li>
+                  <span class="radio-btn"></span>
+                  All Time</li>
+                <li class="inner-filter-menu">
+                  <span class="radio-btn"></span>
+                  Custom Dates</li>
+              </ul>
+            </div>
+            <div>
+                <img src="/dc-dashboard/images/bell.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="main-content scroll-bar">
+          <div class="row">
+            <div class="col-lg-7 pr-0">
+              <div class="row nomargin">
+                <div class="col-lg-6 nopadding">
+                  <div class="card card-sm bg-lt-blue">
+                    <div class="card-head pb-0">
+                      <div class="card-title">
+                        <h4>New Patients</h4>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="outcome">
+                        <strong class="reading-count">20</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 nopadding">
+                  <div class="card card-sm bg-lt-orange">
+                    <div class="card-head pb-0">
+                      <div class="card-title">
+                        <h4>Enrollments from <br>Referrals</h4>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="outcome"><strong class="reading-count">3,219</strong></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 nopadding">
+                  <div class="card card-sm bg-lt-green">
+                    <div class="card-head pb-0">
+                      <div class="card-title">
+                        <h4>Lorem Ipsum</h4>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="outcome"><strong class="reading-count"></strong></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 nopadding">
+                  <div class="card card-sm bg-lt-yellow">
+                    <div class="card-head pb-0">
+                      <div class="card-title">
+                        <h4>Average Weight <br>Reduction</h4>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="outcome"><strong class="reading-count">20%</strong></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 nopadding">
+              <div class="card-block">
+                <div class="card bg-lt-grey">
+                  <div class="card-head">
+                    <div class="card-title">
+                      <h4>No. of Patients</h4>
+                      <div class="count">100</div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-content">
+                      <div class="prog-bar-list">
+                        <div class="prog-bar-item">
+                          <div class="prog-count">20</div>
+                          <div class="prog-bar">
+                            <div class="bar pink" style="width: 60%;"></div>
+                          </div>
+                        </div>
+                        <div class="prog-bar-item">
+                          <div class="prog-count">30</div>
+                          <div class="prog-bar">
+                            <div class="bar orange" style="width: 80%;"></div>
+                          </div>
+                        </div>
+                        <div class="prog-bar-item">
+                          <div class="prog-count">50</div>
+                          <div class="prog-bar">
+                            <div class="bar green" style="width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legend-list">
+                        <div class="legend-item active">
+                          <span class="legend text-pink">Active</span>
+                        </div>
+                        <div class="legend-item onhold">
+                          <span class="legend text-orange">Onhold</span>
+                        </div>
+                        <div class="legend-item completed">
+                          <span class="legend text-green">Completed</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 pr-0">
+              <div class="card-block">
+                <div class="card bg-lt-grey">
+                  <div class="card-head bg-lt-blue">
+                    <div class="card-title">
+                      <h4>Important Notifications</h4>
+                    </div>
+                  </div>
+                  <div class="card-body notification scroll-bar">
+                    <div class="card-content notification-list">
+                      <div class="card">
+                        <div class="card-head pb-0">
+                          <div class="card-title">
+                            <h5>Lorem Ipsum</h5>
+                            <div class="date">Monday, 5:00am</div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-content">
+                            <p>Important notification will display here. Important notification will display here</p>
+                            <span>Read More</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-head pb-0">
+                          <div class="card-title">
+                            <h5>Lorem Ipsum</h5>
+                            <div class="date">Monday, 5:00am</div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-content">
+                            <p>Important notification will display here. Important notification will display here</p>
+                            <span>Read More</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-head pb-0">
+                          <div class="card-title">
+                            <h5>Lorem Ipsum</h5>
+                            <div class="date">Monday, 5:00am</div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-content">
+                            <p>Important notification will display here. Important notification will display here</p>
+                            <span>Read More</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 nopadding">
+              <div class="card-block">
+                <div class="card bg-lt-grey">
+                  <div class="card-head bg-lt-blue">
+                    <div class="card-title">
+                      <h4>List of Members with positive outcomes</h4>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-content">
+                      <div class="member-table scroll-bar">
+                        <table>
+                          <tr>
+                            <th>Name & Contact</th>
+                            <th>HbA1ac</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="member-prof">
+                                <div class="member-img">
+                                  <img src="/dc-dashboard/images/mem-img.svg" />
+                                </div>
+                                <div class="member-info">
+                                  <h6 class="member-name">First and Last Name</h6>
+                                  <h6 class="mob-num">999999999</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <a class="rec-link">HbA1ac Rec</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="member-prof">
+                                <div class="member-img">
+                                  <img src="/dc-dashboard/images/mem-img.svg" />
+                                </div>
+                                <div class="member-info">
+                                  <h6 class="member-name">First and Last Name</h6>
+                                  <h6 class="mob-num">999999999</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <a class="rec-link">HbA1ac Rec</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="member-prof">
+                                <div class="member-img">
+                                  <img src="/dc-dashboard/images/mem-img.svg" />
+                                </div>
+                                <div class="member-info">
+                                  <h6 class="member-name">First and Last Name</h6>
+                                  <h6 class="mob-num">999999999</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <a class="rec-link">HbA1ac Rec</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="member-prof">
+                                <div class="member-img">
+                                  <img src="/dc-dashboard/images/mem-img.svg" />
+                                </div>
+                                <div class="member-info">
+                                  <h6 class="member-name">First and Last Name</h6>
+                                  <h6 class="mob-num">999999999</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <a class="rec-link">HbA1ac Rec</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="member-prof">
+                                <div class="member-img">
+                                  <img src="/dc-dashboard/images/mem-img.svg" />
+                                </div>
+                                <div class="member-info">
+                                  <h6 class="member-name">First and Last Name</h6>
+                                  <h6 class="mob-num">999999999</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <a class="rec-link">HbA1ac Rec</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="member-prof">
+                                <div class="member-img">
+                                  <img src="/dc-dashboard/images/mem-img.svg" />
+                                </div>
+                                <div class="member-info">
+                                  <h6 class="member-name">First and Last Name</h6>
+                                  <h6 class="mob-num">999999999</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <a class="rec-link">HbA1ac Rec</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pr-0">
+              <div class="card-block">
+                <div class="card bg-lt-grey">
+                  <div class="card-head bg-lt-blue">
+                    <div class="card-title">
+                      <h4>Fitterfly Programs</h4>
+                    </div>
+                  </div>
+                  <div class="card-body scroll-bar">
+                    <div class="card-content refer-list">
+                      <div class="card">
+                        <div class="program-img">
+                          <img src="/dc-dashboard/images/program-img.svg" />
+                        </div>
+                        <div class="program-name">Fitterfly Diabetes Care CGM Program</div>
+                        <div class="button">Refer a patient</div>
+                      </div>
+                      <div class="card">
+                        <div class="program-img">
+                          <img src="/dc-dashboard/images/program-img.svg" />
+                        </div>
+                        <div class="program-name">Fitterfly Diabetes Care CGM Program</div>
+                        <div class="button">Refer a patient</div>
+                      </div>
+                      <div class="card">
+                        <div class="program-img">
+                          <img src="/dc-dashboard/images/program-img.svg" />
+                        </div>
+                        <div class="program-name">Fitterfly Diabetes Care CGM Program</div>
+                        <div class="button">Refer a patient</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 nopadding">
+      <div class="right-content">
+          <strong>List of Ongoing Patients</strong>
+          <div class="form-field-holder">
+            <div class="form-field" style="width: 67%;">
+              <input type="search" placeholder="Search">
+              <!-- <span class="search-icon">
+                <img src="/dc-dashboard/images/search.svg" alt="">
+              </span> -->
+            </div>
+            <div class="form-field">
+              <label class="switch">
+                <input type="checkbox" id="checkswitch" >
+                <span class="slider round"></span>
+              </label>
+              <label class="switch-label" for="checkswitch">Pinned</label>
+            </div>
+          </div>
+          <div class="pat-search-list mt-20">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Program & Date</th>
+                      </tr>
+                </thead>
+                <tr>
+                  <td class="top-align"><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><div><span>First and Last Name</span>
+                  <div class="pl-10">999999999</div></div></div></td>
+                  <td>
+                    <div class="rec-link">Diabetes CGM</div>
+                    <div class="flex-space-between">
+                      <div>30-12-22</div>
+                      <div class="pin-card">
+                        <img src="/dc-dashboard/images/pin.svg" alt="">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-align"><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><div><span>First and Last Name</span>
+                  <div class="pl-10">999999999</div></div></div></td>
+                  <td>
+                    <div class="rec-link">Diabetes CGM</div>
+                    <div class="flex-space-between">
+                      <div>30-12-22</div>
+                      <div class="pin-card">
+                        <img src="/dc-dashboard/images/pin.svg" alt="">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-align"><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><div><span>First and Last Name</span>
+                  <div class="pl-10">999999999</div></div></div></td>
+                  <td>
+                    <div class="rec-link">Diabetes CGM</div>
+                    <div class="flex-space-between">
+                      <div>30-12-22</div>
+                      <div class="pin-card">
+                        <img src="/dc-dashboard/images/pin.svg" alt="">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="top-align"><div class="profile-name top-align"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><div><span>First and Last Name</span>
+                  <div class="pl-10">999999999</div></div></div></td>
+                  <td>
+                    <div class="rec-link">Diabetes CGM</div>
+                    
+                    <div class="flex-space-between">
+                      <div>30-12-22</div>
+                      <div class="pin-card">
+                        <img src="/dc-dashboard/images/pin.svg" alt="">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+input {
+    border: none;
+    outline: none;
+    border: 1px solid #9E9E9E;
+    border-radius: 8px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    max-width: 220px;
+    background-color: #fff;
+    &:focus {
+        border-color:#0A0A0A ;
+    }
+    &:disabled {
+        background-color: #fff;
+    }
+}
+.form-field-holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .form-field {
+    }
+}
+.custome-filter {
+    position: relative;
+    width: 200px;
+    &::after { 
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: url('/dc-dashboard/images/arrowdown.svg') no-repeat;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+    }
+    input {
+        &::-webkit-input-placeholder { /* Edge */
+            color: #000;
+            font-weight: 600;
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #000;
+            font-weight: 600;
+          }
+          
+          &::placeholder {
+            color: #000;
+            font-weight: 600;
+          }
+    }
+    &.active {
+        .custome-filter-menu {
+            display: block;
+        }
+    }
+    .custome-filter-menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        background: #fff;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 8px;
+        max-width: 220px;
+        width: 100%;
+        li {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            .radio-btn {
+                width: 20px;
+                height: 20px;
+                display: block;
+                border-radius: 30px;
+                background: rgba(0, 0, 0, 0.05);
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    display: none;
+                    background-color: #F62088;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    border-radius: 10px;
+                }
+            }
+            &:hover {
+                background-color: #F5F5F5;
+                border-radius: 8px;
+            }
+            &.active {
+                .radio-btn {
+                    border-color: #F62088;
+                    &::before {
+                        display: block;
+                    }
+                }
+            }
+        }
+        li.inner-filter-menu{
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            position: relative;
+            &::after {
+                content: "";
+                width: 20px;
+                height: 15px;
+                background: url('/dc-dashboard/images/arrowright.svg') no-repeat;
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
+}
+// radio button swith
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 21px;
+     input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            top: 3px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+          
+      }
+    input:checked + .slider {
+    background-color: #2196F3;
+    &::before {
+        left: -6px;
+      }
+    }
+    // input:focus + .slider {
+    //     // box-shadow: 0 0 1px #2196F3;
+    // }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+  .switch-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 6px;
+  }
+// end switch
