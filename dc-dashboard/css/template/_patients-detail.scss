@@ -1,6 +1,77 @@
 .profile-card{
+    border: 1px solid #A3B2C2;
+    border-radius: 15px;
+    overflow: hidden;
+    .card-head{
+        background: #DBF4F2;
+        border-radius: 15px 15px 0px 0px;
+        height: 96px;
+    }
     .profile-title{
         display: flex;
         align-items: center;
+    }
+    .profile-pic{
+        width: 49px;
+        height: 49px;
+        @extend .flex-center;
+        border-radius: 50px;
+        border: 0.819307px solid rgba(18, 137, 131, 0.6);
+        margin-right: 12px;
+        padding: 3px;
+    }
+    .profile-info{
+        .name{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+        }
+        .age{
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            color: #424242;
+        }
+    }
+}
+
+.entry-table{
+    table{
+        border: 0px;
+        th{
+            padding: 0;
+            padding-bottom: 5px;
+            border: 0;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #1C1C1C;
+        }
+        td{
+            border-bottom: 0px;
+            padding: 0px;
+            .mob-num{
+                font-weight: 400;
+            }
+            div{
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #1C1C1C;
+            }
+        }
     }
 }
