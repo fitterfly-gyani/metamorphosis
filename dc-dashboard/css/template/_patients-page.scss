@@ -1,9 +1,8 @@
-.Patient-page {
+.patient-page {
     .header {
         align-items: center;
     }
     .right-layout {
-        justify-content: space-between;
         .refer-btn {
             display: flex;
             flex-direction: row;
@@ -19,12 +18,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            span {
-                width: 50%;
+            .label {
+                min-width: 60px;
             }
         }
         .search-box {
-            width: 48%;
+            min-width: 400px;
             input {
                 max-width: 400px;
             }
@@ -43,6 +42,9 @@
             height: 40px;
             color: #FFFFFF;
         }
+    }
+    .table{
+        height: calc(100% - 43px);
     }
 }
 .consultation-fee {
@@ -325,7 +327,7 @@
         
         .popup-body{
             .popup-inner-pad {
-                padding: 30px 96px;
+                padding: 56px 56px;
                 @media screen and (max-width:768px) {
                     padding: 15px 20px;
                 }

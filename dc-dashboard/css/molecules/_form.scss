@@ -66,6 +66,7 @@ input {
         border-radius: 8px;
         max-width: 220px;
         width: 100%;
+        z-index: 1;
         li {
             padding: 10px;
             display: flex;
@@ -80,6 +81,7 @@ input {
                 background: rgba(0, 0, 0, 0.05);
                 border: 1px solid rgba(0, 0, 0, 0.2);
                 position: relative;
+                z-index: 7;
                 &::before {
                     content: "";
                     width: 10px;
@@ -90,13 +92,34 @@ input {
                     top: 4px;
                     left: 4px;
                     border-radius: 10px;
+                    z-index: 6;
                 }
             }
             &:hover {
                 background-color: #F5F5F5;
                 border-radius: 8px;
+                .radio-btn {
+                    // width: 30px;
+                    // height: 30px;
+                    // background-color: #F5F5F5;
+                    // border-radius: 8px;
+                    // border: none;
+                    // position: relative;
+                    // &::after{
+                    //     content: "";
+                    //     width: 20px;
+                    //     height: 20px;
+                    //     display: block;
+                    //     border-radius: 30px;
+                    //     background: rgba(0, 0, 0, 0.05);
+                    //     border: 1px solid rgba(0, 0, 0, 0.2);
+                    //     z-index: -1;
+                    // }
+                }
             }
             &.active {
+                background-color: #F5F5F5;
+                border-radius: 8px;
                 .radio-btn {
                     border-color: #F62088;
                     &::before {

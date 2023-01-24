@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="/dc-dashboard/css/base.css">
 </head>
 <body>
-    <div class="row row-eq-height">
+    <div class="row row-eq-height overflow-hidden">
         <div class="col-lg-2 nopadding">
           <div class="sidebar"> 
             <div class="doctor-details">
@@ -72,14 +72,19 @@
             </nav>
           </div>
         </div>
-        <div class="col-lg-10 nopadding row-eq-height">
+        <div class="col-lg-10 nopadding row-eq-height patient-page">
           <div class="middle-content">
             <div class="header">
-              <strong class="active-nav">Dashboard</strong>
-              <div class="right-layout"> 
+              <div class="col-lg-3 pl-0">
+                <strong class="active-nav">Patients / Details</strong>
+              </div>
+              <div class="col-lg-9 right-layout">
+                <div class="search-box">
+                  <input class="search" placeholder="Search">
+                </div>
                 <div class="custome-filter">
-                  <input type="text" placeholder="Filter" disabled class="filter">
-                  <ul class="custome-filter-menu">
+                  <input type="text" placeholder="Status" disabled class="filter">
+                  <ul class="custome-filter-menu" style="display: block;">
                     <li class="active">
                       <span class="radio-btn"></span>
                       Last 1 Month</li>
@@ -96,9 +101,6 @@
                       <span class="radio-btn"></span>
                       Custom Dates</li>
                   </ul>
-                </div>
-                <div>
-                    <img src="/dc-dashboard/images/bell.svg" alt="">
                 </div>
               </div>
             </div>
@@ -147,8 +149,11 @@
                             <div class="card-head">
                                 <div class="profile-title">
                                     <div class="profile-info">
-                                        <h3 class="name">Program Details</h3>
-                                        <h3 class="name">Program Name : Diabetes CGM</h3>
+                                        <h5 class="prog-dts">Program Details</h5>
+                                        <h5 class="prog-name">Program Name : Diabetes CGM</h5>
+                                    </div>
+                                    <div class="program-logo">
+                                        <img src="/dc-dashboard/images/diabetes-cgm-logo.svg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +181,7 @@
                     </div>
                 </div>
               </div>
-              <div class="row nomargin detal-page-report-tables">
+              <div class="row nomargin detail-page-report-tables">
                 <div class="col-lg-4 nopadding">
                     <div class="card-block">
                         <div class="card">
@@ -280,7 +285,7 @@
                       </div>
                       <div class="card-body">
                         <div class="card-content">
-                          <div class="scroll-bar">
+                          <div class="outcome-table scroll-bar">
                             <table>
                               <tbody>
                                 <tr>

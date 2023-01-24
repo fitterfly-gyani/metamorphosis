@@ -5,7 +5,9 @@
     .card-head{
         background: #DBF4F2;
         border-radius: 15px 15px 0px 0px;
-        height: 96px;
+        min-height: 96px;
+        display: flex;
+        align-items: center;
     }
     .profile-title{
         display: flex;
@@ -26,7 +28,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
-            line-height: 28px;
+            line-height: 28px; 
             display: flex;
             align-items: center;
             color: #000000;
@@ -49,6 +51,29 @@
     overflow: hidden;
     .card-head{
         background: #FCD7D1;
+        min-height: 96px;
+        display: flex;
+        align-items: center;
+    }
+    .profile-info{
+        .prog-dts{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #1C1C1C;
+        }
+        .prog-name{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 28px;
+            color: #1C1C1C;
+        }
+    }
+    .profile-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
     }
 }
 
@@ -69,24 +94,25 @@
         td{
             border-bottom: 0px;
             padding: 0px;
+            font-size: 14px;
+            font-weight: 500;
             .mob-num{
                 font-weight: 400;
             }
             div{
-                font-family: Inter;
                 font-size: 14px;
                 font-weight: 500;
-                line-height: 28px;
                 letter-spacing: 0em;
                 text-align: left;
-                color: #1C1C1C;
+            }
+            .blue-tag{
+                font-size: 12px;
             }
         }
     }
 }
-.detal-page-report-tables {
+.detail-page-report-tables {
     padding: 25px;
-
     .card-block {
         align-items: center;
         .card{
@@ -98,6 +124,7 @@
             .card-body {
                 padding: 0px 0px;
                 border: 1px solid #A3B2C2;
+                border-top: none;
                 border-radius: 0px 0px 15px 15px;
                 .download-report-card{
                     display: flex;
@@ -111,11 +138,18 @@
                 }
             }
             table {
-               height: 300px;
+               min-height: 300px;
+               border-right: none;
             }
         }
         .prescription-card {
             width: 275px;
         }
+    }
+}
+
+.outcome-table{
+    table th{
+        background: #EFF5FA;
     }
 }
