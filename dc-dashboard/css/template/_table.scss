@@ -1,12 +1,26 @@
 .patients-table {
-    padding-right: 30px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+.table{
+    overflow-y: auto;
+    thead th {
+        position: sticky;
+        top: -1px;
+        background-color: #F7F9FB;
+        padding: 0px;
+        border: none;
+        .thead{
+            border-right: 1px solid #dddddd;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+            padding: 10px;
+        }
+    }
 }
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -83,4 +97,24 @@ td {
 }
 .Competed-status {
     background-color: #1A9D250D;
+}
+.info-note{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3363A5;
+    &.tag{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        display: inline-flex;
+        align-items: center;
+        color: #59A8D4;
+        background: #E2F5FF;
+        border-radius: 18px;
+        padding: 0px 6px;
+        height: 18px;
+    }
 }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="/dc-dashboard/css/base.css">
+</head>
+<body>
+  <div class="row row-eq-height overflow-hidden">
+    <div class="col-lg-2 nopadding">
+      <div class="sidebar"> 
+        <div class="doctor-details">
+            <div class="doctor-profile-pic">
+              <img src="images/dcprofil.png"  alt="" />
+            </div>
+            <div class="doctor-info">
+                <span class="name">Doctor's Name</span>
+                <a href="#" class="email">Doctor@fitterfly.com</a>
+            </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="active nav-item">
+                <span class="nav-icon">
+                  <img src="images/chartpieslice.svg" alt="">
+                </span>
+                <span class="nav-item-name">
+                  Dashboard
+                </span>
+            </li>
+            <li class=" nav-item">
+              <span class="nav-icon">
+                <img src="images/usersthree.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Patient
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/notebook.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Contact
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/chatsteardrop.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Refer
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/wallet.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Consultation Fee
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/signout.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Log Out
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-lg-10 nopadding patient-page">
+      <div class="middle-content">
+        <div class="header">
+          <div class="col-lg-3">
+            <strong class="active-nav">Patients</strong>
+          </div>
+          <div class="col-lg-9 right-layout"> 
+            <div class="">
+              <button type="button" class="refer-btn">Refer a patient</button>
+            </div>
+            <div class="search-box">
+              <input class="search" placeholder="Search">
+            </div>
+            <div class="custome-filter">
+              <label class="label">Filter by:</label>
+              <input type="text" placeholder="Status" disabled class="filter">
+              <ul class="custome-filter-menu">
+                <li class="active">
+                  <span class="radio-btn"></span>
+                  Last 1 Month</li>
+                <li>
+                  <span class="radio-btn"></span>
+                  Last 3 Months</li>
+                <li>
+                  <span class="radio-btn"></span>
+                  Last 1 Year</li>
+                <li>
+                  <span class="radio-btn"></span>
+                  All Time</li>
+                <li class="inner-filter-menu">
+                  <span class="radio-btn"></span>
+                  Custom Dates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main-content nopadding">
+          <div class="patients-table table scroll-bar">
+              <table>
+                  <thead>
+                      <tr>
+                          <th><div class="thead">Name</div></th>
+                          <th><div class="thead">Program Enrolled</div></th>
+                          <th><div class="thead">Contact</div></th>
+                          <th><div class="thead">Date of Enrollment</div></th>
+                          <th><div class="thead">Progress</div></th>
+                          <th><div class="thead">Status</div></th>
+                        </tr>
+                  </thead>
+                  <tr>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><span>Katherine Moss</span></div></td>
+                    <td>Diabetes Weight Management</td>
+                    <td>999999999</td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                    <td><div class="blue-tag">Good</div></td>
+                    <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                  </tr>
+                  <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/bad-dot.svg" alt=""><span class="text-red">Bad</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="brown-tag">Bad</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/onhold-dot.svg" alt=""><span class="text-orange">Onhold</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/onhold-dot.svg" alt=""><span class="text-orange">Onhold</span></div></td>
+                    </tr>
+                    <tr class="Competed-status">
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/koray-okumus.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/competed-dot.svg" alt=""><span class="text-green">Competed</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="brown-tag">Bad</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/withdrawn-dot.svg" alt=""><span class="text-yellow">Withdrawn</span></div></td>
+                    </tr>
+                    <tr class="Competed-status">
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/koray-okumus.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/competed-dot.svg" alt=""><span class="text-green">Competed</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/withdrawn-dot.svg" alt=""><span class="text-yellow">Withdrawn</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="brown-tag">BAD</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/katherine-moss.svg" alt=""><span>Katherine Moss</span></div></td>
+                      <td>Diabetes Weight Management</td>
+                      <td>999999999</td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                      <td><div class="blue-tag">Good</div></td>
+                      <td><div class="profile-name"><img src="/dc-dashboard/images/in-progress-dot.svg" alt=""><span class="text-pink">In Progress</span></div></td>
+                    </tr>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
