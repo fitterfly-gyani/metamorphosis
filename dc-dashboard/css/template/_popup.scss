@@ -47,7 +47,7 @@
                         padding-bottom: 40px;
                     }
                 }
-                h3 {
+                .popup-title {
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 700;
@@ -123,5 +123,21 @@
                 }
             }
         }
+    }
+}
+
+.comment-content{
+    text-align: center;
+    h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        color: #021D45;
+        margin-top: 50px;
+        justify-content: center;
     }
 }

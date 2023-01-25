@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="/dc-dashboard/css/base.css">
+</head>
+<body>
+    <div class="row row-eq-height overflow-hidden">
+        <div class="col-lg-2 nopadding">
+          <div class="sidebar"> 
+            <div class="doctor-details">
+                <div class="doctor-profile-pic">
+                  <img src="images/dcprofil.png"  alt="" />
+                </div>
+                <div class="doctor-info">
+                    <span class="name">Doctor's Name</span>
+                    <a href="#" class="email">Doctor@fitterfly.com</a>
+                </div>
+            </div>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="active nav-item">
+                    <span class="nav-icon">
+                      <img src="images/chartpieslice.svg" alt="">
+                    </span>
+                    <span class="nav-item-name">
+                      Dashboard
+                    </span>
+                </li>
+                <li class=" nav-item">
+                  <span class="nav-icon">
+                    <img src="images/usersthree.svg" alt="">
+                  </span>
+                  <span class="nav-item-name">
+                    Patient
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-icon">
+                    <img src="images/notebook.svg" alt="">
+                  </span>
+                  <span class="nav-item-name">
+                    Contact
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-icon">
+                    <img src="images/chatsteardrop.svg" alt="">
+                  </span>
+                  <span class="nav-item-name">
+                    Refer
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-icon">
+                    <img src="images/wallet.svg" alt="">
+                  </span>
+                  <span class="nav-item-name">
+                    Consultation Fee
+                  </span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-icon">
+                    <img src="images/signout.svg" alt="">
+                  </span>
+                  <span class="nav-item-name">
+                    Log Out
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-10 nopadding row-eq-height patient-page">
+          <div class="middle-content">
+            <div class="header">
+              <div class="col-lg-3 pl-0">
+                <strong class="active-nav">Patients / Details</strong>
+              </div>
+              <div class="col-lg-9 right-layout">
+                <div class="search-box">
+                  <input class="search" placeholder="Search">
+                </div>
+                <div class="custome-filter">
+                  <input type="text" placeholder="Status" disabled class="filter">
+                  <ul class="custome-filter-menu" style="display: block;">
+                    <li class="active">
+                      <span class="radio-btn"></span>
+                      Last 1 Month</li>
+                    <li>
+                      <span class="radio-btn"></span>
+                      Last 3 Months</li>
+                    <li>
+                      <span class="radio-btn"></span>
+                      Last 1 Year</li>
+                    <li>
+                      <span class="radio-btn"></span>
+                      All Time</li>
+                    <li class="inner-filter-menu">
+                      <span class="radio-btn"></span>
+                      Custom Dates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-content scroll-bar">
+              <div class="row">
+                <div class="col-lg-6 pr-0">
+                    <div class="card-block">
+                        <div class="card profile-card">
+                            <div class="card-head">
+                                <div class="profile-title">
+                                    <div class="profile-pic">
+                                        <img src="/dc-dashboard/images/prof-img-default.svg" alt="">
+                                    </div>
+                                    <div class="profile-info">
+                                        <h3 class="name">Katherine Moss</h3>
+                                        <div class="age">Female | 28 Years</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <div class="entry-table">
+                                        <table>
+                                            <tr>
+                                                <th>Contact</th>
+                                                <th>Program Name</th>
+                                                <th>Email</th>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="mob-num">+91 99999999</div></td>
+                                                <td><div>Diabetes Weight Management</div></td>
+                                                <td>
+                                                    <div>name@gmail.com</div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 nopadding">
+                    <div class="card-block">
+                        <div class="card program-card">
+                            <div class="card-head">
+                                <div class="profile-title">
+                                    <div class="profile-info">
+                                        <h5 class="prog-dts">Program Details</h5>
+                                        <h5 class="prog-name">Program Name : Diabetes CGM</h5>
+                                    </div>
+                                    <div class="program-logo">
+                                        <img src="/dc-dashboard/images/diabetes-cgm-logo.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-content">
+                                  <div class="entry-table">
+                                    <table>
+                                        <tr>
+                                            <th>Programme Dates</th>
+                                            <th>Status</th>
+                                            <th>Opt-out of Psy Interventions</th>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="mob-num">22/11/2022</div></td>
+                                            <td><div class="blue-tag">Good</div></td>
+                                            <td>
+                                              <span class="text-green">Yes</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row nomargin detail-page-report-tables">
+                <div class="col-lg-4 nopadding">
+                    <div class="card-block">
+                        <div class="card">
+                          <div class="card-head bg-lt-blue">
+                            <div class="card-title">
+                              <h4>Member Reports</h4>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <div class="card-content">
+                              <div class="scroll-bar">
+                                <table>
+                                  <tbody>
+                                  <tr>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>24-12-2022</span></div></td>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/pdf-icon.svg" alt=""><span>Mid Programe Report</span></div></td>
+                                    <td>
+                                      <img src="/dc-dashboard/images/download-icon.svg" alt="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>23-12-2022</span></div></td>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/pdf-icon.svg" alt=""><span>Initial Psychological Report</span></div></td>
+                                    <td>
+                                      <img src="/dc-dashboard/images/download-icon.svg" alt="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>23-12-2022</span></div></td>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/pdf-icon.svg" alt=""><span>Initial Psychological Report</span></div></td>
+                                    <td>
+                                      <img src="/dc-dashboard/images/download-icon.svg" alt="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>23-12-2022</span></div></td>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/pdf-icon.svg" alt=""><span>Initial Psychological Report</span></div></td>
+                                    <td>
+                                      <img src="/dc-dashboard/images/download-icon.svg" alt="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>23-12-2022</span></div></td>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/pdf-icon.svg" alt=""><span>Initial Psychological Report</span></div></td>
+                                    <td>
+                                      <img src="/dc-dashboard/images/download-icon.svg" alt="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>23-12-2022</span></div></td>
+                                    <td><div class="profile-name"><img src="/dc-dashboard/images/pdf-icon.svg" alt=""><span>Initial Psychological Report</span></div></td>
+                                    <td>
+                                      <img src="/dc-dashboard/images/download-icon.svg" alt="">
+                                    </td>
+                                  </tr>
+                                </tbody></table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 nopadding">
+                    <div class="card-block">
+                        <div class="card prescription-card">
+                          <div class="card-head bg-lt-blue">
+                            <div class="card-title">
+                              <h4>Doctor’s Prescription and Reports</h4>
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <div class="card-content download-report-card">
+                              <div>
+                                <img src="/dc-dashboard/images/pdf-icon.svg" alt="">
+                              </div>
+                              <div>
+                                <span>Doctor’s Prescription<br>30-12-2022</span>
+                              </div>
+                              <div><img src="/dc-dashboard/images/download-icon.svg" alt=""></div>
+                             </div>
+                             <div class="card-content download-report-card">
+                              <div>
+                                <img src="/dc-dashboard/images/pdf-icon.svg" alt="">
+                              </div>
+                              <div>
+                                <span>Doctor’s Prescription<br>30-12-2022</span>
+                              </div>
+                              <div><img src="/dc-dashboard/images/download-icon.svg" alt=""></div>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 nopadding">
+                  <div class="card-block">
+                    <div class="card">
+                      <div class="card-head bg-lt-blue">
+                        <div class="card-title">
+                          <h4>Member Outcomes</h4>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-content">
+                          <div class="outcome-table scroll-bar">
+                            <table>
+                              <tbody>
+                                <tr>
+                                  <th>Parameters</th>
+                                  <th>Initial Outcomes <br>22-11-2022</th>
+                                  <th>Latest Outcomes <br>01-01-2023</th>
+                                </tr>
+                                <tr>
+                                  <td class="" >Hb1AC</td>
+                                  <td>
+                                    <a class="">8.3%</a>
+                                  </td>
+                                  <td>
+                                    <div class="profile-name"><img src="/dc-dashboard/images/down-redarrow.svg" alt=""><span class="rec-link">7.5</span></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="" >FBS</td>
+                                  <td>
+                                    <a class="">125mg/dl</a>
+                                  </td>
+                                  <td>
+                                    <div class="profile-name"><img src="/dc-dashboard/images/down-redarrow.svg" alt=""><span class="rec-link">90mg/dl</span></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="" >PPBS</td>
+                                  <td>
+                                    <a class="">225mg/dl </a>
+                                  </td>
+                                  <td>
+                                    <div class="profile-name"><img src="/dc-dashboard/images/down-redarrow.svg" alt=""><span class="rec-link">160mg/dl</span></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="" >Weight</td>
+                                  <td>
+                                    <a class="">90kg </a>
+                                  </td>
+                                  <td>
+                                    <div class="profile-name"><img src="/dc-dashboard/images/down-greenarrow.svg" alt=""><span class="rec-link">86.5kg</span></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="" >Waist Circumference</td>
+                                  <td>
+                                    <a class="">100cm</a>
+                                  </td>
+                                  <td>
+                                    <div class="profile-name"><img src="/dc-dashboard/images/down-greenarrow.svg" alt=""><span class="rec-link">90cm</span></div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12 pr-0">
+                  <div class="card-block">
+                    <div class="card bg-lt-grey">
+                      <div class="card-head bg-lt-blue">
+                        <div class="card-title">
+                          <h4>Fitterfly Programs</h4>
+                        </div>
+                      </div>
+                      <div class="card-body scroll-bar">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="dc-dashboard-popup" style="display: none;">
+        <div class="popup">
+          <div class="popup-pad">
+              <div class="popup-body">
+                  <div class="popup-inner-pad">
+                      <div class="back-icon">
+                          <img class="" src="/dc-dashboard/images/back-logo.svg" alt="">
+                      </div>
+                      <div class="form-main">
+                          <h3 class="popup-title">Add a comment</h3>
+                          <div class="form-field">
+                            <input type="text" placeholder=" Title" value="">
+                          </div>
+                          <div class="form-field">
+                            <textarea placeholder="Your comment or notes here.." rows="4" cols="50"></textarea>
+                          </div>
+                          <div class="popup-button">
+                              <a href="" class="submit-btn">Submit </a>
+                          </div>
+                      </div> 
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="dc-dashboard-popup" style="">
+      <div class="popup">
+        <div class="popup-pad">
+            <div class="popup-body">
+                <div class="popup-inner-pad">
+                    <div class="back-icon">
+                        <img class="" src="/dc-dashboard/images/back-logo.svg" alt="">
+                    </div>
+                    <div class="form-main">
+                        <h3 class="popup-title">Add a comment</h3>
+                        <div class="form-field">
+                          <input type="text" placeholder="Comment 1" value="">
+                        </div>
+                        <div class="form-field">
+                          <textarea placeholder="Improvement in the overall performance" rows="4" cols="50"></textarea>
+                        </div>
+                        <div class="popup-button">
+                            <a href="" class="submit-btn black">Submit </a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dc-dashboard-popup" style="display: none;">
+      <div class="popup">
+        <div class="popup-pad">
+            <div class="popup-body">
+                <div class="popup-inner-pad">
+                    <div class="back-icon">
+                        <img class="" src="/dc-dashboard/images/back-logo.svg" alt="">
+                    </div>
+                    <div class="comment-content">
+                      <img class="" src="/dc-dashboard/images/comment-img.png" alt="">
+                      <h2>Comment added successfully</h2>
+                    </div> 
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
