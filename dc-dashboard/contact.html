@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="/dc-dashboard/css/base.css">
+</head>
+<body>
+  <div class="row row-eq-height">
+    <div class="col-lg-2 nopadding">
+      <div class="sidebar"> 
+        <div class="doctor-details">
+            <div class="doctor-profile-pic">
+              <img src="images/dcprofil.png"  alt="" />
+            </div>
+            <div class="doctor-info">
+                <span class="name">Doctor's Name</span>
+                <a href="#" class="email">Doctor@fitterfly.com</a>
+            </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="active nav-item">
+                <span class="nav-icon">
+                  <img src="images/chartpieslice.svg" alt="">
+                </span>
+                <span class="nav-item-name">
+                  Dashboard
+                </span>
+            </li>
+            <li class=" nav-item">
+              <span class="nav-icon">
+                <img src="images/usersthree.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Patient
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/notebook.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Contact
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/chatsteardrop.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Refer
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/wallet.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Consultation Fee
+              </span>
+            </li>
+            <li class="nav-item">
+              <span class="nav-icon">
+                <img src="images/signout.svg" alt="">
+              </span>
+              <span class="nav-item-name">
+                Log Out
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-lg-10 nopadding refer-sec">
+        <div class="heading">
+            <span>Contact</span>
+        </div>
+        <div class="contact-page">
+            <div class="col-lg-6">
+                <div class="">
+                    <h4>Coordinating Physician Partnership Member Details</h4>
+                </div>
+                <div class="">
+                    <div class="card-block">
+                        <div class="card profile-card">
+                            <div class="card-head">
+                                <div class="profile-title">
+                                    <div class="profile-pic">
+                                        <img src="/dc-dashboard/images/prof-img-default.svg" alt="">
+                                    </div>
+                                    <div class="profile-info">
+                                        <h3 class="name">First and Last Name</h3>
+                                        <div class="age">Physician</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-content">
+                                    <div class="entry-table">
+                                        <table>
+                                            <tbody><tr>
+                                                <th>Contact</th>
+                                                <th>WhatsApp </th>
+                                                <th>Email</th>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="mob-num">+91 99999999</div></td>
+                                                <td><div class="mob-num">+91 99999999 </div></td>
+                                                <td>
+                                                    <div class="mob-num">name@gmail.com</div>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 right-sec">
+                <div class="">
+                    <h4>Message from the Doctor</h4>
+                </div>
+
+                <div class="chating-sec">
+                    <form class="chat">
+                        <span></span>
+                        <div class="chat-messages">
+                            <div class="client-message">
+                                <div class="fromThem">
+                                    <p>Okay, sounds good</p>
+                                </div>
+                                <span class="time">Today, 8.36pm</span>
+                            </div>
+                            <div class="my-message">
+                                <div class="myMessage">
+                                    <p>Hello Physician</p>
+                                </div>
+                                <span class="my-time">Today, 8.36pm</span>
+                            </div>
+                            <div class="client-message">
+                                <div class="fromThem">
+                                    <p>Okay, sounds good</p>
+                                </div>
+                                <span class="time">Today, 8.36pm</span>
+                            </div>
+                            <div class="my-message">
+                                <div class="myMessage">
+                                    <p>Hello Physician</p>
+                                </div>
+                                <span class="my-time">Today, 8.36pm</span>
+                            </div>
+                        </div>
+                        <div class="send-icon">
+                            <input type="text" placeholder="Your message">
+                            <div class="">
+                                <img src="/dc-dashboard/images/side-arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="dc-dashboard-popup contact-page-popup" style="display: none;">
+    <div class="popup">
+      <div class="popup-pad">
+          <div class="popup-body">
+              <div class="popup-inner-pad">
+                  <div class="back-icon">
+                      <img class="" src="/dc-dashboard/images/back-logo.svg" alt="">
+                  </div>
+                  <div class="form-main">
+                      <h4 class="pb-35">Are you sure you want to Log out?</h4>
+                      <div class="">
+                        <div class="popup-button">
+                            <a href="" class="cancel-btn">Cancel</a>
+                            <a href="" class="signout-btn black">Submit </a>
+                        </div>
+                      </div>
+                  </div> 
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
