@@ -50,7 +50,7 @@ td {
     justify-content: flex-start;
     align-items: center;
     span {
-        padding-left: 10px;
+        padding-left: 13px;
     }
     .rec-link{
         font-weight: 500;
@@ -59,6 +59,57 @@ td {
         display: flex;
         align-items: center;
         color: #3363A5;
+    }
+}
+.status {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background: #fff;
+        border-radius: 50%;
+    }
+    &.pink-col {
+        &:before{
+            background: #F62088;
+        }
+        .status-text {
+           color:#F62088;
+        }
+    }
+    &.orange-col {
+        &:before{
+            background: #FC7D00;
+        }
+        .status-text {
+           color:#FC7D00;
+        }
+    }
+    &.green-col {
+        &:before{
+            background: #1A9D25;
+        }
+        .status-text {
+           color: #1A9D25;
+        }
+    }
+    &.yellow-col {
+        &:before{
+            background: #EFB514;
+        }
+        .status-text {
+           color: #EFB514;
+        }
+    }
+    &.red-col {
+        &:before{
+            background: #E43A40;
+        }
+        .status-text {
+           color: #E43A40;
+        }
     }
 }
 .blue-tag {
@@ -95,7 +146,7 @@ td {
     color: #541212;
     border-radius: 18px;
 }
-.Competed-status {
+.completed-status {
     background-color: #1A9D250D;
 }
 .info-note{

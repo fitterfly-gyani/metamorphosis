@@ -22,7 +22,7 @@
         .search-box {
             min-width: 400px;
             input {
-                max-width: 400px;
+                max-width: 400px; 
             }
             .search {
                 background: url(/dc-dashboard/images/search.svg) no-repeat 5% center;
@@ -162,21 +162,21 @@
             color: #0A0A0A; 
         }
     }
-    .refer-page-info {
+    .refer-info {
         display: flex;
     }
     
-    .refer-page-table {
+    .refer-list-col {
         padding: 24px 24px 0px 24px;
         background: #DBF4F2;
         .teble-heading {
             padding: 24px 0px 10px 0px;
         }
-        .table-head {
+        .refer-btns {
             display: flex;
             justify-content: flex-start; 
             align-items: center;
-            padding-bottom: 15px;
+            padding: 10px 0px 15px 0px;
             .search-box {
                 padding-right: 30px;
                 width: 50%;
@@ -194,9 +194,9 @@
             background: #FFFFFF;
         }
     }
-    .refer-page-form {
+    .refer-form-col {
         padding: 24px;
-        .form-grup {
+        .form-group {
             display: flex;
             flex-direction: column;
             padding-bottom: 20px;
@@ -230,7 +230,7 @@
                 padding: 10px;
                 width: 100%;
                 max-width: 350px;
-                height: 328px;
+                height: 270px;
                 background-color: #fff;
             } 
             .patient-info {
@@ -242,7 +242,7 @@
                 align-items: center;
                 padding: 10px;
                 position: absolute;
-                bottom: 85px;
+                bottom: 105px;
                 width: 87%;
                 .report-btn {
                     display: flex; 
