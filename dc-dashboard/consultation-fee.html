@@ -20,17 +20,19 @@
         </div>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="active nav-item">
+            <li class="nav-item">
                 <span class="nav-icon">
-                  <img src="images/chartpieslice.svg" alt="">
+                  <img class="white-icon" src="images/chartpieslice-white.svg" alt="">
+                  <img class="black-icon" src="images/chartpieslice.svg" alt="">
                 </span>
                 <span class="nav-item-name">
                   Dashboard
                 </span>
             </li>
-            <li class=" nav-item">
+            <li class="nav-item">
               <span class="nav-icon">
-                <img src="images/usersthree.svg" alt="">
+                <img class="white-icon" src="images/usersthree-white.svg" alt="">
+                <img class="black-icon" src="images/usersthree.svg" alt="">
               </span>
               <span class="nav-item-name">
                 Patient
@@ -38,7 +40,8 @@
             </li>
             <li class="nav-item">
               <span class="nav-icon">
-                <img src="images/notebook.svg" alt="">
+                <img class="white-icon" src="images/notebook-white.svg" alt="">
+                <img class="black-icon" src="images/notebook.svg" alt="">
               </span>
               <span class="nav-item-name">
                 Contact
@@ -46,15 +49,17 @@
             </li>
             <li class="nav-item">
               <span class="nav-icon">
-                <img src="images/chatsteardrop.svg" alt="">
+                <img class="white-icon" src="images/chatsteardrop-white.svg" alt="">
+                <img class="black-icon" src="images/chatsteardrop.svg" alt="">
               </span>
               <span class="nav-item-name">
                 Refer
               </span>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <span class="nav-icon">
-                <img src="images/wallet.svg" alt="">
+                <img class="white-icon" src="images/wallet-white.svg" alt="">
+                <img class="black-icon" src="images/wallet.svg" alt="">
               </span>
               <span class="nav-item-name">
                 Consultation Fee
@@ -62,7 +67,8 @@
             </li>
             <li class="nav-item">
               <span class="nav-icon">
-                <img src="images/signout.svg" alt="">
+                <img class="white-icon" src="images/signout-white.svg" alt="">
+                <img class="black-icon" src="images/signout.svg" alt="">
               </span>
               <span class="nav-item-name">
                 Log Out
@@ -75,7 +81,7 @@
     <div class="col-lg-10 nopadding Patient-page">
       <div class="middle-content consultation-fee">
         <div class="header">
-          <div class="col-lg-3">
+          <div class="col-lg-3 pl-0">
             <strong class="active-nav">Consultation Fee</strong>
           </div>
           <div class="col-lg-9 right-layout"> 
@@ -90,7 +96,8 @@
               </div>
           </div>
         </div>
-        <div class="patients-table">
+        <div class="main-content scroll-bar">
+          <div class="patients-table">
             <table>
                 <thead class="bg-gray">
                     <tr>
@@ -106,7 +113,8 @@
                   <td>Diabetes Weight Management</td>
                   <td>Rs. 999</td>
                   <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                  <td><div class="status pink-col">
+                  <td>
+                      <div class="status pink-col">
                         <span class="status-text">In Progress</span>
                       </div>
                   </td>
@@ -116,146 +124,150 @@
                     <td>Diabetes Weight Management</td>
                     <td>Rs. 999</td>
                     <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status red-col">
+                    <td>
+                      <div class="status red-col">
                         <span class="status-text">Failed</span>
                       </div>
-                  </td>
-                  </tr>
-                  <tr>
-                    <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
-                    <td>Diabetes Weight Management</td>
-                    <td>Rs. 999</td>
-                    <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status orange-col">
-                        <span class="status-text">Unpaid</span>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr>
-                    <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
-                    <td>Diabetes Weight Management</td>
-                    <td>Rs. 999</td>
-                    <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status orange-col">
-                        <span class="status-text">Unpaid</span>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr class="completed-status">
-                    <td><div class="profile-name"><img src="/dc-dashboard/images/koray-okumus.svg" alt=""><span>Katherine Moss</span></div></td>
-                    <td>Diabetes Weight Management</td>
-                    <td>Rs. 999</td>
-                    <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status green-col">
-                        <span class="status-text">Paid</span>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr>
-                    <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
-                    <td>Diabetes Weight Management</td>
-                    <td>Rs. 999</td>
-                    <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status pink-col">
-                        <span class="status-text">In Progress</span>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr>
-                    <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
-                    <td>Diabetes Weight Management</td>
-                    <td>Rs. 999</td>
-                    <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status pink-col">
-                        <span class="status-text">In Progress</span>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr>
-                    <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
-                    <td>Diabetes Weight Management</td>
-                    <td>Rs. 999</td>
-                    <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
-                    <td><div class="status pink-col">
-                        <span class="status-text">In Progress</span>
-                      </div>
                     </td>
-                  </tr>
-              </table>
-        </div>
-        <div class="update-sec">
-            <div class="card-block">
-              <div class="card">
-                <div class="card-head bg-lt-blue">
-                  <div class="card-title">
-                    <h4>Monthly Stats and Updates</h4>
-                  </div>
-                </div>
-                <div class="stats-update-cards">
-                  <div class="stats-card blue-bg">
-                    <div class="card-heading">Consultation Fee Distribution</div>
-                    <div class="p3-35 flex-align-center">
-                        <div class="circle-block">
-                            <svg width="94px" height="94px" viewBox="0 0 40 40" class="donut">
-                                <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4"></circle>
-                                <circle class="donut-segment donut-segment-2" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4" stroke-dasharray="25 50" stroke-dashoffset="25"></circle>
-                            </svg>
-                            <div class="white-circle">
-                      
-                            </div>
-                        </div>
-                        <div class="w-100 ml-15 mr-20">
-                            <ul class="bullet-list">
-                                <li class="red">
-                                    <div class="item">
-                                        <span>Data 1</span>
-                                        <strong>8,000</strong>
-                                    </div>
-                                </li>
-                                <li class="">
-                                    <div class="item">
-                                        <span>Data 2</span>
-                                        <strong>2,000</strong>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                </tr>
+                <tr>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="status orange-col">
+                      <span class="status-text">Unpaid</span>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="status orange-col">
+                      <span class="status-text">Unpaid</span>
+                    </div>
+                </td>
+                </tr>
+                <tr class="completed-status">
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/koray-okumus.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="status green-col">
+                      <span class="status-text">Paid</span>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/drew-cano.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="status pink-col">
+                      <span class="status-text">In Progress</span>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/aliah-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="status pink-col">
+                      <span class="status-text">In Progress</span>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                  <td><div class="profile-name"><img src="/dc-dashboard/images/andi-lane.svg" alt=""><span>Katherine Moss</span></div></td>
+                  <td>Diabetes Weight Management</td>
+                  <td>Rs. 999</td>
+                  <td><div class="cal-date"><img src="/dc-dashboard/images/calendar.svg" alt=""><span>19 Aug 22</span></div></td>
+                  <td><div class="status pink-col">
+                      <span class="status-text">In Progress</span>
+                    </div>
+                  </td>
+                </tr>
+            </table>
+          </div>
+          <div class="row nomargin">
+            <div class="update-sec">
+              <div class="card-block">
+                <div class="card">
+                  <div class="card-head bg-lt-blue">
+                    <div class="card-title">
+                      <h4>Monthly Stats and Updates</h4>
                     </div>
                   </div>
-                  <div class="stats-card blue-bg">
-                    <div class="card-heading">Total Referral v/s Enrolments</div>
-                    <div class="p3-35 flex-align-center">
-                        <div class="circle-block">
-                            <svg width="94px" height="94px" viewBox="0 0 40 40" class="donut">
-                                <circle class="donut-ring-1" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4"></circle>
-                                <circle class="donut-segment donut-segment-3" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4" stroke-dasharray="25 50" stroke-dashoffset="25"></circle>
-                            </svg>
-                            <div class="white-circle">
-                      
-                            </div>
-                        </div>
-                        <div class="w-100 ml-15 mr-20">
-                            <ul class="bullet-list">
-                                <li class="yellow">
-                                    <div class="item">
-                                        <span>Data 1</span>
-                                        <strong>8,000</strong>
-                                    </div>
-                                </li>
-                                <li class="">
-                                    <div class="item">
-                                        <span>Data 2</span>
-                                        <strong>2,000</strong>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                  <div class="stats-update-cards">
+                    <div class="stats-card blue-bg">
+                      <div class="card-heading">Consultation Fee Distribution</div>
+                      <div class="p3-35 flex-align-center">
+                          <div class="circle-block">
+                              <svg width="94px" height="94px" viewBox="0 0 40 40" class="donut">
+                                  <circle class="donut-ring" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4"></circle>
+                                  <circle class="donut-segment donut-segment-2" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4" stroke-dasharray="25 50" stroke-dashoffset="25"></circle>
+                              </svg>
+                              <div class="white-circle">
+                        
+                              </div>
+                          </div>
+                          <div class="w-100 ml-15 mr-20">
+                              <ul class="bullet-list">
+                                  <li class="red">
+                                      <div class="item">
+                                          <span>Data 1</span>
+                                          <strong>8,000</strong>
+                                      </div>
+                                  </li>
+                                  <li class="">
+                                      <div class="item">
+                                          <span>Data 2</span>
+                                          <strong>2,000</strong>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="stats-card blue-bg">
+                      <div class="card-heading">Total Referral v/s Enrolments</div>
+                      <div class="p3-35 flex-align-center">
+                          <div class="circle-block">
+                              <svg width="94px" height="94px" viewBox="0 0 40 40" class="donut">
+                                  <circle class="donut-ring-1" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4"></circle>
+                                  <circle class="donut-segment donut-segment-3" cx="20" cy="20" r="15.91549430918954" fill="transparent" stroke-width="4" stroke-dasharray="25 50" stroke-dashoffset="25"></circle>
+                              </svg>
+                              <div class="white-circle">
+                        
+                              </div>
+                          </div>
+                          <div class="w-100 ml-15 mr-20">
+                              <ul class="bullet-list">
+                                  <li class="yellow">
+                                      <div class="item">
+                                          <span>Data 1</span>
+                                          <strong>8,000</strong>
+                                      </div>
+                                  </li>
+                                  <li class="">
+                                      <div class="item">
+                                          <span>Data 2</span>
+                                          <strong>2,000</strong>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -313,6 +325,6 @@
             stroke-dasharray: 50, 50;
         }
     }
-</style>
+  </style>
 </body>
 </html>

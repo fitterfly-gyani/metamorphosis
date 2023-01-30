@@ -39,21 +39,42 @@
                 padding: 15px;
                 gap: 10px;
                 margin-bottom: 5px;
-                span {
+                .nav-icon {
                     display: flex;
-                   
+                    justify-content: center;
+                    align-items: center;
+                    .white-icon{
+                        display: none;
+                    }
+                    .black-icon{
+                        display: block;
+                    }
                 }
-                span.nav-item-name {
+                .nav-item-name {
                     font-size: 14px;
                     line-height: 20px;
                     color:#000 ;
                 }
                 &.active {
                     background-color: #CC2E7F;
-                    span.nav-item-name {
+                    .nav-icon {
+                        .white-icon{
+                            display: block;
+                        }
+                        .black-icon{
+                            display: none;
+                        }
+                    }
+                    .nav-item-name {
                         font-weight: 600;
                         color: #fff;
                     }
+                    &:hover{
+                        background-color: #CC2E7F;
+                    }
+                }
+                &:hover{
+                    background-color: #F5F5F5;
                 }
             }
         }
