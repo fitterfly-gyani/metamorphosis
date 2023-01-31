@@ -1,7 +1,4 @@
 .patient-page {
-    .header {
-        align-items: center;
-    }
     .right-layout {
         .refer-btn {
             display: flex;
@@ -25,7 +22,7 @@
         .search-box {
             min-width: 400px;
             input {
-                max-width: 400px;
+                max-width: 400px; 
             }
             .search {
                 background: url(/dc-dashboard/images/search.svg) no-repeat 5% center;
@@ -52,7 +49,8 @@
         justify-content: flex-end;
     }
     .update-sec {
-        padding: 20px 25px;
+        padding: 20px 30px 20px 25px;
+        width: 100%;
         .card{
             border: 1px solid #E0E0E0;
         }
@@ -165,21 +163,21 @@
             color: #0A0A0A; 
         }
     }
-    .refer-page-info {
+    .refer-info {
         display: flex;
     }
     
-    .refer-page-table {
+    .refer-list-col {
         padding: 24px 24px 0px 24px;
         background: #DBF4F2;
         .teble-heading {
             padding: 24px 0px 10px 0px;
         }
-        .table-head {
+        .refer-btns {
             display: flex;
             justify-content: flex-start; 
             align-items: center;
-            padding-bottom: 15px;
+            padding: 10px 0px 15px 0px;
             .search-box {
                 padding-right: 30px;
                 width: 50%;
@@ -197,9 +195,9 @@
             background: #FFFFFF;
         }
     }
-    .refer-page-form {
+    .refer-form-col {
         padding: 24px;
-        .form-grup {
+        .form-group {
             display: flex;
             flex-direction: column;
             padding-bottom: 20px;
@@ -233,7 +231,7 @@
                 padding: 10px;
                 width: 100%;
                 max-width: 350px;
-                height: 328px;
+                height: 270px;
                 background-color: #fff;
             } 
             .patient-info {
@@ -245,7 +243,7 @@
                 align-items: center;
                 padding: 10px;
                 position: absolute;
-                bottom: 85px;
+                bottom: 105px;
                 width: 87%;
                 .report-btn {
                     display: flex; 
@@ -301,3 +299,107 @@
 .information-table{
     
 }
+
+.contact-page {
+    display: flex;
+    .right-sec {
+        padding: 0px 30px 50px;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        .chating-sec {
+            form.chat {
+                .client-message {
+                    position: relative;
+                    padding: 50px 0px;
+                    .fromThem {
+                        color: #0A0A0A;
+                        float: left;
+                        margin-bottom: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        padding: 14px 16px;
+                        width: 257px;
+                        height: 48px;
+                        background: #EDEDED;
+                        border-radius: 16px;
+                        p {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #0A0A0A;  
+                        }
+                    }
+                    .time {
+                        position: absolute;
+                        top: 100px;
+                        left: 0px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #707070;
+                        
+                    }
+                }
+                .my-message {
+                    position: relative;
+                    padding: 50px 0px;
+                    .myMessage {
+                        color: #F5F5F5;
+                        float: right;
+                        margin-bottom: 20px;
+                        padding: 14px 16px;
+                        width: 257px;
+                        height: 48px;
+                        background: #166780;
+                        border-radius: 16px;
+                        p {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #F5F5F5; 
+                        }
+                    }
+                    .my-time {
+                        position: absolute;
+                        right: 180px;
+                        top: 100px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #707070; 
+                    }
+                }
+                .send-icon {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 80px;
+                    input {
+                        max-width: 480px;
+                        height: 62px;
+                        background: #EFF5FA;
+                        border-radius: 16px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    h4 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1C1C1C; 
+        padding: 25px 0px 25px 5px;
+    }
+}
+

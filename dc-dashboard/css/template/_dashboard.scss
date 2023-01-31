@@ -332,6 +332,23 @@
         text-align: right;
         color: #3363A5;
     }
+    &.table{
+        height: calc(100% - 90px);
+        thead th {
+            background-color: #fff;
+            .thead{
+                padding: 10px;
+                box-shadow: unset;
+                border-bottom: 1px solid #dddddd;
+                border-right: 1px solid #dddddd;
+            }
+            &:last-child{
+                .thead{
+                    border-right: none;
+                }
+            }
+        }
+    }
 }
 
 .top-align{
