@@ -5,11 +5,12 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 20px 50px;
+            padding: 0 15px;
             background: #1C1C1C;
             border-radius: 8px;
             height: 40px;
             color: #FFFFFF;
+            min-width: 217px;
         }
         .custome-filter {
             display: flex;

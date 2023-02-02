@@ -128,13 +128,22 @@
                 border-radius: 0px 0px 15px 15px;
                 .download-report-card{
                     display: flex;
-                    padding: 24px 16px;
+                    padding: 16px 16px;
                     justify-content: space-between;
                     align-items: center;
                     background: #F7F9FB;
                     border: 1px solid #A3B2C2;
                     border-radius: 8px;
-                    margin: 16px 20px;
+                    margin: 16px 16px;
+                    .prescrib-text{
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 16px;
+                        em{
+                            color: rgba(0, 0, 0, 0.4);
+                            font-style: normal;
+                        }
+                    }
                 }
             }
             table {
