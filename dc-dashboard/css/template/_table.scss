@@ -50,7 +50,7 @@ td {
     justify-content: flex-start;
     align-items: center;
     span {
-        padding-left: 13px;
+        padding-left: 10px;
     }
     .rec-link{
         font-weight: 500;
@@ -61,8 +61,14 @@ td {
         color: #3363A5;
     }
 }
+.cal-date{
+    span {
+        padding-left: 4px;
+    }
+}
 .status {
     position: relative;
+    z-index: -1;
     &:before {
         content: "";
         position: absolute;
