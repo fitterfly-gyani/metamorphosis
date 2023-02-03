@@ -30,7 +30,7 @@ input {
         width: 20px;
         height: 20px;
         display: block;
-        background: url('/dc-dashboard/images/arrowdown.svg') no-repeat;
+        background: url('../images/arrowdown.svg') no-repeat;
         position: absolute;
         top: 13px;
         right: 10px;
@@ -135,7 +135,7 @@ input {
                 content: "";
                 width: 20px;
                 height: 15px;
-                background: url('/dc-dashboard/images/arrowright.svg') no-repeat;
+                background: url('../images/arrowright.svg') no-repeat;
                 position: absolute;
                 right: 0px;
             }

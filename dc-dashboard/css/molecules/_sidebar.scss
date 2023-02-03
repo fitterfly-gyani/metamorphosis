@@ -43,21 +43,27 @@
                 padding: 15px;
                 gap: 10px;
                 margin-bottom: 5px;
-                .nav-icon {
+                a{
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-                    .white-icon{
-                        display: none;
+                    flex: 1;
+                    .nav-icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 10px;
+                        .white-icon{
+                            display: none;
+                        }
+                        .black-icon{
+                            display: block;
+                        }
                     }
-                    .black-icon{
-                        display: block;
+                    .nav-item-name {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color:#000 ;
                     }
-                }
-                .nav-item-name {
-                    font-size: 14px;
-                    line-height: 20px;
-                    color:#000 ;
                 }
                 &.active {
                     background-color: #CC2E7F;
