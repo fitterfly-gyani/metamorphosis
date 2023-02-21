@@ -227,7 +227,7 @@ function verifyUser(event) {
     // console.log($username);
     // console.log($password);
     var settings = {
-        "url": "https://stage.fitterfly.com/nplus_app/account/request_account_access",
+        "url": "https://stage-ftx-admin.ffly.in/nplus_app/account/request_account_access",
         "method": "POST",
         "timeout": 0,
         "headers": {
